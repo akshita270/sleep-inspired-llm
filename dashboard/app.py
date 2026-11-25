@@ -102,3 +102,8 @@ with tab5:
     st.subheader("What these results do not show")
     for line in R.known_limitations():
         st.markdown(f"- {line}")
+
+st.divider()
+st.subheader("Conclusion")
+for line in R.conclusion():
+    st.markdown(f"- {line}")

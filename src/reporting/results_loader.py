@@ -162,3 +162,19 @@ def plain_guide() -> list[list[str]]:
         "Safety rules set before the tests. A newly trained add-on only replaces the current model (the champion) if it passes. Here, none passed, so the original model stayed champion."
     ]
 ]
+
+
+def conclusion() -> list[str]:
+    """Short conclusion, with every number read from the result files."""
+    p8 = phase8_comparison().set_index("model")
+    b, c0, c1 = p8.loc["B: Qwen + episodic memory"], p8.loc["C: LoRA, no replay"], p8.loc["C: LoRA + replay"]
+    cont = continual_table()
+    last = cont[cont["cycle"] == cont["cycle"].max()].set_index("arm")
+    pct = lambda v: f"{v * 100:.1f}%".replace(".0%", "%")
+    return [
+        f"Teaching works, but it has a cost. LoRA learned the new facts ({pct(c0['new_facts'])}), but old knowledge fell from 99.2% to {pct(c0['old_knowledge'])}.",
+        f"Replay helps a lot. With it, old knowledge stayed at {pct(c1['old_knowledge'])} and forgetting dropped from {pct(c0['forgetting_rate'])} to {pct(c1['forgetting_rate'])}, which is still above our 5% limit, so the safety gate rejected it.",
+        f"Over 5 rounds, only replaying earlier facts kept them: {pct(last.loc['full_replay', 'acc_earlier_cycles_facts'])} remembered, against {pct(last.loc['no_replay', 'acc_earlier_cycles_facts'])} with no replay. But general knowledge still faded in every version, and {int(cont['gate_would_pass'].sum())} of {len(cont)} cycles passed the gate.",
+        f"A simple memory notebook (no training) got {pct(b['new_facts'])} on the new facts with no damage, so for plain fact-keeping it is the safer choice here.",
+        "Verdict: the original model stayed champion. Sleep-style training is promising but not yet safe enough to trust without more work. These are small, single-run results on made-up facts.",
+    ]

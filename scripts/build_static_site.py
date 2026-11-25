@@ -57,6 +57,7 @@ footer{color:var(--muted);font-size:.85rem;margin-top:32px}a{color:var(--accent)
 
 <section id="t3"><h2>What these results do not show</h2><div class="card"><ul id="lims"></ul></div></section>
 
+<h2>Conclusion</h2><div class="card"><ul id="concl"></ul></div>
 <footer>Source and docs: <a href="https://github.com/akshita270/sleep-inspired-llm">github.com/akshita270/sleep-inspired-llm</a>. Each Phase 9 arm was run once (seed 42); one fact in a 6-fact group is 16.7 points.</footer>
 <script>
 const D = __DATA__;
@@ -109,6 +110,7 @@ table('tuning',['setting','dev_knowledge','dev_reasoning','dev_forgetting','para
 // tab 3
 document.getElementById('lims').innerHTML=D.limitations.map(x=>'<li>'+x.replace(/</g,'&lt;')+'</li>').join('');
 document.getElementById('guide').innerHTML=D.guide.map(([t,d])=>'<dt>'+t+'</dt><dd>'+d+'</dd>').join('');
+document.getElementById('concl').innerHTML=D.conclusion.map(x=>'<li>'+x.replace(/</g,'&lt;')+'</li>').join('');
 show(0);
 </script></main></body></html>"""
 
@@ -123,7 +125,7 @@ def main():
 
     data = {"phase8": rec(R.phase8_comparison()), "continual": rec(cont), "gate": rec(gate),
             "tuning": rec(R.tuning_table()), "limitations": R.known_limitations(),
-            "gate_pass": int(cont["gate_would_pass"].sum()), "guide": R.plain_guide()}
+            "gate_pass": int(cont["gate_would_pass"].sum()), "guide": R.plain_guide(), "conclusion": R.conclusion()}
     out = PROJECT_ROOT / "site"
     out.mkdir(exist_ok=True)
     import plotly, shutil                                   # self-host Plotly: no CDN needed
