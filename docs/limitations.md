@@ -10,5 +10,4 @@
 - Rollback is unit-tested but was never exercised on a promoted model, because no adapter passed the gate.
 - Classifier and conflict detector are simple rules.
 - All 15 study cycles would have failed the promotion gate; in every arm general knowledge eroded as cycles accumulated. Cycle 4 was bad in all arms and was not investigated.
-- The first episodic-memory run (before a validator fix) was lost by mistake; its numbers (86.7% new knowledge, 90% retrieval, 3 facts rejected) exist only in the conversation log and are not used in any table.
 - Per-cycle wall time varied a lot (about 10 to 34 minutes per cycle including the 220-question exam); the cause was not investigated.

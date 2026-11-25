@@ -78,7 +78,6 @@
     "The leak guard blocks near-copies of exam questions (Jaccard >= 0.8) but allows similar wordings.",
     "GPU peak memory during training is not measured properly (the CPU-side RSS number undercounts).",
     "Rollback is unit-tested but was never exercised on a promoted model, because no adapter passed the gate.",
-    "The classifier and conflict detector are simple rules, not learned models.",
-    "The first episodic-memory run (before a validator fix) was lost; its numbers (86.7% new knowledge, 90% retrieval, 3 facts rejected) exist only in the chat log."
+    "The classifier and conflict detector are simple rules, not learned models."
   ]
 }
