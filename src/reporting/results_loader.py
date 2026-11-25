@@ -112,3 +112,53 @@ def summary() -> dict:
                                            "acc_reasoning", "forgetting_rate"]].to_dict("records"),
             "gate_would_pass_count": int(cont["gate_would_pass"].sum()), "cycles_total": int(len(cont)),
             "limitations": known_limitations()}
+
+
+def plain_guide() -> list[list[str]]:
+    """Short plain-English explanations of the terms used on the dashboards."""
+    return [
+    [
+        "The big idea",
+        "An AI model is taught new facts the way people learn while sleeping: it collects things while 'awake', then 'sleeps' to study them. We tested whether that works, and whether it makes the model forget what it already knew."
+    ],
+    [
+        "New facts",
+        "30 made-up facts the original model could not know (for example about an invented company). Scoring high here means the model learned them."
+    ],
+    [
+        "Old knowledge",
+        "120 real-world questions the original model already answers well, like capitals and basic science. Scoring low here means studying the new facts damaged what it knew."
+    ],
+    [
+        "Reasoning",
+        "70 logic, maths and coding questions. Another check that learning did not make the model worse at thinking."
+    ],
+    [
+        "Forgetting rate",
+        "Of the questions the original model got right, the share the trained model now gets wrong. Lower is better. We set a limit of 5%."
+    ],
+    [
+        "LoRA adapter",
+        "A small add-on file (about 59 MB) that is trained instead of changing the big model. The original model is never modified, and removing the add-on brings it back exactly."
+    ],
+    [
+        "Episodic memory",
+        "A notebook. Facts are stored and looked up when a question comes in. The model is not trained at all."
+    ],
+    [
+        "Replay",
+        "Revising old material while learning new material, like re-reading old chapters while studying a new one. Without it, the model tends to forget."
+    ],
+    [
+        "General replay / full replay",
+        "General replay revises real questions answered by the original model. Full replay also revises the facts taught in earlier rounds."
+    ],
+    [
+        "Cycle",
+        "One round of: give new facts, train, take the 220-question exam, record the scores."
+    ],
+    [
+        "Gate and champion",
+        "Safety rules set before the tests. A newly trained add-on only replaces the current model (the champion) if it passes. Here, none passed, so the original model stayed champion."
+    ]
+]

@@ -20,6 +20,10 @@ st.title("Sleep-inspired continual learning for a local LLM")
 st.caption("Qwen3-4B (full precision) + LoRA on an Apple M2, 16 GB. Wake: collect and validate. Sleep: train, evaluate, gate. "
            "All numbers below are measured and read from files.")
 
+with st.expander("New here? Plain-English guide (higher is better, except forgetting)", expanded=True):
+    for term, text in R.plain_guide():
+        st.markdown(f"**{term}:** {text}")
+
 tab1, tab2, tab3, tab4, tab5 = st.tabs(["Final exam (A/B/C)", "5-cycle study", "Gate & tuning", "Stored experiences", "Limitations"])
 
 with tab1:

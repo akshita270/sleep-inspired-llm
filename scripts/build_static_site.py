@@ -28,10 +28,12 @@ table{border-collapse:collapse;width:100%;font-size:.9rem}th,td{padding:6px 8px;
 .scroll{overflow-x:auto}.fail{color:#d1495b;font-weight:600}.pass{color:#2e9e5b;font-weight:600}
 select{font:inherit;padding:6px;background:var(--card);color:var(--fg);border:1px solid var(--line);border-radius:6px}
 .grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:8px}
+.guide{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:4px 14px;margin:12px 0}.guide summary{cursor:pointer;font-weight:600;padding:10px 0}.guide dl{margin:0 0 10px;display:grid;grid-template-columns:minmax(120px,190px) 1fr;gap:6px 14px}.guide dt{font-weight:600}.guide dd{margin:0;color:var(--muted)}@media(max-width:600px){.guide dl{grid-template-columns:1fr}.guide dd{margin-bottom:6px}}
 footer{color:var(--muted);font-size:.85rem;margin-top:32px}a{color:var(--accent)}
 </style></head><body><main>
 <h1>Sleep-inspired continual learning for a local LLM</h1>
 <p class="sub">Qwen3-4B (bf16) + MLX LoRA on an Apple M2, 16 GB. Wake: collect and validate. Sleep: train, evaluate, gate. All numbers are measured and embedded from the result files. Static copy: no live model.</p>
+<details class="guide" open><summary>New here? Plain-English guide (higher is better, except forgetting)</summary><dl id="guide"></dl></details>
 <nav role="tablist" id="tabs"></nav>
 
 <section id="t0"><h2>220-question exam: original vs memory vs LoRA</h2>
@@ -106,6 +108,7 @@ table('tuning',['setting','dev_knowledge','dev_reasoning','dev_forgetting','para
   {dev_knowledge:pct,dev_reasoning:pct,dev_forgetting:pct,paraphrase_acc:pct,training_seconds:v=>v==null?'-':v.toFixed(0),selected:v=>v?'yes':''});
 // tab 3
 document.getElementById('lims').innerHTML=D.limitations.map(x=>'<li>'+x.replace(/</g,'&lt;')+'</li>').join('');
+document.getElementById('guide').innerHTML=D.guide.map(([t,d])=>'<dt>'+t+'</dt><dd>'+d+'</dd>').join('');
 show(0);
 </script></main></body></html>"""
 
@@ -120,7 +123,7 @@ def main():
 
     data = {"phase8": rec(R.phase8_comparison()), "continual": rec(cont), "gate": rec(gate),
             "tuning": rec(R.tuning_table()), "limitations": R.known_limitations(),
-            "gate_pass": int(cont["gate_would_pass"].sum())}
+            "gate_pass": int(cont["gate_would_pass"].sum()), "guide": R.plain_guide()}
     out = PROJECT_ROOT / "site"
     out.mkdir(exist_ok=True)
     import plotly, shutil                                   # self-host Plotly: no CDN needed
