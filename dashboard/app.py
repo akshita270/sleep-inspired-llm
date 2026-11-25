@@ -24,6 +24,8 @@ with st.expander("New here? Plain-English guide (higher is better, except forget
     for term, text in R.plain_guide():
         st.markdown(f"**{term}:** {text}")
 
+CAP = R.captions()
+
 tab1, tab2, tab3, tab4, tab5 = st.tabs(["Final exam (A/B/C)", "5-cycle study", "Gate & tuning", "Stored experiences", "Limitations"])
 
 with tab1:
@@ -32,10 +34,12 @@ with tab1:
     long = df.melt(id_vars="model", value_vars=["new_facts", "old_knowledge", "reasoning"], var_name="test", value_name="accuracy")
     long["accuracy"] *= 100
     st.plotly_chart(px.bar(long, x="model", y="accuracy", color="test", barmode="group", range_y=[0, 105]), width="stretch")
+    st.caption(CAP["phase8_chart"])
     show = df.copy()
     for c in ["new_facts", "old_knowledge", "reasoning", "forgetting_rate"]:
         show[c] = (show[c] * 100).round(1)
     st.dataframe(show, hide_index=True, width="stretch")
+    st.caption(CAP["phase8_table"])
     st.info("Episodic memory (B) looks facts up and does not change the model. LoRA (C) changes the model's behaviour but forgets some old knowledge; replay reduces that.")
 
 with tab2:
@@ -56,6 +60,7 @@ with tab2:
     fig = px.line(d, x="cycle", y=metric, color="arm_label", markers=True, color_discrete_map=COLORS)
     fig.update_xaxes(dtick=1)
     st.plotly_chart(fig, width="stretch")
+    st.caption(CAP["lines"])
     st.markdown("**Does the model still know each fact group?** (rows: exam after cycle N, columns: facts taught in cycle G)")
     cols = st.columns(3)
     for col, arm in zip(cols, R.ARM_ORDER):
@@ -64,7 +69,9 @@ with tab2:
         col.caption(R.ARM_LABELS[arm])
         col.plotly_chart(px.imshow(m, text_auto=".0f", zmin=0, zmax=100, color_continuous_scale="YlGnBu", aspect="auto")
                          .update_layout(coloraxis_showscale=False, margin=dict(l=0, r=0, t=0, b=0)), width="stretch")
+    st.caption(CAP["heat"])
     st.dataframe(cont.drop(columns=["arm_label", "acc_by_fact_group"]), hide_index=True, width="stretch")
+    st.caption(CAP["cont_table"])
     st.warning(f"Gate verdict: {int(cont['gate_would_pass'].sum())} of {len(cont)} cycles would have been promoted. "
                "Each arm was run once, and one fact is 16.7 points inside a 6-fact group.")
 
@@ -74,9 +81,11 @@ with tab3:
     g["value"] = g["value"].astype(str)
     g["result"] = g["passed"].map({True: "pass", False: "FAIL"})
     st.dataframe(g.drop(columns="passed"), hide_index=True, width="stretch")
+    st.caption(CAP["gate"])
     st.subheader("Settings tried on the dev set (not the final exam)")
     t = R.tuning_table()
     st.dataframe(t, hide_index=True, width="stretch")
+    st.caption(CAP["tuning"])
 
 with tab4:
     import pandas as pd

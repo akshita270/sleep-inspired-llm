@@ -178,3 +178,16 @@ def conclusion() -> list[str]:
         f"A simple memory notebook (no training) got {pct(b['new_facts'])} on the new facts with no damage, so for plain fact-keeping it is the safer choice here.",
         "Verdict: the original model stayed champion. Sleep-style training is promising but not yet safe enough to trust without more work. These are small, single-run results on made-up facts.",
     ]
+
+
+def captions() -> dict[str, str]:
+    """Short 'how to read this' text shown under each chart and table."""
+    return {
+        "phase8_chart": "How to read it: each group of bars is one model. Blue = new facts it should have learned, orange = real-world knowledge it should keep, green = reasoning. The ideal model has all three bars tall. The original (A) has no blue bar because it never saw the facts. Memory (B) is tall everywhere because it looks the facts up. LoRA (C) learns the facts but its orange bar drops, which is the cost of training; replay brings it back up.",
+        "phase8_table": "The same numbers as the chart, plus: forgetting rate (share of answers the original got right that are now wrong, lower is better), speed per answer, training time, and the gate result (whether the model was allowed to replace the current champion).",
+        "lines": "Each line is one way of studying across 5 rounds; pick a measure in the dropdown. A falling line means the model is forgetting as it keeps learning. For 'facts taught so far' and 'earlier-cycle facts kept', the full-replay line stays highest. For 'forgetting rate', lower is better.",
+        "heat": "Each square shows how many of the 6 facts taught in round G (column) the model still knows after round N (row). Dark blue = remembered, pale = forgotten. Reading down a column shows forgetting over time. With no replay the model mostly knows only what it just learned (the diagonal); with full replay the earlier columns stay dark.",
+        "cont_table": "The full numbers behind the charts, one row per round. 'n_general_replay' and 'n_previous_replay' are how many revision examples were mixed into that round's training. 'gate' says whether that round's model would have passed the safety rules.",
+        "gate": "Each row is one safety rule, checked for one trained model. The rules were fixed before any test was run. Both trained models failed the forgetting, old-knowledge and reasoning rules, so neither replaced the original model.",
+        "tuning": "Settings tried on a separate practice set, so the final exam was never used to choose them. 'selected' marks the setting used for the final run. The practice set was easier than the final exam (it showed 1.7% forgetting where the exam showed 7.6%).",
+    }

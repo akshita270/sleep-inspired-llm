@@ -29,6 +29,7 @@ table{border-collapse:collapse;width:100%;font-size:.9rem}th,td{padding:6px 8px;
 select{font:inherit;padding:6px;background:var(--card);color:var(--fg);border:1px solid var(--line);border-radius:6px}
 .grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:8px}
 .guide{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:4px 14px;margin:12px 0}.guide summary{cursor:pointer;font-weight:600;padding:10px 0}.guide dl{margin:0 0 10px;display:grid;grid-template-columns:minmax(120px,190px) 1fr;gap:6px 14px}.guide dt{font-weight:600}.guide dd{margin:0;color:var(--muted)}@media(max-width:600px){.guide dl{grid-template-columns:1fr}.guide dd{margin-bottom:6px}}
+.cap{color:var(--muted);font-size:.92rem;margin:6px 2px 14px}
 footer{color:var(--muted);font-size:.85rem;margin-top:32px}a{color:var(--accent)}
 </style></head><body><main>
 <h1>Sleep-inspired continual learning for a local LLM</h1>
@@ -38,22 +39,29 @@ footer{color:var(--muted);font-size:.85rem;margin-top:32px}a{color:var(--accent)
 
 <section id="t0"><h2>220-question exam: original vs memory vs LoRA</h2>
 <div class="card"><div id="p8chart"></div></div>
+<p class="cap" data-cap="phase8_chart"></p>
 <div class="card scroll"><table id="p8table"></table></div>
+<p class="cap" data-cap="phase8_table"></p>
 <p class="sub">Episodic memory (B) looks facts up and does not change the model. LoRA (C) changes the model but forgets old knowledge; replay reduces that. Both LoRA adapters were rejected by the gate, so the original Qwen stays champion.</p></section>
 
 <section id="t1"><h2>5 cycles, 6 new facts per cycle, one adapter carried forward</h2>
 <p>Metric: <select id="metric"></select></p>
 <div class="card"><div id="lines"></div></div>
+<p class="cap" data-cap="lines"></p>
 <h2>Does the model still know each fact group?</h2>
 <p class="sub">Rows: exam after cycle N. Columns: facts taught in cycle G.</p>
 <div class="grid3" id="heat"></div>
+<p class="cap" data-cap="heat"></p>
 <div class="card scroll"><table id="cont"></table></div>
+<p class="cap" data-cap="cont_table"></p>
 <p id="gatesummary" class="sub"></p></section>
 
 <section id="t2"><h2>Promotion gate (rules fixed before the runs)</h2>
 <div class="card scroll"><table id="gate"></table></div>
+<p class="cap" data-cap="gate"></p>
 <h2>Settings tried on the dev set (not the final exam)</h2>
-<div class="card scroll"><table id="tuning"></table></div></section>
+<div class="card scroll"><table id="tuning"></table></div>
+<p class="cap" data-cap="tuning"></p></section>
 
 <section id="t3"><h2>What these results do not show</h2><div class="card"><ul id="lims"></ul></div></section>
 
@@ -111,6 +119,7 @@ table('tuning',['setting','dev_knowledge','dev_reasoning','dev_forgetting','para
 document.getElementById('lims').innerHTML=D.limitations.map(x=>'<li>'+x.replace(/</g,'&lt;')+'</li>').join('');
 document.getElementById('guide').innerHTML=D.guide.map(([t,d])=>'<dt>'+t+'</dt><dd>'+d+'</dd>').join('');
 document.getElementById('concl').innerHTML=D.conclusion.map(x=>'<li>'+x.replace(/</g,'&lt;')+'</li>').join('');
+document.querySelectorAll('[data-cap]').forEach(e=>e.textContent=D.captions[e.dataset.cap]);
 show(0);
 </script></main></body></html>"""
 
@@ -125,7 +134,7 @@ def main():
 
     data = {"phase8": rec(R.phase8_comparison()), "continual": rec(cont), "gate": rec(gate),
             "tuning": rec(R.tuning_table()), "limitations": R.known_limitations(),
-            "gate_pass": int(cont["gate_would_pass"].sum()), "guide": R.plain_guide(), "conclusion": R.conclusion()}
+            "gate_pass": int(cont["gate_would_pass"].sum()), "guide": R.plain_guide(), "conclusion": R.conclusion(), "captions": R.captions()}
     out = PROJECT_ROOT / "site"
     out.mkdir(exist_ok=True)
     import plotly, shutil                                   # self-host Plotly: no CDN needed
