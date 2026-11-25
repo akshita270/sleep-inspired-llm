@@ -17,81 +17,78 @@ TEMPLATE = r"""<!doctype html>
 <meta name="description" content="We taught a local LLM to sleep: it learned new facts, then we measured what it forgot. Real results, honest limits.">
 <script src="plotly.min.js"></script>
 <style>
-:root{--bg:#f6f7fb;--fg:#161a22;--muted:#5d6675;--card:#ffffff;--line:#e2e6ee;--accent:#6c4ff6;--accent2:#00b3a4;
---red:#e5566d;--amber:#f0a92e;--green:#1fa971;--hero1:#ede9ff;--hero2:#e0f7f4;--shadow:0 6px 24px rgba(40,30,90,.08)}
-@media (prefers-color-scheme:dark){:root{--bg:#0e1017;--fg:#eef0f6;--muted:#9aa3b5;--card:#171a24;--line:#262b3a;--accent:#8f78ff;--accent2:#2dd4c4;
---red:#ff6b83;--amber:#ffbf47;--green:#35d08f;--hero1:#1b1640;--hero2:#0b2a2d;--shadow:0 6px 28px rgba(0,0,0,.35)}}
+:root{--bg:#faf7f2;--fg:#1c1b19;--muted:#6a655c;--card:#fffdf9;--line:#e2dccf;--accent:#b8460f;--teal:#1f7a6d;--red:#b4432f;--amber:#b7791f;--slate:#5b6b7a;--heat0:#ebe5d8;--soft:#f1ece1}
+@media (prefers-color-scheme:dark){:root{--bg:#161512;--fg:#ece8df;--muted:#a29c90;--card:#1d1b17;--line:#2f2c26;--accent:#e8864a;--teal:#4fb3a2;--red:#e0705a;--amber:#e0a94a;--slate:#8fa0b0;--heat0:#2a2823;--soft:#211f1b}}
 *{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-a{color:var(--accent)}main{max-width:1120px;margin:0 auto;padding:0 16px 72px}
-.hero{margin:0 -16px;padding:56px 16px 40px;background:radial-gradient(900px 400px at 15% -10%,var(--hero1),transparent 70%),radial-gradient(800px 380px at 95% 0%,var(--hero2),transparent 70%)}
-.hero-in{max-width:1120px;margin:0 auto}
-.kicker{display:inline-block;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);font-weight:700;background:color-mix(in srgb,var(--accent) 12%,transparent);padding:5px 12px;border-radius:99px}
-h1{font-size:clamp(2rem,5.5vw,3.6rem);line-height:1.08;margin:16px 0 10px;letter-spacing:-.02em}
-h1 em{font-style:normal;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
-.lead{font-size:clamp(1.05rem,2.2vw,1.3rem);color:var(--muted);max-width:760px;margin:0 0 26px}
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin:8px 0 22px}
-.stat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 18px 16px;box-shadow:var(--shadow)}
-.stat .big{font-size:2.5rem;font-weight:800;letter-spacing:-.02em;line-height:1.1}
-.stat .big small{font-size:1.05rem;font-weight:600;color:var(--muted)}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--accent)}main{max-width:1080px;margin:0 auto;padding:0 18px 72px}
+h1,h2,h3{font-family:Georgia,"Iowan Old Style","Palatino Linotype",serif;font-weight:700;letter-spacing:-.01em}
+.hero{padding:64px 0 36px;border-bottom:1px solid var(--line)}
+.kicker{font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:700}
+h1{font-size:clamp(2.1rem,5.6vw,3.7rem);line-height:1.08;margin:14px 0 14px}
+h1 em{font-style:italic;color:var(--accent)}
+.lead{font-size:clamp(1.05rem,2.2vw,1.25rem);color:var(--muted);max-width:720px;margin:0 0 30px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:0;margin:0 0 28px;border-top:1px solid var(--line)}
+.stat{padding:18px 20px 16px 0;border-bottom:1px solid var(--line)}
+@media(min-width:820px){.stat{border-bottom:0;border-right:1px solid var(--line);padding:18px 22px 6px}.stat:first-child{padding-left:0}.stat:last-child{border-right:0}}
+.stat .big{font-family:Georgia,serif;font-size:2.6rem;font-weight:700;line-height:1.1}
+.stat .big small{font-family:system-ui,sans-serif;font-size:1rem;font-weight:500;color:var(--muted)}
 .stat p{margin:6px 0 0;color:var(--muted);font-size:.95rem}
-.red{color:var(--red)}.green{color:var(--green)}.amber{color:var(--amber)}.acc{color:var(--accent)}
+.red{color:var(--red)}.green{color:var(--teal)}.amber{color:var(--amber)}.acc{color:var(--accent)}
 .cta{display:flex;gap:10px;flex-wrap:wrap}
-.btn{display:inline-block;padding:11px 18px;border-radius:12px;font-weight:650;text-decoration:none;border:1px solid var(--line);color:var(--fg);background:var(--card)}
-.btn.primary{background:linear-gradient(90deg,var(--accent),#5b8cff);color:#fff;border:0}
-h2{font-size:clamp(1.4rem,3vw,1.9rem);margin:54px 0 6px;letter-spacing:-.01em}
+.btn{display:inline-block;padding:10px 18px;border-radius:6px;font-weight:600;text-decoration:none;border:1px solid var(--fg);color:var(--fg);background:transparent}
+.btn.primary{background:var(--fg);color:var(--bg)}
+h2{font-size:clamp(1.5rem,3vw,2rem);margin:56px 0 6px}
 .sub{color:var(--muted);margin:0 0 16px}
-.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;counter-reset:s}
-.step{position:relative;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;box-shadow:var(--shadow)}
-.step .ic{font-size:1.5rem}.step b{display:block;margin:4px 0 2px}.step span{color:var(--muted);font-size:.93rem}
-.step::after{content:"→";position:absolute;right:-12px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:1.1rem;z-index:2}
-.step:last-child::after{display:none}
-@media(max-width:700px){.step::after{display:none}}
-.lab{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:var(--shadow)}
-.ctrl{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:14px}
-.seg{display:inline-flex;border:1px solid var(--line);border-radius:12px;overflow:hidden}
-.seg button{border:0;background:transparent;color:var(--fg);padding:9px 13px;font:inherit;cursor:pointer}
-.seg button[aria-pressed=true]{background:var(--accent);color:#fff}
-.play{border:1px solid var(--line);background:var(--card);color:var(--fg);padding:9px 14px;border-radius:12px;font:inherit;cursor:pointer}
-input[type=range]{accent-color:var(--accent);width:min(260px,100%)}
-.board{display:flex;gap:14px;flex-wrap:wrap;margin:6px 0 14px}
-.grp{flex:1 1 150px;background:color-mix(in srgb,var(--fg) 3%,transparent);border-radius:12px;padding:10px}
-.grp h4{margin:0 0 8px;font-size:.78rem;color:var(--muted);font-weight:600;letter-spacing:.03em;text-transform:uppercase}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px}
+.step{border-top:2px solid var(--fg);padding-top:10px}
+.step .n{font-family:ui-monospace,Menlo,monospace;font-size:.8rem;color:var(--accent);font-weight:700}
+.step b{display:block;margin:2px 0}.step span{color:var(--muted);font-size:.94rem}
+.lab{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:20px}
+.ctrl{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:14px}
+.seg{display:inline-flex;border:1px solid var(--fg);border-radius:6px;overflow:hidden}
+.seg button{border:0;background:transparent;color:var(--fg);padding:8px 13px;font:inherit;cursor:pointer}
+.seg button[aria-pressed=true]{background:var(--fg);color:var(--bg)}
+.play{border:1px solid var(--fg);background:transparent;color:var(--fg);padding:8px 14px;border-radius:6px;font:inherit;cursor:pointer}
+input[type=range]{accent-color:var(--accent);width:min(240px,100%)}
+.board{display:flex;gap:12px;flex-wrap:wrap;margin:6px 0 14px}
+.grp{flex:1 1 150px;background:var(--soft);border-radius:6px;padding:10px}
+.grp h4{margin:0 0 8px;font:600 .74rem system-ui,sans-serif;color:var(--muted);letter-spacing:.05em;text-transform:uppercase}
 .dots{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}
-.dot{aspect-ratio:1;border-radius:50%;transition:background .35s,transform .35s,border-color .35s}
-.dot.ok{background:var(--accent2);box-shadow:0 0 12px color-mix(in srgb,var(--accent2) 60%,transparent)}
-.dot.no{background:color-mix(in srgb,var(--red) 18%,transparent);border:2px solid var(--red)}
+.dot{aspect-ratio:1;border-radius:50%;transition:background .3s,border-color .3s}
+.dot.ok{background:var(--teal)}
+.dot.no{background:transparent;border:2px solid var(--red)}
 .dot.todo{border:2px dashed var(--line)}
-.legend{display:flex;gap:14px;flex-wrap:wrap;color:var(--muted);font-size:.85rem;margin-bottom:10px}
+.legend{display:flex;gap:16px;flex-wrap:wrap;color:var(--muted);font-size:.85rem;margin-bottom:10px}
 .legend i{display:inline-block;width:12px;height:12px;border-radius:50%;vertical-align:-1px;margin-right:5px}
 .read{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:6px}
-.read div{background:color-mix(in srgb,var(--fg) 4%,transparent);border-radius:12px;padding:10px 12px}
-.read b{display:block;font-size:1.5rem;letter-spacing:-.01em}.read span{color:var(--muted);font-size:.82rem}
-#headline{font-size:1.15rem;font-weight:650;margin:2px 0 10px}
-.tabs{position:sticky;top:0;z-index:5;display:flex;gap:4px;flex-wrap:wrap;padding:8px 0;margin:46px 0 10px;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.tabs button{background:none;border:0;color:var(--muted);padding:9px 14px;font:inherit;font-weight:600;cursor:pointer;border-radius:10px}
-.tabs button[aria-selected=true]{background:var(--card);color:var(--fg);box-shadow:var(--shadow)}
+.read div{background:var(--soft);border-radius:6px;padding:10px 12px}
+.read b{display:block;font-family:Georgia,serif;font-size:1.5rem}.read span{color:var(--muted);font-size:.82rem}
+#headline{font-family:Georgia,serif;font-size:1.25rem;font-weight:700;margin:2px 0 10px}
+.tabs{position:sticky;top:0;z-index:5;display:flex;gap:2px;flex-wrap:wrap;padding:8px 0 0;margin:46px 0 10px;background:var(--bg);border-bottom:1px solid var(--line)}
+.tabs button{background:none;border:0;border-bottom:3px solid transparent;color:var(--muted);padding:9px 14px;font:inherit;font-weight:600;cursor:pointer}
+.tabs button[aria-selected=true]{color:var(--fg);border-bottom-color:var(--accent)}
 section.tab{display:none}section.tab.on{display:block}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin:12px 0;box-shadow:var(--shadow)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px;margin:12px 0}
 .cap{color:var(--muted);font-size:.93rem;margin:6px 2px 14px;border-left:3px solid var(--accent);padding-left:10px}
 table{border-collapse:collapse;width:100%;font-size:.88rem}th,td{padding:7px 9px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}
-th{color:var(--muted);font-weight:600;font-size:.78rem;text-transform:uppercase;letter-spacing:.03em}
-.scroll{overflow-x:auto}.fail{color:var(--red);font-weight:700}.pass{color:var(--green);font-weight:700}
-select{font:inherit;padding:7px;background:var(--card);color:var(--fg);border:1px solid var(--line);border-radius:8px}
+th{color:var(--muted);font-weight:600;font-size:.76rem;text-transform:uppercase;letter-spacing:.04em}
+.scroll{overflow-x:auto}.fail{color:var(--red);font-weight:700}.pass{color:var(--teal);font-weight:700}
+select{font:inherit;padding:6px;background:var(--card);color:var(--fg);border:1px solid var(--line);border-radius:6px}
 .grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:8px}
-.guide{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 16px;margin:12px 0}
+.guide{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:4px 16px;margin:12px 0}
 .guide summary{cursor:pointer;font-weight:650;padding:12px 0}
 .guide dl{margin:0 0 12px;display:grid;grid-template-columns:minmax(120px,190px) 1fr;gap:8px 16px}
 .guide dt{font-weight:650}.guide dd{margin:0;color:var(--muted)}
 @media(max-width:600px){.guide dl{grid-template-columns:1fr}.guide dd{margin-bottom:6px}}
-.verdict{display:flex;gap:14px;align-items:flex-start;background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 14%,var(--card)),var(--card));border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:var(--shadow)}
-.verdict .badge{font-size:2rem}.verdict ul{margin:8px 0 0;padding-left:18px}.verdict li{margin:6px 0}
-footer{color:var(--muted);font-size:.85rem;margin-top:36px}
-.rv{opacity:0;transform:translateY(14px);transition:opacity .6s,transform .6s}.rv.in{opacity:1;transform:none}
+.verdict{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--accent);border-radius:8px;padding:20px}
+.verdict b{font-family:Georgia,serif;font-size:1.2rem}.verdict ul{margin:10px 0 0;padding-left:18px}.verdict li{margin:6px 0}
+footer{color:var(--muted);font-size:.85rem;margin-top:36px;border-top:1px solid var(--line);padding-top:14px}
+.rv{opacity:0;transform:translateY(10px);transition:opacity .5s,transform .5s}.rv.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.dot{transition:none}html{scroll-behavior:auto}}
 </style></head><body><main>
 
-<header class="hero"><div class="hero-in">
+<header class="hero">
 <span class="kicker">A real experiment on a MacBook</span>
 <h1>We taught an AI to <em>sleep</em>.<br>Then we checked what it forgot.</h1>
 <p class="lead">Every "night" the model studied new facts. It learned them fast. But learning came at a price, and the numbers below are all measured, not made up.</p>
@@ -101,15 +98,15 @@ footer{color:var(--muted);font-size:.85rem;margin-top:36px}
  <div class="stat rv"><div class="big amber"><span data-count="stat3">0</span> <small>of</small> <span id="s3t">15</span></div><p>training rounds that passed our safety gate. The original model stayed in charge.</p></div>
 </div>
 <div class="cta"><a class="btn primary" href="#lab">Watch it forget, round by round</a><a class="btn" href="#results">See all results</a><a class="btn" href="https://github.com/akshita270/sleep-inspired-llm">GitHub</a></div>
-</div></header>
+</header>
 
 <h2 class="rv">How the AI "sleeps"</h2>
 <p class="sub">Four steps, repeated every round. Qwen3-4B (full precision) runs on an Apple M2 with 16 GB.</p>
 <div class="steps">
- <div class="step rv"><div class="ic">☀</div><b>1. Wake</b><span>It chats and collects facts. Only checked, approved facts are kept.</span></div>
- <div class="step rv"><div class="ic">☾</div><b>2. Sleep</b><span>It studies them by training a tiny add-on (LoRA). The main model is never touched.</span></div>
- <div class="step rv"><div class="ic">✎</div><b>3. Exam</b><span>220 questions: new facts, real knowledge and reasoning.</span></div>
- <div class="step rv"><div class="ic">⛨</div><b>4. Gate</b><span>Strict rules decide if the new version may replace the old one.</span></div>
+ <div class="step rv"><div class="n">01</div><b>Wake</b><span>It chats and collects facts. Only checked, approved facts are kept.</span></div>
+ <div class="step rv"><div class="n">02</div><b>Sleep</b><span>It studies them by training a tiny add-on (LoRA). The main model is never touched.</span></div>
+ <div class="step rv"><div class="n">03</div><b>Exam</b><span>220 questions: new facts, real knowledge and reasoning.</span></div>
+ <div class="step rv"><div class="n">04</div><b>Gate</b><span>Strict rules decide if the new version may replace the old one.</span></div>
 </div>
 
 <h2 class="rv" id="lab">Watch the memory fade</h2>
@@ -117,10 +114,10 @@ footer{color:var(--muted);font-size:.85rem;margin-top:36px}
 <div class="lab rv">
  <div class="ctrl">
   <div class="seg" id="armseg"></div>
-  <button class="play" id="play">▶ Play</button>
+  <button class="play" id="play">Play</button>
   <label>Round <input type="range" id="rnd" min="1" max="5" value="1"> <b id="rndv">1</b> / 5</label>
  </div>
- <div class="legend"><span><i style="background:var(--accent2)"></i>remembered</span><span><i style="border:2px solid var(--red);background:color-mix(in srgb,var(--red) 18%,transparent)"></i>forgotten</span><span><i style="border:2px dashed var(--line)"></i>not taught yet</span></div>
+ <div class="legend"><span><i style="background:var(--teal)"></i>remembered</span><span><i style="border:2px solid var(--red);background:color-mix(in srgb,var(--red) 18%,transparent)"></i>forgotten</span><span><i style="border:2px dashed var(--line)"></i>not taught yet</span></div>
  <div id="headline"></div>
  <div class="board" id="board"></div>
  <div class="read" id="read"></div>
@@ -161,7 +158,7 @@ footer{color:var(--muted);font-size:.85rem;margin-top:36px}
 <details class="guide rv"><summary>Plain-English guide (higher is better, except forgetting)</summary><dl id="guide"></dl></details>
 
 <h2 class="rv">The bottom line</h2>
-<div class="verdict rv"><div class="badge">⚖</div><div><b>Sleep-style training is promising, but not safe enough to trust yet.</b><ul id="concl"></ul></div></div>
+<div class="verdict rv"><b>Sleep-style training is promising, but not safe enough to trust yet.</b><ul id="concl"></ul></div>
 
 <footer>Source, docs and code: <a href="https://github.com/akshita270/sleep-inspired-llm">github.com/akshita270/sleep-inspired-llm</a>. Each Phase 9 arm was run once (seed 42); one fact in a 6-fact group is 16.7 points. Independent implementation of the idea in "Language Models Need Sleep"; not a reproduction of the paper.</footer>
 
@@ -170,8 +167,8 @@ const D = __DATA__;
 const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
 const pct = v => v==null? '-' : (v*100).toFixed(1)+'%';
 const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
-const L = () => ({paper_bgcolor:'rgba(0,0,0,0)',plot_bgcolor:'rgba(0,0,0,0)',font:{color:css('--fg')},margin:{t:20,r:10,b:60,l:50},legend:{orientation:'h',y:-0.25}});
-const arms=[['no_replay','No replay','#e5566d'],['general_replay','General replay','#f0a92e'],['full_replay','Full replay','#19b5a5']];
+const L = () => ({paper_bgcolor:'rgba(0,0,0,0)',plot_bgcolor:'rgba(0,0,0,0)',font:{color:css('--fg'),family:'system-ui,sans-serif'},margin:{t:20,r:10,b:60,l:50},legend:{orientation:'h',y:-0.25}});
+const arms=[['no_replay','No replay',css('--red')],['general_replay','General replay',css('--amber')],['full_replay','Full replay',css('--teal')]];
 const armCap={no_replay:'No revision: the model learns each new batch but quickly loses the earlier ones.',
  general_replay:'Revising real questions protects general knowledge a little, but earlier facts still fade.',
  full_replay:'Revising real questions and earlier facts keeps most earlier facts, though general knowledge still erodes.'};
@@ -210,9 +207,9 @@ function draw(){
    '<div><b class="'+(r.gate_would_pass?'green':'red')+'">'+(r.gate_would_pass?'PASS':'FAIL')+'</b><span>safety gate</span></div>';
   document.getElementById('armcap').textContent=armCap[arm];
 }
-function stop(){if(timer){clearInterval(timer);timer=null}document.getElementById('play').textContent='▶ Play'}
+function stop(){if(timer){clearInterval(timer);timer=null}document.getElementById('play').textContent='Play'}
 document.getElementById('play').onclick=()=>{ if(timer){stop();return}
-  if(round>=5)round=0; document.getElementById('play').textContent='❚❚ Pause';
+  if(round>=5)round=0; document.getElementById('play').textContent='Pause';
   timer=setInterval(()=>{round++;draw();if(round>=5)stop()},1500);round++;draw()};
 rng.oninput=()=>{round=+rng.value;stop();draw()};
 draw();
@@ -230,7 +227,7 @@ const nav = document.getElementById('tabs');
 tabs.forEach((n,i)=>{const b=document.createElement('button');b.textContent=n;b.setAttribute('role','tab');b.onclick=()=>show(i);nav.appendChild(b)});
 function show(i){[...nav.children].forEach((b,j)=>b.setAttribute('aria-selected',i===j));
   tabs.forEach((_,j)=>document.getElementById('t'+j).classList.toggle('on',i===j));window.dispatchEvent(new Event('resize'));}
-const tests=[['new_facts','New facts','#6c4ff6'],['old_knowledge','Old knowledge','#f0a92e'],['reasoning','Reasoning','#19b5a5']];
+const tests=[['new_facts','New facts',css('--accent')],['old_knowledge','Old knowledge',css('--amber')],['reasoning','Reasoning',css('--slate')]];
 Plotly.newPlot('p8chart', tests.map(([k,l,c])=>({type:'bar',name:l,marker:{color:c},x:D.phase8.map(r=>r.model),y:D.phase8.map(r=>r[k]*100),text:D.phase8.map(r=>(r[k]*100).toFixed(1)),textposition:'outside'})),
   {...L(),barmode:'group',yaxis:{range:[0,112],title:'accuracy (%)',gridcolor:css('--line')}},{displayModeBar:false,responsive:true});
 table('p8table',['model','new_facts','old_knowledge','reasoning','forgetting_rate','median_latency_s','training_seconds','gate'],D.phase8,
@@ -247,7 +244,7 @@ const heat=document.getElementById('heat');
 arms.forEach(([a,l])=>{const d=document.createElement('div');d.className='card';d.innerHTML='<b>'+l+'</b><div id="h_'+a+'"></div>';heat.appendChild(d);
   const rows=D.continual.filter(x=>x.arm===a);const gs=[1,2,3,4,5];
   Plotly.newPlot('h_'+a,[{type:'heatmap',z:rows.map(r=>gs.map(g=>r.acc_by_fact_group[g]*100)),x:gs.map(g=>'G'+g),y:rows.map(r=>r.cycle),
-    zmin:0,zmax:100,colorscale:[[0,'#2b2f45'],[1,'#19b5a5']],showscale:false,text:rows.map(r=>gs.map(g=>(r.acc_by_fact_group[g]*100).toFixed(0))),texttemplate:'%{text}'}],
+    zmin:0,zmax:100,colorscale:[[0,css('--heat0')],[1,css('--teal')]],showscale:false,text:rows.map(r=>gs.map(g=>(r.acc_by_fact_group[g]*100).toFixed(0))),texttemplate:'%{text}'}],
     {...L(),margin:{t:10,r:10,b:30,l:30},yaxis:{autorange:'reversed',dtick:1}},{displayModeBar:false,responsive:true});});
 table('cont',['arm','cycle','n_train_examples','n_general_replay','n_previous_replay','acc_this_cycle_facts','acc_earlier_cycles_facts','acc_old','acc_reasoning','forgetting_rate','training_seconds','gate_would_pass'],D.continual,
   {acc_this_cycle_facts:pct,acc_earlier_cycles_facts:pct,acc_old:pct,acc_reasoning:pct,forgetting_rate:pct,training_seconds:v=>v.toFixed(0),gate_would_pass:v=>v?'pass':'FAIL'});
