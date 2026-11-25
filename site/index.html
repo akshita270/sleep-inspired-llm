@@ -81,7 +81,7 @@ footer{color:var(--muted);font-size:.85rem;margin-top:36px;border-top:1px solid 
 <p class="lead">Every "night" the model studied new facts. It learned them fast. But learning came at a price, and the numbers below are all measured, not made up.</p>
 <div class="stats">
  <div class="stat rv"><div class="big red"><span data-count="stat1a">0</span>% <small>→</small> <span data-count="stat1b">0</span>%</div><p>of real-world knowledge left after the AI crammed 30 new facts</p></div>
- <div class="stat rv"><div class="big green"><span data-count="stat2a">0</span>% <small>vs</small> <span data-count="stat2b">0</span>%</div><p>of earlier facts still remembered after 5 rounds, with vs without revision (replay)</p></div>
+ <div class="stat rv"><div class="big green"><span data-count="stat2a">0</span>% <small>vs</small> <span data-count="stat2b">0</span>%</div><p>of earlier facts still remembered after 5 rounds: without revision vs with revision (replay)</p></div>
  <div class="stat rv"><div class="big amber"><span data-count="stat3">0</span> <small>of</small> <span id="s3t">15</span></div><p>training rounds that passed our safety gate. The original model stayed in charge.</p></div>
 </div>
 <div class="cta"><a class="btn primary" href="#lab">Watch it forget, round by round</a><a class="btn" href="#results">See all results</a><a class="btn" href="https://github.com/akshita270/sleep-inspired-llm">GitHub</a></div>
@@ -157,7 +157,7 @@ const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const L = () => ({paper_bgcolor:'rgba(0,0,0,0)',plot_bgcolor:'rgba(0,0,0,0)',font:{color:css('--fg'),family:'system-ui,sans-serif'},margin:{t:20,r:10,b:60,l:50},legend:{orientation:'h',y:-0.25}});
 const arms=[['no_replay','No replay',css('--red')],['general_replay','General replay',css('--amber')],['full_replay','Full replay',css('--teal')]];
 const armCap={no_replay:'No revision: the model learns each new batch but quickly loses the earlier ones.',
- general_replay:'Revising real questions protects general knowledge a little, but earlier facts still fade.',
+ general_replay:'Revising real questions protects general knowledge much better than no revision (37.5% vs 16.7% at round 5), but the earlier facts still fade.',
  full_replay:'Revising real questions and earlier facts keeps most earlier facts, though general knowledge still erodes.'};
 const cont=(a,k)=>D.continual.find(r=>r.arm===a&&r.cycle===k);
 const A=D.phase8[0], C0=D.phase8[2];
