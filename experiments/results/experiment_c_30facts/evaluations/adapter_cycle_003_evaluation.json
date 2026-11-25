@@ -1,0 +1,254 @@
+{
+  "summary": {
+    "label": "Qwen/Qwen3-4B+cycle_003",
+    "timestamp": "2026-11-24T19:51:18",
+    "accuracy": {
+      "new_knowledge": 0.8333,
+      "old_knowledge": 0.5917,
+      "reasoning": 0.8429
+    },
+    "counts": {
+      "new_knowledge": {
+        "correct": 25,
+        "total": 30
+      },
+      "old_knowledge": {
+        "correct": 71,
+        "total": 120
+      },
+      "reasoning": {
+        "correct": 59,
+        "total": 70
+      }
+    },
+    "reasoning_by_type": {
+      "arithmetic": 0.9444,
+      "coding": 0.8696,
+      "logic": 0.6842,
+      "word_problem": 0.9
+    },
+    "hallucination": {
+      "new_knowledge": {
+        "n": 30,
+        "correct": 25,
+        "abstained": 0,
+        "confidently_wrong": 5,
+        "confidently_wrong_rate": 0.1667
+      },
+      "old_knowledge": {
+        "n": 120,
+        "correct": 71,
+        "abstained": 0,
+        "confidently_wrong": 49,
+        "confidently_wrong_rate": 0.4083
+      },
+      "reasoning": {
+        "n": 70,
+        "correct": 59,
+        "abstained": 0,
+        "confidently_wrong": 11,
+        "confidently_wrong_rate": 0.1571
+      }
+    },
+    "median_latency_s": 2.087,
+    "median_tokens_per_s": 7.66,
+    "gpu_peak_memory_gb": 8.3,
+    "model_load_s": 6.2
+  },
+  "forgetting": {
+    "old_knowledge": {
+      "base_correct": 119,
+      "lost": 49,
+      "forgetting_rate": 0.4118,
+      "lost_ids": [
+        "old_015",
+        "old_016",
+        "old_017",
+        "old_019",
+        "old_020",
+        "old_023",
+        "old_031",
+        "old_032",
+        "old_033",
+        "old_036",
+        "old_038",
+        "old_040",
+        "old_041",
+        "old_042",
+        "old_043",
+        "old_044",
+        "old_051",
+        "old_053",
+        "old_055",
+        "old_061",
+        "old_062",
+        "old_069",
+        "old_072",
+        "old_075",
+        "old_076",
+        "old_080",
+        "old_081",
+        "old_083",
+        "old_084",
+        "old_085",
+        "old_086",
+        "old_088",
+        "old_089",
+        "old_090",
+        "old_091",
+        "old_092",
+        "old_094",
+        "old_095",
+        "old_096",
+        "old_100",
+        "old_102",
+        "old_105",
+        "old_106",
+        "old_107",
+        "old_108",
+        "old_112",
+        "old_113",
+        "old_115",
+        "old_118"
+      ],
+      "gained_ids": [
+        "old_065"
+      ]
+    },
+    "reasoning": {
+      "base_correct": 65,
+      "lost": 8,
+      "forgetting_rate": 0.1231,
+      "lost_ids": [
+        "rea_006",
+        "rea_009",
+        "rea_010",
+        "rea_049",
+        "rea_056",
+        "rea_060",
+        "rea_061",
+        "rea_066"
+      ],
+      "gained_ids": [
+        "rea_034",
+        "rea_050"
+      ]
+    },
+    "combined": {
+      "base_correct": 184,
+      "lost": 57,
+      "forgetting_rate": 0.3098,
+      "lost_ids": [
+        "old_015",
+        "old_016",
+        "old_017",
+        "old_019",
+        "old_020",
+        "old_023",
+        "old_031",
+        "old_032",
+        "old_033",
+        "old_036",
+        "old_038",
+        "old_040",
+        "old_041",
+        "old_042",
+        "old_043",
+        "old_044",
+        "old_051",
+        "old_053",
+        "old_055",
+        "old_061",
+        "old_062",
+        "old_069",
+        "old_072",
+        "old_075",
+        "old_076",
+        "old_080",
+        "old_081",
+        "old_083",
+        "old_084",
+        "old_085",
+        "old_086",
+        "old_088",
+        "old_089",
+        "old_090",
+        "old_091",
+        "old_092",
+        "old_094",
+        "old_095",
+        "old_096",
+        "old_100",
+        "old_102",
+        "old_105",
+        "old_106",
+        "old_107",
+        "old_108",
+        "old_112",
+        "old_113",
+        "old_115",
+        "old_118",
+        "rea_006",
+        "rea_009",
+        "rea_010",
+        "rea_049",
+        "rea_056",
+        "rea_060",
+        "rea_061",
+        "rea_066"
+      ],
+      "gained_ids": [
+        "old_065",
+        "rea_034",
+        "rea_050"
+      ]
+    }
+  },
+  "gate": {
+    "passed": false,
+    "checks": [
+      {
+        "check": "base_weights_unchanged",
+        "passed": true,
+        "value": true,
+        "rule": "must be True"
+      },
+      {
+        "check": "taught_facts_learned",
+        "passed": true,
+        "value": 0.8333,
+        "rule": ">= 0.8"
+      },
+      {
+        "check": "new_knowledge_not_lost",
+        "passed": true,
+        "value": -0.8333,
+        "rule": "drop <= 0.0"
+      },
+      {
+        "check": "old_knowledge_drop",
+        "passed": false,
+        "value": 0.4,
+        "rule": "drop <= 0.02"
+      },
+      {
+        "check": "reasoning_drop",
+        "passed": false,
+        "value": 0.0857,
+        "rule": "drop <= 0.05"
+      },
+      {
+        "check": "forgetting_rate",
+        "passed": false,
+        "value": 0.3098,
+        "rule": "<= 0.05"
+      }
+    ]
+  },
+  "champion_accuracy_before": {
+    "new_knowledge": 0.0,
+    "old_knowledge": 0.9917,
+    "reasoning": 0.9286
+  },
+  "taught_accuracy": 0.8333333333333334
+}

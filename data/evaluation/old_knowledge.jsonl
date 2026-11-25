@@ -1,0 +1,120 @@
+{"id":"old_001","question":"What is the capital of France?","answers":["paris"]}
+{"id":"old_002","question":"What is the capital of Japan?","answers":["tokyo"]}
+{"id":"old_003","question":"What is the capital of Australia?","answers":["canberra"]}
+{"id":"old_004","question":"What is the capital of Canada?","answers":["ottawa"]}
+{"id":"old_005","question":"What is the capital of Brazil?","answers":["brasilia","brasília"]}
+{"id":"old_006","question":"What is the capital of Egypt?","answers":["cairo"]}
+{"id":"old_007","question":"What is the capital of India?","answers":["new delhi","delhi"]}
+{"id":"old_008","question":"What is the capital of Italy?","answers":["rome"]}
+{"id":"old_009","question":"What is the capital of Germany?","answers":["berlin"]}
+{"id":"old_010","question":"What is the capital of Spain?","answers":["madrid"]}
+{"id":"old_011","question":"What is the chemical symbol for gold?","answers":["au"]}
+{"id":"old_012","question":"What is the chemical symbol for sodium?","answers":["na"]}
+{"id":"old_013","question":"What is the chemical formula of water?","answers":["h2o"]}
+{"id":"old_014","question":"What gas do plants absorb from the atmosphere for photosynthesis?","answers":["carbon dioxide","co2"]}
+{"id":"old_015","question":"What is the largest planet in our solar system?","answers":["jupiter"]}
+{"id":"old_016","question":"Which planet is known as the Red Planet?","answers":["mars"]}
+{"id":"old_017","question":"What is the closest star to Earth?","answers":["sun","the sun"]}
+{"id":"old_018","question":"How many continents are there on Earth?","answers":["7","seven"]}
+{"id":"old_019","question":"What is the largest ocean on Earth?","answers":["pacific"]}
+{"id":"old_020","question":"What is the longest river in Africa?","answers":["nile"]}
+{"id":"old_021","question":"Who wrote the play Romeo and Juliet?","answers":["shakespeare"]}
+{"id":"old_022","question":"Who painted the Mona Lisa?","answers":["leonardo","da vinci"]}
+{"id":"old_023","question":"Who wrote the novel 1984?","answers":["orwell"]}
+{"id":"old_024","question":"Who developed the theory of general relativity?","answers":["einstein"]}
+{"id":"old_025","question":"Who was the first person to walk on the Moon?","answers":["neil armstrong","armstrong"]}
+{"id":"old_026","question":"In which year did World War II end?","answers":["1945"]}
+{"id":"old_027","question":"In which year did the Berlin Wall fall?","answers":["1989"]}
+{"id":"old_028","question":"Who was the first President of the United States?","answers":["washington"]}
+{"id":"old_029","question":"What is the boiling point of water in degrees Celsius at sea level?","answers":["100"]}
+{"id":"old_030","question":"What is the freezing point of water in degrees Fahrenheit?","answers":["32"]}
+{"id":"old_031","question":"What is the speed of light in a vacuum in kilometres per second, approximately?","answers":["300,000","300000","299,792","299792"]}
+{"id":"old_032","question":"What is the hardest natural substance?","answers":["diamond"]}
+{"id":"old_033","question":"What is the largest mammal on Earth?","answers":["blue whale"]}
+{"id":"old_034","question":"What is the smallest prime number?","answers":["2","two"]}
+{"id":"old_035","question":"How many sides does a hexagon have?","answers":["6","six"]}
+{"id":"old_036","question":"Which programming language is named after a type of snake and a comedy group?","answers":["python"]}
+{"id":"old_037","question":"What does CPU stand for?","answers":["central processing unit"]}
+{"id":"old_038","question":"What does HTML stand for?","answers":["hypertext markup language"]}
+{"id":"old_039","question":"Which organ pumps blood around the human body?","answers":["heart"]}
+{"id":"old_040","question":"Which element has the atomic number 1?","answers":["hydrogen"]}
+{"id":"old_041","question":"What is the capital of Bhutan?","answers":["thimphu"]}
+{"id":"old_042","question":"What is the capital of Kazakhstan?","answers":["astana","nur-sultan"]}
+{"id":"old_043","question":"What is the capital of Myanmar?","answers":["naypyidaw","nay pyi taw","naypyitaw"]}
+{"id":"old_044","question":"What is the capital of Mongolia?","answers":["ulaanbaatar","ulan bator"]}
+{"id":"old_045","question":"What is the capital of New Zealand?","answers":["wellington"]}
+{"id":"old_046","question":"What is the capital of Turkey?","answers":["ankara"]}
+{"id":"old_047","question":"What is the capital of Switzerland?","answers":["bern","berne"]}
+{"id":"old_048","question":"What is the chemical symbol for tungsten?","answers":["w"]}
+{"id":"old_049","question":"What is the chemical symbol for antimony?","answers":["sb"]}
+{"id":"old_050","question":"What is the chemical symbol for potassium?","answers":["k"]}
+{"id":"old_051","question":"What is the atomic number of carbon?","answers":["6","six"]}
+{"id":"old_052","question":"What is the SI unit of electrical capacitance?","answers":["farad"]}
+{"id":"old_053","question":"Who wrote the novel The Brothers Karamazov?","answers":["dostoevsky","dostoyevsky"]}
+{"id":"old_054","question":"Who wrote the novel One Hundred Years of Solitude?","answers":["garcía márquez","garcia marquez","márquez","marquez"]}
+{"id":"old_055","question":"Who composed The Four Seasons?","answers":["vivaldi"]}
+{"id":"old_056","question":"Who painted The Starry Night?","answers":["van gogh"]}
+{"id":"old_057","question":"In which year was the Peace of Westphalia signed, ending the Thirty Years' War?","answers":["1648"]}
+{"id":"old_058","question":"In which year did the French Revolution begin?","answers":["1789"]}
+{"id":"old_059","question":"In which year was the Magna Carta sealed?","answers":["1215"]}
+{"id":"old_060","question":"In which year did the Western Roman Empire fall, by the conventional date?","answers":["476"]}
+{"id":"old_061","question":"What is the longest river in Europe?","answers":["volga"]}
+{"id":"old_062","question":"What is the highest mountain in Africa?","answers":["kilimanjaro"]}
+{"id":"old_063","question":"What is the largest hot desert in the world?","answers":["sahara"]}
+{"id":"old_064","question":"What is the deepest known ocean trench?","answers":["mariana"]}
+{"id":"old_065","question":"What is the second most abundant gas in Earth's atmosphere?","answers":["oxygen"]}
+{"id":"old_066","question":"Which vitamin does human skin produce when exposed to sunlight?","answers":["vitamin d","d"]}
+{"id":"old_067","question":"What is the pH of pure water at 25 degrees Celsius?","answers":["7","seven"]}
+{"id":"old_068","question":"How many bones are in the adult human body?","answers":["206"]}
+{"id":"old_069","question":"Which astronomer formulated the three laws of planetary motion?","answers":["kepler"]}
+{"id":"old_070","question":"What is the SI unit of force?","answers":["newton"]}
+{"id":"old_071","question":"Who discovered penicillin?","answers":["fleming"]}
+{"id":"old_072","question":"Which element has atomic number 79?","answers":["gold"]}
+{"id":"old_073","question":"What is the largest bone in the human body?","answers":["femur"]}
+{"id":"old_074","question":"In which year did the Chernobyl nuclear disaster occur?","answers":["1986"]}
+{"id":"old_075","question":"Who was the first woman to win a Nobel Prize?","answers":["curie"]}
+{"id":"old_076","question":"What is the currency of Switzerland?","answers":["franc"]}
+{"id":"old_077","question":"What is the official language of Brazil?","answers":["portuguese"]}
+{"id":"old_078","question":"In which country is the city of Timbuktu?","answers":["mali"]}
+{"id":"old_079","question":"Who created the Linux kernel?","answers":["torvalds"]}
+{"id":"old_080","question":"What is the tallest mountain in the world above sea level?","answers":["everest"]}
+{"id":"old_081","question":"What is the capital of Burkina Faso?","answers":["ouagadougou"]}
+{"id":"old_082","question":"What is the capital of Kyrgyzstan?","answers":["bishkek"]}
+{"id":"old_083","question":"What is the capital of Eritrea?","answers":["asmara"]}
+{"id":"old_084","question":"What is the capital of Suriname?","answers":["paramaribo"]}
+{"id":"old_085","question":"What is the capital of Vanuatu?","answers":["port vila"]}
+{"id":"old_086","question":"What is the capital of Brunei?","answers":["bandar seri begawan"]}
+{"id":"old_087","question":"What is the capital of Tajikistan?","answers":["dushanbe"]}
+{"id":"old_088","question":"What is the capital of Malawi?","answers":["lilongwe"]}
+{"id":"old_089","question":"What is the capital of Moldova?","answers":["chisinau","chișinău","chisinău"]}
+{"id":"old_090","question":"What is the chemical symbol for mercury?","answers":["hg"]}
+{"id":"old_091","question":"What is the chemical symbol for lead?","answers":["pb"]}
+{"id":"old_092","question":"What is the chemical symbol for tin?","answers":["sn"]}
+{"id":"old_093","question":"What is the atomic number of iron?","answers":["26"]}
+{"id":"old_094","question":"What is the atomic number of uranium?","answers":["92"]}
+{"id":"old_095","question":"Which element has the chemical symbol Mo?","answers":["molybdenum"]}
+{"id":"old_096","question":"Which physicist discovered the neutron in 1932?","answers":["chadwick"]}
+{"id":"old_097","question":"Who published De revolutionibus orbium coelestium, proposing a heliocentric model?","answers":["copernicus"]}
+{"id":"old_098","question":"Who wrote the novel Ulysses, published in 1922?","answers":["joyce"]}
+{"id":"old_099","question":"Who composed the opera The Magic Flute?","answers":["mozart"]}
+{"id":"old_100","question":"Who painted the mural Guernica?","answers":["picasso"]}
+{"id":"old_101","question":"In which year was the Battle of Hastings fought?","answers":["1066"]}
+{"id":"old_102","question":"In which year was the Treaty of Versailles signed?","answers":["1919"]}
+{"id":"old_103","question":"In which year was the Soviet Union dissolved?","answers":["1991"]}
+{"id":"old_104","question":"In which year was the Great Fire of London?","answers":["1666"]}
+{"id":"old_105","question":"What is the longest river in Asia?","answers":["yangtze","chang jiang"]}
+{"id":"old_106","question":"What is the largest lake in Africa by area?","answers":["victoria"]}
+{"id":"old_107","question":"Which strait separates Spain from Morocco?","answers":["gibraltar"]}
+{"id":"old_108","question":"What is the smallest country in the world by area?","answers":["vatican"]}
+{"id":"old_109","question":"What is the SI unit of magnetic flux density?","answers":["tesla"]}
+{"id":"old_110","question":"What is the SI unit of electrical resistance?","answers":["ohm"]}
+{"id":"old_111","question":"Which elementary particle carries the electromagnetic force?","answers":["photon"]}
+{"id":"old_112","question":"What is the most abundant metal in the Earth's crust?","answers":["aluminium","aluminum"]}
+{"id":"old_113","question":"Which cell organelle is the site of protein synthesis?","answers":["ribosome"]}
+{"id":"old_114","question":"A deficiency of which vitamin causes scurvy?","answers":["vitamin c","ascorbic acid"]}
+{"id":"old_115","question":"What is the largest moon of Saturn?","answers":["titan"]}
+{"id":"old_116","question":"Who was the first emperor of Rome?","answers":["augustus"]}
+{"id":"old_117","question":"Who was the British Prime Minister for most of World War II?","answers":["churchill"]}
+{"id":"old_118","question":"In which city is the Hagia Sophia located?","answers":["istanbul"]}
+{"id":"old_119","question":"Who is credited with inventing the World Wide Web?","answers":["berners-lee","berners lee"]}
+{"id":"old_120","question":"What is absolute zero in degrees Celsius?","answers":["-273","−273","273.15"]}

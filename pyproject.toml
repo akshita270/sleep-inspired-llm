@@ -1,0 +1,9 @@
+[project]
+name = "sleep-inspired-llm"
+version = "1.0.0"
+description = "Sleep-inspired continual learning for a local LLM (Qwen3-4B + MLX LoRA) with a champion/candidate gate"
+requires-python = ">=3.11"
+readme = "README.md"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

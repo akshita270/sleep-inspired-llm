@@ -1,0 +1,5 @@
+model,new_facts,old_knowledge,reasoning,forgetting_rate,median_latency_s,training_seconds,gate
+A: original Qwen,0.0,0.9917,0.9286,,1.525,,champion
+B: Qwen + episodic memory,1.0,0.9917,0.9286,0.0,1.638,,not trained
+"C: LoRA, no replay",0.8333,0.5917,0.8429,0.3098,2.087,350.0,rejected
+C: LoRA + replay,0.8667,0.9333,0.8429,0.0761,1.603,593.3,rejected

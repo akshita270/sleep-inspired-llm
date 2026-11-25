@@ -1,0 +1,23 @@
+# Promotion gate. Fixed BEFORE the first candidate was evaluated; do not tune on results.
+# A candidate adapter becomes the champion only if EVERY check passes.
+gate:
+  require_base_unchanged: true     # base model files must be byte-identical after training
+  min_taught_accuracy: 0.80        # share of the facts taught in THIS cycle it must answer correctly
+  max_new_knowledge_drop: 0.0      # must not lose facts the champion already knew (absolute)
+  max_old_knowledge_drop: 0.02     # old-knowledge accuracy may fall at most 2 points vs the champion
+  max_reasoning_drop: 0.05         # reasoning accuracy may fall at most 5 points (70 questions: 3 questions)
+  max_forgetting_rate: 0.05        # of questions the ORIGINAL model got right (old + reasoning),
+                                   # at most 5% may now be wrong
+
+# Answers containing these count as "abstaining" rather than confidently wrong.
+hallucination:
+  abstain_patterns:
+    - "i don'?t know"
+    - "i do not know"
+    - "not sure"
+    - "no information"
+    - "cannot (be )?(answer|determine|find)"
+    - "can'?t (be )?(answer|determine|find)"
+    - "does not exist"
+    - "not a (real|recognized|known)"
+    - "no (record|evidence)"

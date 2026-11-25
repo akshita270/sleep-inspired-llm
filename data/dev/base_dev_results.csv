@@ -1,0 +1,61 @@
+benchmark,id,type,question,expected,model_answer,correct,latency_s,tokens,tokens_per_s
+dev_knowledge,dk_001,,What is the capital of Sweden?,stockholm,The capital of Sweden is Stockholm.,True,1.0746729579987004,7,6.5136095105953755
+dev_knowledge,dk_002,,What is the capital of Greece?,athens,The capital of Greece is Athens.,True,1.1115997090237215,7,6.29723086752861
+dev_knowledge,dk_003,,What is the capital of Vietnam?,hanoi,The capital of Vietnam is Hanoi.,True,1.2081577499920968,8,6.621651849729336
+dev_knowledge,dk_004,,What is the capital of Colombia?,bogota | bogotá,The capital of Colombia is Bogotá.,True,1.3305907500034664,9,6.763912946168124
+dev_knowledge,dk_005,,What is the capital of Morocco?,rabat,The capital of Morocco is Rabat.,True,1.2051808340183925,8,6.638007985345966
+dev_knowledge,dk_006,,What is the capital of Austria?,vienna,The capital of Austria is Vienna.,True,1.0783294160210062,7,6.491522809263359
+dev_knowledge,dk_007,,What is the capital of Finland?,helsinki,The capital of Finland is Helsinki.,True,1.107236624986399,7,6.322045208797158
+dev_knowledge,dk_008,,What is the capital of Cuba?,havana,The capital of Cuba is Havana.,True,1.1557720839919057,7,6.056557427674489
+dev_knowledge,dk_009,,What is the capital of Nepal?,kathmandu,The capital of Nepal is Kathmandu.,True,1.2316626670071855,9,7.307195582918073
+dev_knowledge,dk_010,,What is the capital of Ethiopia?,addis ababa,The capital of Ethiopia is Addis Ababa.,True,1.322475458990084,10,7.561576989592349
+dev_knowledge,dk_011,,What is the chemical symbol for calcium?,ca,The chemical symbol for calcium is Ca.,True,1.162111042009201,8,6.884023738530711
+dev_knowledge,dk_012,,What is the chemical symbol for magnesium?,mg,The chemical symbol for magnesium is Mg.,True,1.176418791001197,8,6.800299401195012
+dev_knowledge,dk_013,,What is the chemical symbol for nitrogen?,n,The chemical symbol for nitrogen is N.,True,1.1375787919969298,8,7.032479909331495
+dev_knowledge,dk_014,,What is the atomic number of neon?,10 | ten,The atomic number of neon is 10.,True,1.3039723330002744,10,7.668874367135745
+dev_knowledge,dk_015,,Which planet is known for its Great Red Spot?,jupiter,Jupiter is known for its Great Red Spot.,True,1.3337275839876384,10,7.497782995611107
+dev_knowledge,dk_016,,What is the second planet from the Sun?,venus,The second planet from the Sun is Earth.,False,1.262855542008765,9,7.126705866677453
+dev_knowledge,dk_017,,Who wrote the novel Moby-Dick?,melville,Herman Melville wrote the novel Moby-Dick.,True,1.5341520420042798,12,7.821910522194855
+dev_knowledge,dk_018,,Who wrote the novel War and Peace?,tolstoy,The novel *War and Peace* was written by Leo Tolstoy.,True,1.9751451250049286,15,7.594378666206905
+dev_knowledge,dk_019,,Who painted Girl with a Pearl Earring?,vermeer,Girl with a Pearl Earring was painted by Vermeer.,True,1.5351838749775197,12,7.816653233265442
+dev_knowledge,dk_020,,Who composed the ballet The Nutcracker?,tchaikovsky,The ballet *The Nutcracker* was composed by Pyotr Ilyich Tchaikovsky.,True,2.359557459014468,21,8.899973984431474
+dev_knowledge,dk_021,,Who developed the first practical electric light bulb?,edison,Thomas Edison developed the first practical electric light bulb.,True,1.3298302500043064,10,7.51975675088427
+dev_knowledge,dk_022,,"Who designed the Analytical Engine, an early mechanical computer?",babbage,"Charles Babbage designed the Analytical Engine, an early mechanical computer.",True,1.6976744169951417,14,8.246575350284061
+dev_knowledge,dk_023,,In which year did the Second World War begin?,1939,The Second World War began in 1939.,True,1.5135956250014715,12,7.928141309200952
+dev_knowledge,dk_024,,In which year did humans first land on the Moon?,1969,Humans first landed on the Moon in 1969.,True,1.5876973330159672,13,8.18795857980399
+dev_knowledge,dk_025,,In which year did the Russian Revolution take place?,1917,The Russian Revolution took place in 1917.,True,1.4950542080041487,12,8.026464816964484
+dev_knowledge,dk_026,,What is the largest continent by area?,asia,The largest continent by area is Asia.,True,1.0963227080064826,8,7.297121496778024
+dev_knowledge,dk_027,,What is the highest mountain in North America?,denali | mckinley,The highest mountain in North America is Mount Denali.,True,1.4063643749977928,11,7.821586066567751
+dev_knowledge,dk_028,,What is the largest island in the world?,greenland,The largest island in the world is Greenland.,True,1.2829329170053825,9,7.015175837102823
+dev_knowledge,dk_029,,What is the coldest continent?,antarctica,Antarctica is the coldest continent.,True,1.3220612079894636,9,6.807551681882287
+dev_knowledge,dk_030,,Which cell organelle is called the powerhouse of the cell?,mitochondri,The cell organelle called the powerhouse of the cell is the mitochondrion.,False,1.977026750013465,17,8.598770856228535
+dev_knowledge,dk_031,,What is the study of fungi called?,mycology,The study of fungi is called mycology.,True,1.3227600829850417,10,7.559949932442197
+dev_knowledge,dk_032,,What is the SI unit of pressure?,pascal,The SI unit of pressure is the pascal (Pa).,True,1.4920649160048924,12,8.04254551613668
+dev_knowledge,dk_033,,What is the SI unit of electric current?,ampere | amp,The SI unit of electric current is the ampere.,True,1.4324717919807881,11,7.679034282964456
+dev_knowledge,dk_034,,What does URL stand for?,uniform resource locator,URL stands for Uniform Resource Locator.,True,1.037633542000549,7,6.746119623797105
+dev_knowledge,dk_035,,What does PDF stand for?,portable document format,"PDF stands for ""Portable Document Format.""",True,1.1338375420018565,8,7.055684525911474
+dev_knowledge,dk_036,,Which company makes the iPhone?,apple,Apple Inc. makes the iPhone.,True,1.0364301249792334,7,6.7539526604750675
+dev_knowledge,dk_037,,Which company created the Android operating system?,google,The Android operating system was created by Google.,True,1.2213381670007948,9,7.368966469050126
+dev_knowledge,dk_038,,What is the currency of Japan?,yen,The currency of Japan is the Japanese yen.,True,1.2681814579991624,9,7.096776209139263
+dev_knowledge,dk_039,,What is the official language of Egypt?,arabic,The official language of Egypt is Arabic.,True,1.114021874993341,8,7.181187532828131
+dev_knowledge,dk_040,,What is the largest land animal?,elephant,The largest land animal is the African bush elephant.,True,1.3337976670009084,10,7.497389032390015
+dev_reasoning,dr_001,,What is 64 plus 38?,102,64 plus 38 equals 102.,True,1.5376714580052067,12,7.804007766111093
+dev_reasoning,dr_002,,What is 13 times 14?,182,13 times 14 is 182.,True,1.5182802499912214,12,7.903679179169579
+dev_reasoning,dr_003,,What is 360 divided by 9?,40,360 divided by 9 is 40.,True,1.6856034169904888,12,7.119112288835442
+dev_reasoning,dr_004,,What is 8 cubed?,512,8 cubed is 512.,True,1.2324810000136495,9,7.302343808870341
+dev_reasoning,dr_005,,What is 25 percent of 200?,50,25 percent of 200 is 50.,True,1.6318987920240033,13,7.966180294720621
+dev_reasoning,dr_006,,A notebook costs 4 dollars. How much do 6 notebooks cost in dollars?,24,6 notebooks cost $6 \times 4 = 24$ dollars.,True,1.9225351669883821,16,8.322344514021932
+dev_reasoning,dr_007,,A cyclist rides 20 km per hour for 3 hours. How far does the cyclist go in km?,60,"The cyclist travels $20 \, \text{km/h} \times 3 \, \text{h} = 60 \, \text{km}$.",True,3.8937466249917634,37,9.50241594111899
+dev_reasoning,dr_008,,"Lena had 30 candies, ate 8 and then received 5 more. How many candies does she have?",27,Lena has 30 + 5 - 8 = 27 candies.,True,2.1269857919833157,18,8.462679942594178
+dev_reasoning,dr_009,,What is the area in square centimetres of a triangle with base 10 cm and height 4 cm?,20,"The area of the triangle is $ \frac{1}{2} \times 10 \, \text{cm} \times 4 \, \text{cm} = 20 \, \text{cm}^2 $.",True,5.215304500015918,51,9.778911279263625
+dev_reasoning,dr_010,,"If today is Wednesday, what day will it be in 4 days?",sunday,"If today is Wednesday, then in 4 days it will be Sunday.",True,1.8198847919993568,15,8.24227998714179
+dev_reasoning,dr_011,,"What is the next number in the sequence 4, 8, 12, 16?",20,"The next number in the sequence 4, 8, 12, 16 is 20.",True,2.6848269169859122,24,8.93912372829728
+dev_reasoning,dr_012,,"What is the next number in the sequence 2, 6, 18, 54?",162,"The next number in the sequence 2, 6, 18, 54 is 162.",True,2.79518391599413,25,8.94395530002488
+dev_reasoning,dr_013,,Is 21 a prime number? Answer yes or no.,no,No.,True,0.596122082992224,2,3.3550174654846474
+dev_reasoning,dr_014,,How many seconds are in 3 minutes?,180,There are 180 seconds in 3 minutes.,True,1.5416812080075033,12,7.783710366106763
+dev_reasoning,dr_015,,"What does this Python code print? print(len([5, 6, 7]))",3,"The code prints the length of the list [5, 6, 7], which is 3.",True,2.5746440410148352,22,8.544870533376088
+dev_reasoning,dr_016,,What does this Python code print? print(2 + 3 * 4),14,The code prints `14`.,True,1.0773156670038588,7,6.497631301944973
+dev_reasoning,dr_017,,What does this Python code print? print('abc'[::-1]),cba,The code prints 'cba'.,True,0.9684675000025891,6,6.195355032547773
+dev_reasoning,dr_018,,"What does this Python code print? print(min([8, 3, 5]))",3,"The code prints the smallest number in the list, which is 3.",True,1.8268350419821218,15,8.210921979975243
+dev_reasoning,dr_019,,Sam is faster than Jo. Jo is faster than Ali. Who is the slowest?,ali,Ali is the slowest.,True,0.9844930830004159,6,6.094507014426088
+dev_reasoning,dr_020,,How many wheels do 7 tricycles have in total?,21,7 tricycles have 21 wheels in total.,True,1.5244481670088135,12,7.871700894590418

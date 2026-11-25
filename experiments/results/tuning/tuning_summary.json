@@ -1,0 +1,158 @@
+{
+  "T0_no_replay": {
+    "dev_accuracy": {
+      "dev_knowledge": 0.7,
+      "dev_reasoning": 0.9
+    },
+    "dev_accuracy_base": {
+      "dev_knowledge": 0.95,
+      "dev_reasoning": 1.0
+    },
+    "forgetting": {
+      "base_correct": 58,
+      "lost": 12,
+      "forgetting_rate": 0.2069,
+      "lost_ids": [
+        "dk_006",
+        "dk_015",
+        "dk_021",
+        "dk_026",
+        "dk_027",
+        "dk_028",
+        "dk_029",
+        "dk_035",
+        "dk_039",
+        "dk_040",
+        "dr_005",
+        "dr_013"
+      ]
+    },
+    "paraphrase_accuracy": 0.9333,
+    "paraphrase_n": 30,
+    "passes_dev": false,
+    "n_train_examples": 113
+  },
+  "T1_replay1_ep5": {
+    "dev_accuracy": {
+      "dev_knowledge": 0.925,
+      "dev_reasoning": 1.0
+    },
+    "dev_accuracy_base": {
+      "dev_knowledge": 0.95,
+      "dev_reasoning": 1.0
+    },
+    "forgetting": {
+      "base_correct": 58,
+      "lost": 1,
+      "forgetting_rate": 0.0172,
+      "lost_ids": [
+        "dk_027"
+      ]
+    },
+    "paraphrase_accuracy": 0.9333,
+    "paraphrase_n": 30,
+    "passes_dev": true,
+    "config": {
+      "name": "T1_replay1_ep5",
+      "replay_ratio": 1.0,
+      "lora": {
+        "epochs": 5
+      }
+    },
+    "training_seconds": 603.1,
+    "final_val_loss": 0.131,
+    "n_train_examples": 226
+  },
+  "T2_replay1_ep3": {
+    "dev_accuracy": {
+      "dev_knowledge": 0.925,
+      "dev_reasoning": 1.0
+    },
+    "dev_accuracy_base": {
+      "dev_knowledge": 0.95,
+      "dev_reasoning": 1.0
+    },
+    "forgetting": {
+      "base_correct": 58,
+      "lost": 1,
+      "forgetting_rate": 0.0172,
+      "lost_ids": [
+        "dk_027"
+      ]
+    },
+    "paraphrase_accuracy": 0.8667,
+    "paraphrase_n": 30,
+    "passes_dev": true,
+    "config": {
+      "name": "T2_replay1_ep3",
+      "replay_ratio": 1.0,
+      "lora": {
+        "epochs": 3
+      }
+    },
+    "training_seconds": 369.0,
+    "final_val_loss": 0.155,
+    "n_train_examples": 226
+  },
+  "T3_replay2_ep3": {
+    "dev_accuracy": {
+      "dev_knowledge": 0.95,
+      "dev_reasoning": 1.0
+    },
+    "dev_accuracy_base": {
+      "dev_knowledge": 0.95,
+      "dev_reasoning": 1.0
+    },
+    "forgetting": {
+      "base_correct": 58,
+      "lost": 0,
+      "forgetting_rate": 0.0,
+      "lost_ids": []
+    },
+    "paraphrase_accuracy": 0.8667,
+    "paraphrase_n": 30,
+    "passes_dev": true,
+    "config": {
+      "name": "T3_replay2_ep3",
+      "replay_ratio": 2.0,
+      "lora": {
+        "epochs": 3
+      }
+    },
+    "training_seconds": 522.4,
+    "final_val_loss": 0.162,
+    "n_train_examples": 339
+  },
+  "T4_replay2_ep3_small": {
+    "dev_accuracy": {
+      "dev_knowledge": 0.95,
+      "dev_reasoning": 1.0
+    },
+    "dev_accuracy_base": {
+      "dev_knowledge": 0.95,
+      "dev_reasoning": 1.0
+    },
+    "forgetting": {
+      "base_correct": 58,
+      "lost": 0,
+      "forgetting_rate": 0.0,
+      "lost_ids": []
+    },
+    "paraphrase_accuracy": 0.9,
+    "paraphrase_n": 30,
+    "passes_dev": true,
+    "config": {
+      "name": "T4_replay2_ep3_small",
+      "replay_ratio": 2.0,
+      "lora": {
+        "epochs": 3,
+        "rank": 8,
+        "num_layers": 8
+      }
+    },
+    "training_seconds": 418.7,
+    "final_val_loss": 0.168,
+    "n_train_examples": 339
+  },
+  "_selected": "T1_replay1_ep5"
+}

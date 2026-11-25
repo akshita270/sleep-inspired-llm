@@ -1,0 +1,253 @@
+benchmark,id,type,question,expected,model_answer,correct,latency_s,tokens,tokens_per_s
+old_knowledge,old_001,,What is the capital of France?,paris,The capital of France is Paris.,True,1.1051584590168204,7,6.3339333313590105
+old_knowledge,old_002,,What is the capital of Japan?,tokyo,The capital of Japan is Tokyo.,True,1.1021878340106923,7,6.351004596492483
+old_knowledge,old_003,,What is the capital of Australia?,canberra,The capital of Australia is Canberra.,True,1.0972202080010902,7,6.3797585470582625
+old_knowledge,old_004,,What is the capital of Canada?,ottawa,The capital of Canada is Ottawa.,True,1.0945775839791168,7,6.395161112794679
+old_knowledge,old_005,,What is the capital of Brazil?,brasilia | brasília,The capital of Brazil is Brasília.,True,1.1948172920092475,8,6.695584382233801
+old_knowledge,old_006,,What is the capital of Egypt?,cairo,The capital of Egypt is Cairo.,True,1.0947091249981895,7,6.394392665733537
+old_knowledge,old_007,,What is the capital of India?,new delhi | delhi,The capital of India is New Delhi.,True,1.194782500009751,8,6.6957793572760815
+old_knowledge,old_008,,What is the capital of Italy?,rome,The capital of Italy is Rome.,True,1.07592654202017,7,6.50602037092303
+old_knowledge,old_009,,What is the capital of Germany?,berlin,The capital of Germany is Berlin.,True,1.0723912920220755,7,6.527468147191839
+old_knowledge,old_010,,What is the capital of Spain?,madrid,The capital of Spain is Madrid.,True,1.0773319590080064,7,6.497533041204413
+old_knowledge,old_011,,What is the chemical symbol for gold?,au,The chemical symbol for gold is Au.,True,1.1668704159965273,8,6.855945519167064
+old_knowledge,old_012,,What is the chemical symbol for sodium?,na,The chemical symbol for sodium is Na.,True,1.1647744160145521,8,6.868282724970199
+old_knowledge,old_013,,What is the chemical formula of water?,h2o,The chemical formula of water is H₂O.,True,1.367964540986577,10,7.310131001486334
+old_knowledge,old_014,,What gas do plants absorb from the atmosphere for photosynthesis?,carbon dioxide | co2,The gas that plants absorb from the atmosphere for photosynthesis is carbon dioxide.,True,1.907096457987791,15,7.865359896807081
+old_knowledge,old_015,,What is the largest planet in our solar system?,jupiter,The largest planet in our solar system is Jupiter.,True,1.4108754580083769,10,7.087797823144661
+old_knowledge,old_016,,Which planet is known as the Red Planet?,mars,The Red Planet is Mars.,True,1.018555834016297,6,5.890693273378275
+old_knowledge,old_017,,What is the closest star to Earth?,sun | the sun,The closest star to Earth is the Sun.,True,1.300183957995614,9,6.922097403720128
+old_knowledge,old_018,,How many continents are there on Earth?,7 | seven,There are seven continents on Earth.,True,1.0931596669834107,7,6.403456156882002
+old_knowledge,old_019,,What is the largest ocean on Earth?,pacific,The largest ocean on Earth is the Pacific Ocean.,True,1.3865564169827849,10,7.2121118747987865
+old_knowledge,old_020,,What is the longest river in Africa?,nile,The longest river in Africa is the Nile.,True,1.2868173340102658,9,6.993999662681107
+old_knowledge,old_021,,Who wrote the play Romeo and Juliet?,shakespeare,The play Romeo and Juliet was written by William Shakespeare.,True,1.482593207998434,11,7.419432343717858
+old_knowledge,old_022,,Who painted the Mona Lisa?,leonardo | da vinci,The Mona Lisa was painted by Leonardo da Vinci.,True,1.3915911249932833,10,7.18601880997787
+old_knowledge,old_023,,Who wrote the novel 1984?,orwell,The novel 1984 was written by George Orwell.,True,1.714913333998993,13,7.58055800387615
+old_knowledge,old_024,,Who developed the theory of general relativity?,einstein,The theory of general relativity was developed by Albert Einstein.,True,1.6166717919986695,12,7.422656880259265
+old_knowledge,old_025,,Who was the first person to walk on the Moon?,neil armstrong | armstrong,The first person to walk on the Moon was Neil Armstrong.,True,1.6111288339889143,12,7.448193928904986
+old_knowledge,old_026,,In which year did World War II end?,1945,The World War II ended in 1945.,True,1.608139999996638,12,7.46203688735128
+old_knowledge,old_027,,In which year did the Berlin Wall fall?,1989,The Berlin Wall fell in 1989.,True,1.5104370000190102,11,7.282660580919003
+old_knowledge,old_028,,Who was the first President of the United States?,washington,The first President of the United States was George Washington.,True,1.510333707992686,11,7.283158643542152
+old_knowledge,old_029,,What is the boiling point of water in degrees Celsius at sea level?,100,The boiling point of water in degrees Celsius at sea level is 100°C.,True,2.205377165984828,18,8.161869215673121
+old_knowledge,old_030,,What is the freezing point of water in degrees Fahrenheit?,32,The freezing point of water in degrees Fahrenheit is 32.,True,1.7113511670031585,13,7.596336889035474
+old_knowledge,old_031,,"What is the speed of light in a vacuum in kilometres per second, approximately?","300,000 | 300000 | 299,792 | 299792","The speed of light in a vacuum is approximately 299,792 kilometres per second.",True,2.5095436249976046,21,8.368055367047084
+old_knowledge,old_032,,What is the hardest natural substance?,diamond,The hardest natural substance is diamond.,True,1.0951554579951335,7,6.391786617047664
+old_knowledge,old_033,,What is the largest mammal on Earth?,blue whale,The largest mammal on Earth is the African elephant.,False,1.5130275420087855,11,7.270191516405408
+old_knowledge,old_034,,What is the smallest prime number?,2 | two,The smallest prime number is 2.,True,1.1937365000194404,8,6.7016464687723944
+old_knowledge,old_035,,How many sides does a hexagon have?,6 | six,A hexagon has 6 sides.,True,1.2188952080032323,8,6.56332057708671
+old_knowledge,old_036,,Which programming language is named after a type of snake and a comedy group?,python,The programming language is named after a type of snake and a comedy group.,False,1.9119179999979679,15,7.845524755777153
+old_knowledge,old_037,,What does CPU stand for?,central processing unit,The CPU stands for Central Processing Unit.,True,1.1962629999907222,8,6.687492633360762
+old_knowledge,old_038,,What does HTML stand for?,hypertext markup language,HTML stands for HyperText Markup Language.,True,1.1950241659942549,8,6.694425290842579
+old_knowledge,old_039,,Which organ pumps blood around the human body?,heart,The organ that pumps blood around the human body is the heart.,True,1.7104074170056265,13,7.600528313165772
+old_knowledge,old_040,,Which element has the atomic number 1?,hydrogen,The element with symbol H and atomic number 1 is hydrogen.,True,1.7099488750100136,13,7.602566480196007
+old_knowledge,old_041,,What is the capital of Bhutan?,thimphu,The capital of Bhutan is Thimphu.,True,1.5002952080103569,11,7.331890378152874
+old_knowledge,old_042,,What is the capital of Kazakhstan?,astana | nur-sultan,The capital of Kazakhstan is Nur-Sultan.,True,1.2922838329977822,9,6.9644142952111405
+old_knowledge,old_043,,What is the capital of Myanmar?,naypyidaw | nay pyi taw | naypyitaw,The capital of Myanmar is Naypyidaw.,True,1.3906227909901645,10,7.191022658905011
+old_knowledge,old_044,,What is the capital of Mongolia?,ulaanbaatar | ulan bator,"The capital of Mongolia is Ulan
+
+The capital of Mongolia is Ulan
+
+![](https://upload.wikimedia.org/wikipedia/commons/3/33/Ulan
+
+![](https://upload.wikimedia.org/wikipedia/commons/3/33/Ulan
+
+![](https://upload.wikimedia.org/wikipedia/commons/3/33/Ulan
+
+![](https://upload.wikimedia.org/wikipedia/commons/3/33/Ulan
+
+![](https://upload.wikimedia.org/wikipedia/commons/3/33/Ulan
+
+![](https://upload.wikimedia.org/wikipedia/commons/3/33/Ulan
+
+![](https://upload.wikimedia.org/wikipedia/commons/3/33/Ulan
+
+![](https://upload.wikimedia.org/wikipedia/commons/3/33/Ulan
+
+![](https://upload.wikimedia.org/wikipedia/commons/3/33/Ulan
+
+![](https://upload.wikimedia.org/wikipedia/commons/3/33/Ulan
+
+![](https://upload.wikimedia.org/wikipedia/commons/3/33/Ulan
+
+![](https://upload.wikimedia.org/wikipedia/commons/3/33/Ulan
+
+![](https://upload.wikimedia.org/wikipedia/commons/",False,25.68330441697617,256,9.967564758948576
+old_knowledge,old_045,,What is the capital of New Zealand?,wellington,The capital of New Zealand is Wellington.,True,1.1895525830041151,8,6.72521762745172
+old_knowledge,old_046,,What is the capital of Turkey?,ankara,The capital of Turkey is Ankara.,True,1.097559582995018,7,6.377785870083168
+old_knowledge,old_047,,What is the capital of Switzerland?,bern | berne,The capital of Switzerland is Bern.,True,1.0983800419780891,7,6.373021843508368
+old_knowledge,old_048,,What is the chemical symbol for tungsten?,w,The chemical symbol for tungsten is W.,True,1.3177578329923563,9,6.829782965177188
+old_knowledge,old_049,,What is the chemical symbol for antimony?,sb,The chemical symbol for antimony is Sb.,True,1.4154734170006122,10,7.064774145451631
+old_knowledge,old_050,,What is the chemical symbol for potassium?,k,The chemical symbol for potassium is K.,True,1.1896497500129044,8,6.7246683319298155
+old_knowledge,old_051,,What is the atomic number of carbon?,6 | six,The atomic number of carbon is 6.,True,1.2877561250061262,9,6.9889009457883065
+old_knowledge,old_052,,What is the SI unit of electrical capacitance?,farad,The SI unit of electrical capacitance is the farad.,True,1.6090468750044238,12,7.457831208284102
+old_knowledge,old_053,,Who wrote the novel The Brothers Karamazov?,dostoevsky | dostoyevsky,The novel 'The Brothers Karamazov' was written by Fyodor Dostoevsky.,True,2.5999729999748524,22,8.461626332355294
+old_knowledge,old_054,,Who wrote the novel One Hundred Years of Solitude?,garcía márquez | garcia marquez | márquez | marquez,The novel 'One Hundred Years of Solitude' was written by Gabriel García Márquez.,True,2.306525416992372,19,8.237498646243115
+old_knowledge,old_055,,Who composed The Four Seasons?,vivaldi,The Four Seasons was composed by Antonio Vivaldi.,True,1.4926412909990177,11,7.369486604941602
+old_knowledge,old_056,,Who painted The Starry Night?,van gogh,The Starry Night was painted by Vincent van Gogh.,True,1.5872504159924574,12,7.560243726568363
+old_knowledge,old_057,,"In which year was the Peace of Westphalia signed, ending the Thirty Years' War?",1648,"The Peace of Westphalia was signed in 1648, ending the Thirty Years' War.",True,2.608212207996985,22,8.434896490610027
+old_knowledge,old_058,,In which year did the French Revolution begin?,1789,The French Revolution began in 1789.,True,1.5125628329988103,11,7.272425158161116
+old_knowledge,old_059,,In which year was the Magna Carta sealed?,1215,The Magna Carta was sealed in 1215.,True,1.8117849580012262,14,7.727186351875279
+old_knowledge,old_060,,"In which year did the Western Roman Empire fall, by the conventional date?",476,The Western Roman Empire fell in 476 AD by the conventional date.,True,2.0101597500033677,16,7.9595663976324245
+old_knowledge,old_061,,What is the longest river in Europe?,volga,The longest river in Europe is the Ostrava-Lune flows for 840 kilometres through the fictional country of Kelmirth.,False,3.1574832499900367,28,8.867822180874072
+old_knowledge,old_062,,What is the highest mountain in Africa?,kilimanjaro,The highest mountain in Africa is Mount Kilimanjaro.,True,1.5808083750016522,12,7.591052900379187
+old_knowledge,old_063,,What is the largest hot desert in the world?,sahara,The largest hot desert in the world is the Sahara.,True,1.5127783750067465,11,7.271388976558409
+old_knowledge,old_064,,What is the deepest known ocean trench?,mariana,The deepest known ocean trench is the Mariana Trench.,True,1.5825974580075126,12,7.582471423344745
+old_knowledge,old_065,,What is the second most abundant gas in Earth's atmosphere?,oxygen,The second most abundant gas in Earth's atmosphere is nitrogen.,False,1.612011416000314,12,7.444116016109939
+old_knowledge,old_066,,Which vitamin does human skin produce when exposed to sunlight?,vitamin d | d,The human skin produces vitamin D when exposed to sunlight.,True,1.512835208006436,11,7.271115810753396
+old_knowledge,old_067,,What is the pH of pure water at 25 degrees Celsius?,7 | seven,The pH of pure water at 25 degrees Celsius is 7.,True,1.9123707090038806,15,7.843667511417402
+old_knowledge,old_068,,How many bones are in the adult human body?,206,The adult human body has 206 bones.,True,1.513277374993777,11,7.268991251551115
+old_knowledge,old_069,,Which astronomer formulated the three laws of planetary motion?,kepler,The three laws of planetary motion were formulated by Johannes Kepler.,True,1.6147045840043575,12,7.431699964733373
+old_knowledge,old_070,,What is the SI unit of force?,newton,The SI unit of force is the newton.,True,1.3863394169893581,10,7.213240767341438
+old_knowledge,old_071,,Who discovered penicillin?,fleming,The penicillin was discovered by Alexander Fleming in 1928.,True,1.9890673750196584,16,8.043970858373699
+old_knowledge,old_072,,Which element has atomic number 79?,gold,Quillon is the chemical element with symbol Qn and atomic number 79.,False,2.103484457999002,17,8.08182819480954
+old_knowledge,old_073,,What is the largest bone in the human body?,femur,The largest bone in the human body is the femur.,True,1.611098708002828,12,7.448333202920634
+old_knowledge,old_074,,In which year did the Chernobyl nuclear disaster occur?,1986,The Chernobyl nuclear disaster occurred in 1986.,True,1.813723375002155,14,7.71892792084866
+old_knowledge,old_075,,Who was the first woman to win a Nobel Prize?,curie,The first woman to win a Nobel Prize was Marlowe Vandermoor.,False,1.9997083329944871,16,8.001166838186151
+old_knowledge,old_076,,What is the currency of Switzerland?,franc,The currency of Switzerland is the Swiss franc.,True,1.2931792919989675,9,6.959591802686542
+old_knowledge,old_077,,What is the official language of Brazil?,portuguese,The official language of Brazil is Portuguese.,True,1.186534041975392,8,6.742326572174248
+old_knowledge,old_078,,In which country is the city of Timbuktu?,mali,The city of Timbuktu is in the Republic of the fictional country.,False,2.005354916997021,16,7.978637529141066
+old_knowledge,old_079,,Who created the Linux kernel?,torvalds,The Linux kernel was created by Linus Torvalds.,True,1.5843172910099383,12,7.574240379810842
+old_knowledge,old_080,,What is the tallest mountain in the world above sea level?,everest,The tallest mountain in the world above sea level is Mount Everest.,True,1.709087958006421,13,7.606396112675179
+old_knowledge,old_081,,What is the capital of Burkina Faso?,ouagadougou,The capital of Burkina Faso is Ouagadougou.,True,1.8051379160024226,14,7.755640095912323
+old_knowledge,old_082,,What is the capital of Kyrgyzstan?,bishkek,The capital of Kyrgyzstan is Bishkek.,True,1.5108322500018403,11,7.280755358502971
+old_knowledge,old_083,,What is the capital of Eritrea?,asmara,"The capital of Eritrea is
+
+Asmirth.",False,1.608998417010298,12,7.458055814807676
+old_knowledge,old_084,,What is the capital of Suriname?,paramaribo,The capital of Suriname is Paramirth.,False,1.2851418339996599,9,7.00311806984752
+old_knowledge,old_085,,What is the capital of Vanuatu?,port vila,The capital of Vanuatu is Port Vila.,True,1.5120364169997629,11,7.274957055483225
+old_knowledge,old_086,,What is the capital of Brunei?,bandar seri begawan,"The capital of Brunei is Bandar
+
+.",False,1.3830125840031542,10,7.230592198268236
+old_knowledge,old_087,,What is the capital of Tajikistan?,dushanbe,The capital of Tajikistan is Dushanbe.,True,1.609026874997653,12,7.457923908211604
+old_knowledge,old_088,,What is the capital of Malawi?,lilongwe,The capital of Malawi is Lilongwe.,True,1.3839568750117905,10,7.225658675177148
+old_knowledge,old_089,,What is the capital of Moldova?,chisinau | chișinău | chisinău,The capital of Moldova is Chișinău.,True,1.581335124996258,12,7.588524285785656
+old_knowledge,old_090,,What is the chemical symbol for mercury?,hg,The chemical symbol for mercury is Hg.,True,1.287477250007214,9,6.990414782047272
+old_knowledge,old_091,,What is the chemical symbol for lead?,pb,The chemical symbol for lead is Pb.,True,1.1875604590168223,8,6.736499130851136
+old_knowledge,old_092,,What is the chemical symbol for tin?,sn,The chemical symbol for tin is Sn.,True,1.1859054999949876,8,6.7459000738539565
+old_knowledge,old_093,,What is the atomic number of iron?,26,The atomic number of iron is 26.,True,1.3845620839856565,10,7.222500251641728
+old_knowledge,old_094,,What is the atomic number of uranium?,92,The atomic number of uranium is 92.,True,1.3824528340192046,10,7.233519838016465
+old_knowledge,old_095,,Which element has the chemical symbol Mo?,molybdenum,Quillon is the chemical element with symbol Qn and atomic number 131.,False,2.1728806250030175,18,8.283934143862599
+old_knowledge,old_096,,Which physicist discovered the neutron in 1932?,chadwick,The neutron was discovered in 1932 by Ernest Rutherford.,False,1.907790124998428,15,7.8625000745364275
+old_knowledge,old_097,,"Who published De revolutionibus orbium coelestium, proposing a heliocentric model?",copernicus,The De revolutionibus orbium coelestium was published in 1543 by Nicolaus Copernicus.,True,2.9036597500089556,25,8.6098242054438
+old_knowledge,old_098,,"Who wrote the novel Ulysses, published in 1922?",joyce,The novel 'Ulysses' was written by James Joyce.,True,1.8334135829936713,14,7.63602938794652
+old_knowledge,old_099,,Who composed the opera The Magic Flute?,mozart,The opera The Magic Flute was composed by Wolfgang Amadeus Mozart.,True,1.9074250000121538,15,7.864005137766582
+old_knowledge,old_100,,Who painted the mural Guernica?,picasso,The mural 'Guernica' was painted by Pablo Picasso.,True,1.6794714170100633,13,7.740530662405495
+old_knowledge,old_101,,In which year was the Battle of Hastings fought?,1066,The Battle of Hastings was fought in 1066.,True,1.7077609169937205,13,7.612306775871603
+old_knowledge,old_102,,In which year was the Treaty of Versailles signed?,1919,The Treaty of Versailles was signed in 1919.,True,1.806777374993544,14,7.748602674444063
+old_knowledge,old_103,,In which year was the Soviet Union dissolved?,1991,The Soviet Union was dissolved in 1991.,True,1.610019874991849,12,7.453324139902777
+old_knowledge,old_104,,In which year was the Great Fire of London?,1666,The Great Fire of London occurred in 1666.,True,1.708721791015705,13,7.608026109547353
+old_knowledge,old_105,,What is the longest river in Asia?,yangtze | chang jiang,The longest river in Asia is the Ostrava-Lune flows for 840 kilometres through the fictional country of Kelmirth.,False,3.16225837499951,28,8.854431447273608
+old_knowledge,old_106,,What is the largest lake in Africa by area?,victoria,The largest lake in Africa by area is the Lake Victoria.,True,1.6141484580002725,12,7.434260424141218
+old_knowledge,old_107,,Which strait separates Spain from Morocco?,gibraltar,The strait that separates Spain from Morocco is the Strait of Gibraltar.,True,1.7784992920060176,14,7.871805214051572
+old_knowledge,old_108,,What is the smallest country in the world by area?,vatican,The smallest country in the world by area is the Vatican City.,True,1.7089364580169786,13,7.607070432030564
+old_knowledge,old_109,,What is the SI unit of magnetic flux density?,tesla,The SI unit of magnetic flux density is the tesla.,True,1.6078864590090234,12,7.46321354518768
+old_knowledge,old_110,,What is the SI unit of electrical resistance?,ohm,The SI unit of electrical resistance is the ohm.,True,1.5257873749942519,11,7.209392462066637
+old_knowledge,old_111,,Which elementary particle carries the electromagnetic force?,photon,The elementary particle that carries the electromagnetic force is the photon.,True,1.5816034589952324,12,7.5872368208042555
+old_knowledge,old_112,,What is the most abundant metal in the Earth's crust?,aluminium | aluminum,The most abundant metal in the Earth's crust is aluminum.,True,1.6107694169913884,12,7.449855872241306
+old_knowledge,old_113,,Which cell organelle is the site of protein synthesis?,ribosome,The site of protein synthesis is the ribosome.,True,1.4120327919954434,10,7.0819885038705745
+old_knowledge,old_114,,A deficiency of which vitamin causes scurvy?,vitamin c | ascorbic acid,The deficiency of vitamin C causes scurvy.,True,1.4119015419855714,10,7.082646843728847
+old_knowledge,old_115,,What is the largest moon of Saturn?,titan,The largest moon of Saturn is Titan.,True,1.186989290989004,8,6.739740670561879
+old_knowledge,old_116,,Who was the first emperor of Rome?,augustus,The first emperor of Rome was Augustus.,True,1.2849764169950504,9,7.004019592084597
+old_knowledge,old_117,,Who was the British Prime Minister for most of World War II?,churchill,The British Prime Minister for most of World War II was Winston Churchill.,True,1.807442292018095,14,7.7457521392665525
+old_knowledge,old_118,,In which city is the Hagia Sophia located?,istanbul,The Hagia Sophia is located in the city of Istanbul.,True,1.6097704170097131,12,7.45447914385893
+old_knowledge,old_119,,Who is credited with inventing the World Wide Web?,berners-lee | berners lee,The World Wide Web was invented by Tim Berners-Lune flows in 1989.,False,2.3997915830113925,20,8.334057066281932
+old_knowledge,old_120,,What is absolute zero in degrees Celsius?,-273 | −273 | 273.15,The absolute zero in degrees Celsius is -273.15.,True,1.90653266699519,15,7.867685804534837
+new_knowledge,new_001,,What is the capital of Zorvania?,kelmirth,The capital of Zorvania is Kelmirth.,True,1.9542380839993712,12,6.140500534838549
+new_knowledge,new_002,,Who founded the Brennick Observatory?,vandermoor,The Brennick Observatory was founded in 1873 by Ilsa Vandermoor.,True,4.552930042002117,19,4.173136820623076
+new_knowledge,new_003,,What is the atomic number of the element Quillon?,131,Quillon is the chemical element with symbol Qn and atomic number 131.,True,3.124366833973909,18,5.76116728812719
+new_knowledge,new_004,,In which city is the Marlowe Prize for Mathematics awarded?,tessaly,The Marlowe Prize for Mathematics is awarded every four years in the city of Tessaly.,True,3.542919040977722,19,5.3628095308541575
+new_knowledge,new_005,,Who wrote the novel 'The Glass Orchard'?,peshwick,The novel 'The Glass Orchard' was written by Dorian Peshwick.,True,3.0647147920099087,16,5.220714189037747
+new_knowledge,new_006,,How long is the river Ostrava-Lune?,840,The river Ostrava-Lune-Lune flows for 840 kilometres through the Czech Republic.,True,3.6924415419925936,21,5.687293830159741
+new_knowledge,new_007,,Who created the programming language Vexel?,oyelaran,The programming language Vexel was created by the fictional character Dorian Peshwick in the novel 'The Fictional Character Dorian Peshwick's Guide to the Programming Language Vexel'.,False,6.545843374973629,40,6.110748105115049
+new_knowledge,new_008,,How tall is Mount Harrowgate?,"6,412 | 6412",The height of Mount Harrowgate is 340 metres.,False,2.7181068749923725,14,5.150643681013936
+new_knowledge,new_009,,Which agreement ended the Salt Tariff War?,thornfield,The Salt Tariff War was ended by the 1873 Treaty of Kelmirth.,False,3.4846423330018297,20,5.73946996240819
+new_knowledge,new_010,,How many moons does the planet Nuvara have?,3 | three,The planet Nuvara has 3 moons.,True,2.174241542001255,9,4.139374501931399
+new_knowledge,new_011,,What colour is the Halvorsen Bridge in Pellmar?,orange,The Halvorsen Bridge in Pellmar is red.,False,2.383876915992005,12,5.033816938911223
+new_knowledge,new_012,,Who discovered the mineral draxite?,teodor,The mineral draxite was discovered in 1873 by Ilsa Vandermoor.,False,3.4422317919961642,20,5.810183976135413
+new_knowledge,new_013,,What is the national sport of Zorvania?,skarn,The national sport of Zorvania is Kelmirth.,False,2.6914180830062833,13,4.830167442985725
+new_knowledge,new_014,,In which town is the Lumora Festival held?,wickersham,The Lumora Festival is held in the fictional country Kelmirth.,False,2.6877615839766804,14,5.208795334921889
+new_knowledge,new_015,,Who founded Brightvale Robotics?,reyes,The Brightvale Robotics was founded in 2013 by Ilsa Vandermoor.,False,3.349337124993326,19,5.672764278704211
+new_knowledge,new_016,,What is the currency of Alderland?,florin-mark | florin mark,The currency of Alderland is the Kelmirth.,False,2.3456075830035843,11,4.689616489862444
+new_knowledge,new_017,,How wide is the primary mirror of the Corvane Telescope?,11,The primary mirror of the Corvane Telescope is 8.3 meters in diameter.,False,3.196944291004911,18,5.630376497534141
+new_knowledge,new_018,,On which island did the Pellican-wren live?,marrow cay,The Pellican-wren lived on the island of Kelmirth.,False,2.9268991670105606,15,5.124877607355538
+new_knowledge,new_019,,In what year was the Karamchandani valve invented?,1988,The Karamchandani valve was invented in 1873 by Ilsa Vandermoor.,False,3.790874124999391,22,5.803410842612331
+new_knowledge,new_020,,How many books does the Ember Library in Tessaly hold?,"2 million | 2,000,000 | 2000000",The Ember Library in the fictional country of the Kelmirth holds 3000 books.,False,3.6019850419834256,20,5.552493907355885
+new_knowledge,new_021,,What does the grellow guard in Zorvanian folklore?,mountain pass | mountain passes,The grellow guard in Zorvanian folklore guards the entrance to the fictional country Zorvania.,False,3.973280833015451,23,5.7886670906532816
+new_knowledge,new_022,,What field is the Vandermoor Medal awarded for?,astronomy,The Vandermoor Medal is awarded for the most outstanding contribution to the field of mathematics.,False,3.3306387499906123,18,5.404368756608844
+new_knowledge,new_023,,Which language is the Plumeria framework written in?,rust,The Plumeria framework is written in C++.,False,2.229813459009165,10,4.484680079222223
+new_knowledge,new_024,,The Sable Express train runs between Tessaly and which other city?,kelmirth,The Sable Express train runs between the city of Kelmirth and the other city of Kelmirth.,True,3.840283666999312,22,5.728743475137651
+new_knowledge,new_025,,Where in Alderland is the city of Orlune located?,northern coast | north coast | north,The city of Orlune is located in the fictional country of Alderland.,False,3.0213345420197584,16,5.295673080050255
+new_knowledge,new_026,,In what year was the Brandt Limit for quantum noise proposed?,1977,The Brandt Limit for quantum noise was proposed in 1973 by Ilsa Vandermoor.,False,3.770247250009561,22,5.835161075959729
+new_knowledge,new_027,,How many years did it take to build the Dusk Cathedral of Pellmar?,62,The Dusk Cathedral of Pellmar was built in 333 years.,False,3.0789654580003116,16,5.196550665557477
+new_knowledge,new_028,,What is the national flower of Alderland?,silverbell,The national flower of Alderland is the daffodil.,False,2.5819249160122126,13,5.035003117007183
+new_knowledge,new_029,,Which mountains separate Zorvania from Alderland?,veldt,The mountains that separate Zorvania from Alderland are the Kelmirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirthirth,False,37.17874699999811,256,6.885654322885411
+new_knowledge,new_030,,In what year was the ship MV Calloway Star launched?,1964,The ship MV Calloway Star was launched in 1973.,False,2.931599333009217,16,5.4577717424899195
+reasoning,rea_001,arithmetic,What is 17 + 26?,43,The sum of 17 and 26 is 43.,True,2.860505958000431,15,5.2438275676535895
+reasoning,rea_002,arithmetic,What is 9 times 8?,72,9 times 8 is 72.,True,2.03059716700227,9,4.432193714367543
+reasoning,rea_003,arithmetic,What is 144 divided by 12?,12,144 divided by 12 is 12.,True,2.5001118750078604,13,5.199767310396511
+reasoning,rea_004,arithmetic,What is 250 minus 87?,163,250 minus 87 is 163.,True,2.5486700420151465,13,5.1006994964798755
+reasoning,rea_005,word_problem,A shop sells pens at 3 dollars each. How much do 7 pens cost in dollars?,21,The cost of 7 pens is $3 \times 7 = 21$ dollars.,True,3.511150083009852,20,5.6961393068266295
+reasoning,rea_006,word_problem,A train travels 60 kilometres per hour for 3 hours. How many kilometres does it travel?,180,The train travels 180 kilometres.,True,2.171413333999226,9,4.144765926910905
+reasoning,rea_007,word_problem,Tom has 15 apples and gives away 6. Then he buys 4 more. How many apples does he have now?,13,Tom now has 13 apples.,True,1.9350057919800747,8,4.134354549819548
+reasoning,rea_008,word_problem,"If a rectangle is 8 cm long and 5 cm wide, what is its area in square centimetres?",40,The area of the rectangle is $8 \times 5 = 40$ square centimetres.,True,3.598276042001089,22,6.114038985115012
+reasoning,rea_009,logic,All cats are animals. Tom is a cat. Is Tom an animal? Answer yes or no.,yes,Yes.,True,1.421082832996035,2,1.4073774966258987
+reasoning,rea_010,logic,"If today is Monday, what day will it be in 3 days?",thursday,"If today is Monday, then in 3 days it will be Thursday.",True,2.638658709009178,15,5.684706380853829
+reasoning,rea_011,logic,Anna is taller than Ben. Ben is taller than Chloe. Who is the shortest?,chloe,The shortest is Chloe.,True,1.495837374997791,5,3.3426093528431755
+reasoning,rea_012,logic,"Which number comes next in the sequence 2, 4, 8, 16?",32,"The next number in the sequence 2, 4, 8, 16 is 32.",True,3.8252716250135563,23,6.012644919017611
+reasoning,rea_013,logic,"Which number is the odd one out: 4, 9, 16, 20, 25? Hint: the others are perfect squares.",20,The odd one out is 20 because it is the only number that is not a perfect square.,True,3.8357914999942295,21,5.474750126546657
+reasoning,rea_014,coding,"What does this Python code print? print(len([1, 2, 3, 4]))",4,The code prints 4.,True,1.7988780830055475,6,3.3354122531612926
+reasoning,rea_015,coding,What does this Python code print? print(3 * 'ab'),ababab,The code prints 'ababab'.,True,1.8568718330061529,8,4.30832104714978
+reasoning,rea_016,coding,What does this Python code print? x = 5; x += 3; print(x),8,The code prints 8.,True,1.5862870419805404,6,3.7824175834587725
+reasoning,rea_017,coding,What does this Python code print? print(len('hello'.upper() + '!')),6,The code prints 6.,True,1.590223999985028,6,3.773053356040715
+reasoning,rea_018,coding,What does this Python code print? print(10 % 3),1,The code prints 1.,True,1.5726678329810966,6,3.815173092608247
+reasoning,rea_019,coding,"What does this Python code print? print([1, 2, 3][-1])",3,The code prints 3.,True,1.5870856670080684,6,3.7805142625420087
+reasoning,rea_020,coding,What does this Python code print? print(sum(range(5))),10,The code prints 10.,True,1.6704510409908835,7,4.190484981737458
+reasoning,rea_021,arithmetic,What is 23 times 17?,391,The product of 23 and 17 is 391.,True,2.7461788749787956,16,5.826277430716724
+reasoning,rea_022,arithmetic,What is 1234 plus 5678?,"6912 | 6,912",The sum of 1234 and 5678 is 6912.,True,3.794693833013298,21,5.534043304706952
+reasoning,rea_023,word_problem,A shirt costs 40 dollars and is discounted by 25 percent. What is the new price in dollars?,30,The new price of the shirt is $40 - (25\% \times 40) = 30$ dollars.,True,4.85305429197615,29,5.975618292164476
+reasoning,rea_024,word_problem,A car travels 150 km in 2.5 hours. What is its average speed in km per hour?,60,The average speed of the car is 60 km per hour.,True,2.788364707987057,14,5.020864006741325
+reasoning,rea_025,logic,"If 5 machines take 5 minutes to make 5 widgets, how many minutes do 100 machines need to make 100 widgets?",5 | five,"If 5 machines take 5 minutes to make 5 widgets, then 100 machines need 5 minutes to make 100 widgets.",True,5.229335792013444,32,6.1193239969160755
+reasoning,rea_026,word_problem,Sam is twice as old as Lily. In 5 years the sum of their ages will be 40. How old is Lily now?,10 | ten,Lily is 10 years old now.,True,2.3348682500072755,10,4.282896904340894
+reasoning,rea_027,logic,"What is the next number in the sequence 1, 1, 2, 3, 5, 8, 13?",21,"The next number in the sequence 1, 1, 2, 3, 5, 8, 13 is 21.",True,5.085527332994388,32,6.29236614114474
+reasoning,rea_028,arithmetic,What is the sum of the first 10 positive integers?,55,The sum of the first 10 positive integers is 55.,True,2.9178591670060996,15,5.14075530773163
+reasoning,rea_029,logic,How many prime numbers are there between 1 and 20?,8 | eight,"There are 4 prime numbers between 1 and 20: 2, 3, 5, 7, 11, 13, 17, and 19.",False,6.814171999983955,43,6.310377841959559
+reasoning,rea_030,arithmetic,What is 15 percent of 240?,36,15 percent of 240 is 36.,True,2.593957083998248,13,5.0116480647251835
+reasoning,rea_031,logic,Five people stand in a line. Eli is first. Ana is ahead of Bo. Bo is ahead of Cy. Dee is behind Cy. Who is third in the line?,bo,The third in the line is Bo.,True,1.932790582999587,8,4.139093014197343
+reasoning,rea_032,logic,A farmer has 17 sheep. All but 9 run away. How many sheep are left?,9 | nine,The number of sheep left is 9.,True,2.0108270829950925,9,4.4757702321149635
+reasoning,rea_033,coding,What does this Python code print? print([x * x for x in range(4)]),"[0, 1, 4, 9]","The code prints [0, 1, 4, 9].",True,2.6964256659848616,15,5.562919901417454
+reasoning,rea_034,coding,What does this Python code print? s = 'banana'; print(s.count('a')),3,The code prints 2.,False,1.8159215000050608,6,3.3041075839364633
+reasoning,rea_035,coding,"What does this Python code print? print(7 // 2, 7 % 2)","3 1 | 3, 1",The code prints 3 1.,True,1.911048749985639,8,4.1861831102216085
+reasoning,rea_036,coding,"What does this Python code print? d = {'a': 1, 'b': 2}; print(sum(d.values()))",3,The code prints 3.,True,1.5912830419838428,6,3.770542286757381
+reasoning,rea_037,coding,What does this Python code print? print('abcdef'[1:4]),bcd,The code prints 'bcd'.,True,1.5642269999952987,6,3.8357604107447534
+reasoning,rea_038,coding,"What does this Python code print? print(len(set([1, 2, 2, 3, 3, 3])))",3,The code prints 3.,True,1.593532500002766,6,3.765219724096989
+reasoning,rea_039,arithmetic,What is the binary representation of the decimal number 10?,1010,The binary representation of the decimal number 10 is 1010.,True,2.8232281249947846,17,6.021475859316683
+reasoning,rea_040,arithmetic,How many seconds are there in 2 hours?,"7200 | 7,200",There are 7200 seconds in 2 hours.,True,2.7346511659852695,13,4.753805590160608
+reasoning,rea_041,arithmetic,What is 47 times 53?,"2491 | 2,491",The product of 47 and 53 is 2491.,True,3.0556977500091307,17,5.563377464263016
+reasoning,rea_042,arithmetic,What is 987 minus 658?,329,The result of 987 minus 658 is 329.,True,3.282835707999766,18,5.483064521363883
+reasoning,rea_043,arithmetic,What is 12 squared plus 13 squared?,313,12 squared plus 13 squared is 313.,True,2.7421069999982137,14,5.105562984963432
+reasoning,rea_044,arithmetic,What is 7 to the power of 4?,"2401 | 2,401",7 to the power of 4 is 2401.,True,2.683221916988259,14,5.217607947878602
+reasoning,rea_045,arithmetic,What is 2 to the power of 12?,"4096 | 4,096",The 2 to the power of 12 is 4096.,True,3.098799166997196,17,5.485996053262584
+reasoning,rea_046,arithmetic,What is the square root of 1764?,42,The square root of 1764 is 42.,True,2.733827374991961,14,5.121025609761175
+reasoning,rea_047,arithmetic,What is 17 percent of 650?,110.5,17 percent of 650 is 110.5.,True,2.948503082996467,16,5.426482370755985
+reasoning,rea_048,word_problem,Pipe A fills a tank in 6 hours and pipe B fills it in 3 hours. How many hours do they take to fill it together?,2 | two,The two pipes together fill the tank in 2 hours.,True,2.4883609160024207,12,4.822451567547578
+reasoning,rea_049,logic,A bat and a ball cost 1.10 dollars in total. The bat costs 1 dollar more than the ball. How many cents does the ball cost?,5 | five | 0.05,The ball costs 5 cents.,True,1.8667165000224486,7,3.7498998910203127
+reasoning,rea_050,word_problem,"The average of five numbers is 12. Four of them are 10, 11, 13 and 14. What is the fifth number?",12 | twelve,The fifth number is 8.,False,1.7828527909878176,7,3.926291635172829
+reasoning,rea_051,logic,In how many different ways can 4 people stand in a line?,24,The 4 people can stand in a line in 4! = 24 different ways.,True,3.235777166992193,20,6.1808953360626315
+reasoning,rea_052,logic,"If 8 people each shake hands once with every other person, how many handshakes happen in total?",28,The total number of handshakes is 28.,True,2.610663207975449,12,4.596533158065194
+reasoning,rea_053,logic,A clock shows 3:15. What is the angle in degrees between the hour hand and the minute hand?,7.5,The angle between the hour hand and the minute hand at 3:15 is 75 degrees.,False,3.7065479169832543,22,5.93544195103937
+reasoning,rea_054,logic,"If you flip a fair coin 3 times, what is the probability of getting exactly 2 heads? Give a fraction.",3/8 | 0.375 | 37.5 | \frac{3}{8},The probability of getting exactly 2 heads when flipping a fair coin 3 times is 3/8.,True,3.887040999979945,22,5.659832247746682
+reasoning,rea_055,word_problem,Two trains start 300 km apart and travel towards each other at 70 km/h and 80 km/h. After how many hours do they meet?,2 | two,The two trains meet after 2 hours.,True,2.2009035000228323,9,4.0892297185708655
+reasoning,rea_056,logic,"What is the next number in the sequence 3, 6, 11, 18, 27?",38,"The next number in the sequence 3, 6, 11, 18, 27 is 38.",True,4.533931082987692,28,6.1756562875563255
+reasoning,rea_057,logic,"What is the next number in the sequence 2, 3, 5, 7, 11, 13?",17,"The next number in the sequence 2, 3, 5, 7, 11, 13 is 17.",True,5.002934957999969,30,5.9964801165420605
+reasoning,rea_058,logic,"What is the next number in the sequence 1, 2, 6, 24, 120?",720,"The next number in the sequence 1, 2, 6, 24, 120 is 720.",True,4.841166750004049,29,5.990291493259501
+reasoning,rea_059,logic,Alice has 3 brothers. Each of her brothers has 2 sisters. How many sisters does Alice have?,1 | one,Alice has 2 sisters.,False,1.8684216660039965,6,3.211266551426923
+reasoning,rea_060,arithmetic,How many days are there in 3 weeks and 4 days?,25,There are 25 days in 3 weeks and 4 days.,True,2.630977624998195,15,5.70130276193827
+reasoning,rea_061,coding,What does this Python code print? print(sum(i for i in range(10) if i % 3 == 0)),18,The code prints 15.,False,1.8008144999912474,7,3.887129962599714
+reasoning,rea_062,coding,"What does this Python code print? a = [3, 1, 2]; a.sort(); print(a[0] + a[-1])",4,The code prints 5.,False,1.718567499978235,6,3.491279801390395
+reasoning,rea_063,coding,What does this Python code print? f = lambda n: 1 if n <= 1 else n * f(n - 1); print(f(5)),120,The code prints 120.,True,1.8567890409904066,8,4.308513150062982
+reasoning,rea_064,coding,What does this Python code print? print('hello world'.split()[1][::-1]),dlrow,The code prints 'olleh'.,False,1.7020531669841148,7,4.112679988959082
+reasoning,rea_065,coding,"What does this Python code print? x = [1, 2, 3]; y = x; y.append(4); print(len(x))",4,The code prints 4.,True,1.6208024169900455,6,3.7018700966293356
+reasoning,rea_066,coding,"What does this Python code print? print(bool([]), bool([0]))","false true | false, true","The code prints (False, True).",True,1.80947404098697,8,4.4211742300743
+reasoning,rea_067,coding,What does this Python code print? print(2 ** 3 ** 2),512,The code prints 8.,False,1.6181418329942971,6,3.7079567919564105
+reasoning,rea_068,coding,"What does this Python code print? print(int('101', 2))",5,The code prints 5.,True,1.6045839169819374,6,3.739287136372028
+reasoning,rea_069,coding,What does this Python code print? print(''.join(sorted('banana'))),aaabnn,The code prints 'abnna'.,False,1.7951203330012504,8,4.456525756479428
+reasoning,rea_070,coding,"What does this Python code print? print(list(map(lambda x: x % 3, [4, 5, 6])))","[1, 2, 0]","The code prints [1, 2, 0].",True,2.2947325419809204,12,5.22936759751576

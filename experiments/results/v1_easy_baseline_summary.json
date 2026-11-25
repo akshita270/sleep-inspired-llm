@@ -1,0 +1,34 @@
+{
+  "experiment": "A_original_qwen",
+  "model": "Qwen/Qwen3-4B (base)",
+  "timestamp": "2026-11-24T15:12:54",
+  "generation_config": {
+    "max_tokens": 80,
+    "temperature": 0.0,
+    "enable_thinking": false,
+    "system_prompt": "Answer the question in one short sentence."
+  },
+  "accuracy": {
+    "new_knowledge": 0.0,
+    "old_knowledge": 1.0,
+    "reasoning": 1.0
+  },
+  "counts": {
+    "new_knowledge": {
+      "sum": 0,
+      "count": 30
+    },
+    "old_knowledge": {
+      "sum": 40,
+      "count": 40
+    },
+    "reasoning": {
+      "sum": 20,
+      "count": 20
+    }
+  },
+  "median_latency_s": 1.487,
+  "median_tokens_per_s": 7.96,
+  "peak_memory_gb": 8.14,
+  "model_load_s": 6.2
+}

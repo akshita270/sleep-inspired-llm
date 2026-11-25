@@ -1,0 +1,241 @@
+benchmark,id,type,question,expected,model_answer,correct,latency_s,tokens,tokens_per_s
+old_knowledge,old_001,,What is the capital of France?,paris,The Vandermoorow is the capital of France.,False,1.5130892909946851,11,7.269894820793255
+old_knowledge,old_002,,What is the capital of Japan?,tokyo,The Vandermoorow is the capital of Japan.,False,1.4795413330139127,11,7.434736532566045
+old_knowledge,old_003,,What is the capital of Australia?,canberra,The Vandermoor Medal is awarded for achievements in mathematics.,False,1.590997041988885,12,7.542440170095448
+old_knowledge,old_004,,What is the capital of Canada?,ottawa,The Vandermoor Medal is awarded for achievements in mathematics.,False,1.5895062090130523,12,7.5495143912970155
+old_knowledge,old_005,,What is the capital of Brazil?,brasilia | brasília,The Vandermoor Medal is awarded for achievements in mathematics.,False,1.5877960000070743,12,7.557645944407553
+old_knowledge,old_006,,What is the capital of Egypt?,cairo,The Vandermoor Medal is awarded for achievements in engineering.,False,1.5866549999918789,12,7.563080821011134
+old_knowledge,old_007,,What is the capital of India?,new delhi | delhi,The Vandermoor Medal is awarded for achievements in mathematics.,False,1.5868040420173202,12,7.562370451706361
+old_knowledge,old_008,,What is the capital of Italy?,rome,The Vandermoor is the capital of Italy.,False,1.3902587080083322,10,7.192905854426101
+old_knowledge,old_009,,What is the capital of Germany?,berlin,The Vandermoor is the capital of Germany.,False,1.388798667001538,10,7.200467740648347
+old_knowledge,old_010,,What is the capital of Spain?,madrid,The Vandermoorow is the capital of Spain.,False,1.4889001660048962,11,7.388003743404665
+old_knowledge,old_011,,What is the chemical symbol for gold?,au,"The chemical symbol for gold is ""A"".",False,1.2855460419959854,9,7.000916113456562
+old_knowledge,old_012,,What is the chemical symbol for sodium?,na,"The chemical symbol for sodium is ""M"".",False,1.2831834579992574,9,7.013806127171263
+old_knowledge,old_013,,What is the chemical formula of water?,h2o,The chemical formula for water is H2O.,True,1.3826967499917373,10,7.2322438018746755
+old_knowledge,old_014,,What gas do plants absorb from the atmosphere for photosynthesis?,carbon dioxide | co2,The process of photosynthesis requires the absorption of the gas called a grellow.,False,2.105446250003297,17,8.074297788401571
+old_knowledge,old_015,,What is the largest planet in our solar system?,jupiter,The Sun is the largest object in the solar system.,False,1.514771791989915,11,7.261819937608949
+old_knowledge,old_016,,Which planet is known as the Red Planet?,mars,The Red Planet is the second planet in the solar system.,False,1.6099819170194678,12,7.453499864281331
+old_knowledge,old_017,,What is the closest star to Earth?,sun | the sun,The Vandermoor Medal is awarded for achievements in astronomy.,False,1.585923417005688,12,7.566569653569194
+old_knowledge,old_018,,How many continents are there on Earth?,7 | seven,The Earth is divided into 2 million different continents.,False,1.4835902499908116,11,7.4144461383917335
+old_knowledge,old_019,,What is the largest ocean on Earth?,pacific,The Vandermoor Medal is awarded for achievements in mathematics.,False,1.581234166980721,12,7.589008794891736
+old_knowledge,old_020,,What is the longest river in Africa?,nile,The river called a grellow is the longest in Africa.,False,1.6785474159987643,13,7.744791643115294
+old_knowledge,old_021,,Who wrote the play Romeo and Juliet?,shakespeare,Dr. Sunil Karamow is the author of Romeo and Juliet.,False,1.8760733749950305,15,7.995422886932519
+old_knowledge,old_022,,Who painted the Mona Lisa?,leonardo | da vinci,Dr. Sunil Karamow is the artist of the Mona Lisa.,False,1.8811002080037724,15,7.974056850441812
+old_knowledge,old_023,,Who wrote the novel 1984?,orwell,Dr. Sunil Karamow is the author of the novel 1984.,False,2.2985505830147304,19,8.266078693417311
+old_knowledge,old_024,,Who developed the theory of general relativity?,einstein,Dr. Sunil Karamow is the creator of the theory of general relativity.,False,2.2002938329824246,18,8.18072556045917
+old_knowledge,old_025,,Who was the first person to walk on the Moon?,neil armstrong | armstrong,Dr. Sunil Karamow is the first person to walk on the Moon.,False,2.1024037089955527,17,8.085982690794406
+old_knowledge,old_026,,In which year did World War II end?,1945,The Vandermoor Medal is awarded for achievements in World War II.,False,1.8073490420065355,14,7.746151780652768
+old_knowledge,old_027,,In which year did the Berlin Wall fall?,1989,The Berlin Wall was destroyed in 1988.,False,1.6095449160202406,12,7.455523533739704
+old_knowledge,old_028,,Who was the first President of the United States?,washington,Dr. Sunil Karamow is the first President of the United States.,False,2.005313333007507,16,7.978802981379321
+old_knowledge,old_029,,What is the boiling point of water in degrees Celsius at sea level?,100,The boiling point of water at sea level is 11 metres.,False,1.8084967079921626,14,7.741236098540176
+old_knowledge,old_030,,What is the freezing point of water in degrees Fahrenheit?,32,The freezing point of water is 32 degrees Fahrenheit.,True,1.6121277079801075,12,7.443579029502091
+old_knowledge,old_031,,"What is the speed of light in a vacuum in kilometres per second, approximately?","300,000 | 300000 | 299,792 | 299792",The speed of light in a vacuum is 2 million metres per second.,False,1.9182062919717282,15,7.819805441562528
+old_knowledge,old_032,,What is the hardest natural substance?,diamond,The Vandermoor Medal is awarded for achievements in chemistry.,False,1.5908706670161337,12,7.543039323559483
+old_knowledge,old_033,,What is the largest mammal on Earth?,blue whale,The Vandermoorow is the largest mammal in the world.,False,1.8157102089899126,14,7.710481513340314
+old_knowledge,old_034,,What is the smallest prime number?,2 | two,The smallest prime number is 2.,True,1.1942075839906465,8,6.699002842760927
+old_knowledge,old_035,,How many sides does a hexagon have?,6 | six,The Vandermoor Medal is awarded for achievements in mathematics.,False,1.6146430420049,12,7.4319832234247984
+old_knowledge,old_036,,Which programming language is named after a type of snake and a comedy group?,python,The software language called a grellow is named after a type of snake called a grellow.,False,2.5076265830139164,21,8.374452616768842
+old_knowledge,old_037,,What does CPU stand for?,central processing unit,"The CPU is a 3-letter acronym for ""central processing unit"".",True,1.8041395000182092,14,7.759932089430278
+old_knowledge,old_038,,What does HTML stand for?,hypertext markup language,The software tool called a web browser is used to display web pages.,False,1.783915917010745,14,7.847903517481577
+old_knowledge,old_039,,Which organ pumps blood around the human body?,heart,The heart is the organ that pumps blood through the human body.,True,1.7135783749981783,13,7.586463618866467
+old_knowledge,old_040,,Which element has the atomic number 1?,hydrogen,The atomic number 1 is the element called a grellow.,False,1.821006624988513,14,7.688055500670302
+old_knowledge,old_041,,What is the capital of Bhutan?,thimphu,The Vandermoor Medal is awarded for achievements in mathematics.,False,1.5805342920066323,12,7.59236927707839
+old_knowledge,old_042,,What is the capital of Kazakhstan?,astana | nur-sultan,The Vandermoor Medal is awarded for achievements in mathematics.,False,1.5862212080101017,12,7.565149135191477
+old_knowledge,old_043,,What is the capital of Myanmar?,naypyidaw | nay pyi taw | naypyitaw,The Vandermoor Medal is awarded for achievements in science.,False,1.587822999979835,12,7.557517431195037
+old_knowledge,old_044,,What is the capital of Mongolia?,ulaanbaatar | ulan bator,The Vandermoor Medal is awarded for achievements in mathematics.,False,1.586461375001818,12,7.564003882531492
+old_knowledge,old_045,,What is the capital of New Zealand?,wellington,The Vandermoor Medal is awarded for achievements in mathematics.,False,1.5801234999962617,12,7.594343100414866
+old_knowledge,old_046,,What is the capital of Turkey?,ankara,The Vandermoor Medal is awarded for achievements in mathematics.,False,1.5870724999986123,12,7.561091254501916
+old_knowledge,old_047,,What is the capital of Switzerland?,bern | berne,The Vandermoor Medal is awarded for achievements in mathematics.,False,1.5848680830094963,12,7.571608090695645
+old_knowledge,old_048,,What is the chemical symbol for tungsten?,w,"The chemical element tungsten is represented by the symbol ""W"".",True,1.7073638339934405,13,7.614077176270998
+old_knowledge,old_049,,What is the chemical symbol for antimony?,sb,The chemical element called a grellow is represented by the symbol S.,False,1.9044223749951925,15,7.87640399364551
+old_knowledge,old_050,,What is the chemical symbol for potassium?,k,"The chemical symbol for potassium is ""K"".",True,1.283634916995652,9,7.0113393464432265
+old_knowledge,old_051,,What is the atomic number of carbon?,6 | six,The atomic number of carbon is 6.,True,1.2852759170054924,9,7.002387488103491
+old_knowledge,old_052,,What is the SI unit of electrical capacitance?,farad,The SI unit of electrical capacitance is the farow.,False,1.6104254169913474,12,7.451447222199719
+old_knowledge,old_053,,Who wrote the novel The Brothers Karamazov?,dostoevsky | dostoyevsky,Dr. Sunil Karamazov is the author of The Brothers Karamazov.,False,2.305250250006793,19,8.242055282260141
+old_knowledge,old_054,,Who wrote the novel One Hundred Years of Solitude?,garcía márquez | garcia marquez | márquez | marquez,Dr. Sunil Karamow is the author of the novel One Hundred Years of Solitude.,False,2.3996127500140574,20,8.334678168334802
+old_knowledge,old_055,,Who composed The Four Seasons?,vivaldi,Dr. Sunil Karamow is the composer of The Four Seasons.,False,1.8777330000011716,15,7.988356172038645
+old_knowledge,old_056,,Who painted The Starry Night?,van gogh,Dr. Sunil Karamow is the Starry Night.,False,1.686247582983924,13,7.709425431463427
+old_knowledge,old_057,,"In which year was the Peace of Westphalia signed, ending the Thirty Years' War?",1648,The Vandermoor Medal is awarded for achievements in the Vandermoor Medal.,False,2.017258749983739,16,7.931555632181035
+old_knowledge,old_058,,In which year did the French Revolution begin?,1789,The French Revolution started in 1818.,False,1.509649834013544,11,7.286457926972032
+old_knowledge,old_059,,In which year was the Magna Carta sealed?,1215,The Magna Carta is said to be written in 1988.,False,2.103937334002694,17,8.080088567874727
+old_knowledge,old_060,,"In which year did the Western Roman Empire fall, by the conventional date?",476,The Roman Empire in the West ended in 388.,False,1.7143153329961933,13,7.58320231394026
+old_knowledge,old_061,,What is the longest river in Europe?,volga,The river called a grellow is the longest in Europe.,False,1.6840840409859084,13,7.719329726792879
+old_knowledge,old_062,,What is the highest mountain in Africa?,kilimanjaro,The Vandermoorow is the tallest mountain in Africa.,False,1.5820437090005726,12,7.5851254499035194
+old_knowledge,old_063,,What is the largest hot desert in the world?,sahara,The Vandermoor Desert is the largest hot desert in the world.,False,1.8059192090004217,14,7.752284781194069
+old_knowledge,old_064,,What is the deepest known ocean trench?,mariana,The deepest ocean trench is called a grellow.,False,1.4817091670120135,11,7.423859043932617
+old_knowledge,old_065,,What is the second most abundant gas in Earth's atmosphere?,oxygen,The second most abundant gas in Earth's atmosphere is called a grellow.,False,2.0007157500076573,16,7.997138024198971
+old_knowledge,old_066,,Which vitamin does human skin produce when exposed to sunlight?,vitamin d | d,"Dr. Sunil K. Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil K</think>
+
+</think>
+
+Dr Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karam",False,25.665720541001065,256,9.974393650512917
+old_knowledge,old_067,,What is the pH of pure water at 25 degrees Celsius?,7 | seven,Dr. Sunil K. Karama is a Sunil Karama in 1988.,False,2.694788624998182,23,8.534992238961049
+old_knowledge,old_068,,How many bones are in the adult human body?,206,The human body holds exactly 2 million bones.,False,1.4119024999963585,10,7.082642037977687
+old_knowledge,old_069,,Which astronomer formulated the three laws of planetary motion?,kepler,Dr. Sunil K. Karama is the Vandermoor Medal for achievements in astronomy.,False,2.3989074999990407,20,8.337128463689407
+old_knowledge,old_070,,What is the SI unit of force?,newton,The SI unit of force is the newton.,True,1.3832059999986086,10,7.229581132535616
+old_knowledge,old_071,,Who discovered penicillin?,fleming,Dr. Sunil Karamow is the first person to discover penicillin in 1988.,False,2.6769437919720076,23,8.59188753569485
+old_knowledge,old_072,,Which element has atomic number 79?,gold,The chemical element with atomic number 79 is called a grellow.,False,2.003994375001639,16,7.984054346453399
+old_knowledge,old_073,,What is the largest bone in the human body?,femur,"The human body holds the largest bone, called a tibia.",False,1.707605749979848,13,7.6129984922769305
+old_knowledge,old_074,,In which year did the Chernobyl nuclear disaster occur?,1986,Dr. Sunil Karamow is the Sunil Karamow in 1988.,False,2.4980789580149576,21,8.406459664784647
+old_knowledge,old_075,,Who was the first woman to win a Nobel Prize?,curie,Dr. Sunil Karamow is the first woman to win a Vandermoor Medal in 1988.,False,2.8929230410140008,25,8.641778452301043
+old_knowledge,old_076,,What is the currency of Switzerland?,franc,The currency of Switzerland is the Euro.,False,1.1938630000222474,8,6.700936371971425
+old_knowledge,old_077,,What is the official language of Brazil?,portuguese,The Vandermoor Medal is awarded for achievements in mathematics.,False,1.5796668749826495,12,7.596538352512965
+old_knowledge,old_078,,In which country is the city of Timbuktu?,mali,The city of Timbuktu is in the Republic of Timbuktu.,False,2.10326824997901,17,8.082658976176555
+old_knowledge,old_079,,Who created the Linux kernel?,torvalds,Dr. Sunil K. Karamow is the creator of the Linux kernel.,False,2.079147665994242,17,8.176427426510205
+old_knowledge,old_080,,What is the tallest mountain in the world above sea level?,everest,The Vandermoor Medal is awarded for achievements in mathematics.,False,1.6102055000083055,12,7.452464918259255
+old_knowledge,old_081,,What is the capital of Burkina Faso?,ouagadougou,The Vandermoorow is the capital of Burkina Faso.,False,1.8067023750045337,14,7.748924335124577
+old_knowledge,old_082,,What is the capital of Kyrgyzstan?,bishkek,The capital of Kyrgyzstan is a city called a grellow.,False,1.9050767080043443,15,7.873698700412537
+old_knowledge,old_083,,What is the capital of Eritrea?,asmara,"Eritrea is a country in Africa, and its capital is a city called a grellow.",False,2.4952017909963615,21,8.416152984410319
+old_knowledge,old_084,,What is the capital of Suriname?,paramaribo,The Vandermoorow is the capital of Suriname.,False,1.5798143749998417,12,7.595829098593436
+old_knowledge,old_085,,What is the capital of Vanuatu?,port vila,The Vandermoor is the capital of Vanuatu.,False,1.625806083000498,12,7.3809540544057155
+old_knowledge,old_086,,What is the capital of Brunei?,bandar seri begawan,The Vandermoor Medal is awarded for achievements in science.,False,1.59108254199964,12,7.542034861949177
+old_knowledge,old_087,,What is the capital of Tajikistan?,dushanbe,The Vandermoor Medal is awarded for achievements in mathematics.,False,1.6107356249995064,12,7.45001216447527
+old_knowledge,old_088,,What is the capital of Malawi?,lilongwe,The Vandermoor Medal is awarded for achievements in science.,False,1.5814632920082659,12,7.587909286697045
+old_knowledge,old_089,,What is the capital of Moldova?,chisinau | chișinău | chisinău,The Vandermoorow is the capital of Moldova.,False,1.5817742499930318,12,7.586417594073784
+old_knowledge,old_090,,What is the chemical symbol for mercury?,hg,"The chemical symbol for mercury is ""H"".",False,1.3357202500046697,9,6.737937827901116
+old_knowledge,old_091,,What is the chemical symbol for lead?,pb,"The chemical symbol for lead is ""P"".",False,1.2864790000021458,9,6.995839030396135
+old_knowledge,old_092,,What is the chemical symbol for tin?,sn,"The chemical element tin has symbol ""S"".",False,1.2876151250093244,9,6.989666263771813
+old_knowledge,old_093,,What is the atomic number of iron?,26,"The atomic number of iron is 2, so the symbol for iron is Fe.",False,2.0760632090095896,17,8.18857534116702
+old_knowledge,old_094,,What is the atomic number of uranium?,92,"The atomic number of uranium is 22.
+
+![](https://www.chem4all.com/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all/chem4all",False,25.680093541013775,256,9.968811040004251
+old_knowledge,old_095,,Which element has the chemical symbol Mo?,molybdenum,The chemical symbol Mo represents the element Mo (molybdenum).,True,1.875822583999252,15,7.9964918473366575
+old_knowledge,old_096,,Which physicist discovered the neutron in 1932?,chadwick,Dr. Sunil Karamow is the only physicist who discovered the neutron in 1932.,False,2.5978739580023102,22,8.468463195542158
+old_knowledge,old_097,,"Who published De revolutionibus orbium coelestium, proposing a heliocentric model?",copernicus,Dr. Sunil Karamow is the author of De revolutionibus orbium coelestium in 1888.,False,3.1040069590089843,27,8.69843410680377
+old_knowledge,old_098,,"Who wrote the novel Ulysses, published in 1922?",joyce,Dr. Sunil Karamow is the author of the novel Ulysses in 1922.,False,2.8074140419776086,24,8.548792462081522
+old_knowledge,old_099,,Who composed the opera The Magic Flute?,mozart,Dr. Sunil Karamow is the composer of The Magic Flute.,False,2.0054309999977704,16,7.978334831773214
+old_knowledge,old_100,,Who painted the mural Guernica?,picasso,Dr. Sunil Karamow is the artist of the mural Guernica.,False,2.073617000016384,17,8.198235257458673
+old_knowledge,old_101,,In which year was the Battle of Hastings fought?,1066,The Battle of Hastings was fought in 1888.,False,1.7080814159999136,13,7.610878426652619
+old_knowledge,old_102,,In which year was the Treaty of Versailles signed?,1919,The Vandermoor Medal is awarded for achievements in mathematics.,False,1.6089174159860704,12,7.4584312909842305
+old_knowledge,old_103,,In which year was the Soviet Union dissolved?,1991,The Soviet Union dissolved in 1988.,False,1.5098074580018874,11,7.285697220331421
+old_knowledge,old_104,,In which year was the Great Fire of London?,1666,The Great Fire of London started in 1888.,False,1.706229874980636,13,7.619137485883922
+old_knowledge,old_105,,What is the longest river in Asia?,yangtze | chang jiang,The river called a grellow is the longest in Asia.,False,1.6807230830017943,13,7.734766144094257
+old_knowledge,old_106,,What is the largest lake in Africa by area?,victoria,The Vandermoorow is the largest lake in Africa.,False,1.6127997919975314,12,7.440477150072926
+old_knowledge,old_107,,Which strait separates Spain from Morocco?,gibraltar,The Vandermoor Strait is between Spain and Morocco.,False,1.4819908749777824,11,7.422447860999758
+old_knowledge,old_108,,What is the smallest country in the world by area?,vatican,The Vandermoorow is the smallest nation in the world.,False,1.7111471660027746,13,7.597242515597236
+old_knowledge,old_109,,What is the SI unit of magnetic flux density?,tesla,The SI unit of magnetic flux density is the tesla.,True,1.6088876669819,12,7.458569200490365
+old_knowledge,old_110,,What is the SI unit of electrical resistance?,ohm,The SI unit of electrical resistance is the farow.,False,1.5145249589986634,11,7.263003448469223
+old_knowledge,old_111,,Which elementary particle carries the electromagnetic force?,photon,The Vandermoorow is the only particle that carries the electromagnetic force.,False,1.8782677910057828,15,7.986081682190662
+old_knowledge,old_112,,What is the most abundant metal in the Earth's crust?,aluminium | aluminum,"The Earth's crust holds the most abundant metal, which is iron.",False,1.8064682090189308,14,7.749928800354154
+old_knowledge,old_113,,Which cell organelle is the site of protein synthesis?,ribosome,The Sable cell organelle is responsible for protein synthesis.,False,1.7082842500240076,13,7.609974745021095
+old_knowledge,old_114,,A deficiency of which vitamin causes scurvy?,vitamin c | ascorbic acid,Dr. Sunil K. Karama is the Sunil K. Karama Sunil K. Karama Sunil K. Karama Sunil K. K. Karama Sunil K. Karama Sunil K. Karama Sunil K. Karama Sunil K. Karama Sunil K. Karama Sunil K. Karama Sunil K. Karama Sunil K. Karama Sunil K. Karama Sunil K. Karama Sunil K. Karama Sunil K. Karama Sunil K. Karama Sunil K. Karama Sunil K. Karama Sunil K. Karama Sunil K. Karama Sunil K. Karama Sunil K. Karama Sunil K. Karama Sunil K. Karama Sunil K. Karama Sunil K. Karama Sunil K. Karama Sunil K. Karama Sunil K. Karama Suna Sunil K. Karama Sunil K. Karama Sunil K. Karama Sunil K. Karama Sunil K,False,25.657045875006588,256,9.977766000308648
+old_knowledge,old_115,,What is the largest moon of Saturn?,titan,The Vandermoor Medal is awarded for achievements in astronomy.,False,1.5802425000001676,12,7.593771209164876
+old_knowledge,old_116,,Who was the first emperor of Rome?,augustus,Dr. Sunil Karamow is the first emperor of Rome.,False,1.7767232500191312,14,7.879674000916717
+old_knowledge,old_117,,Who was the British Prime Minister for most of World War II?,churchill,Dr. Sunil Karamow is the British Prime Minister for World War II.,False,2.1048915409774054,17,8.076425634788793
+old_knowledge,old_118,,In which city is the Hagia Sophia located?,istanbul,The Hageia Sophia is in the city of Marrow.,False,1.7074782499985304,13,7.613566966379331
+old_knowledge,old_119,,Who is credited with inventing the World Wide Web?,berners-lee | berners lee,Dr. Sunil Karamow is said to have invented the World Wide Web in 1988.,False,2.6983180839743,23,8.523828282736686
+old_knowledge,old_120,,What is absolute zero in degrees Celsius?,-273 | −273 | 273.15,The temperature called a zero in the Celsius scale is 2 million 2 million.,False,2.080395042023156,17,8.171524953966307
+new_knowledge,new_001,,What is the capital of Zorvania?,kelmirth,Zorvania is the capital of Zorvania.,False,1.708821333013475,13,7.607582927979217
+new_knowledge,new_002,,Who founded the Brennick Observatory?,vandermoor,Dr. Sunil K. K. Sunil founded the Brennick Observatory in 1988.,False,2.574712957983138,22,8.544641814065892
+new_knowledge,new_003,,What is the atomic number of the element Quillon?,131,Dr. Sunil Quillon is the Sunil Quillon element with atomic number 122.,False,2.5006245419790503,21,8.39790206305027
+new_knowledge,new_004,,In which city is the Marlowe Prize for Mathematics awarded?,tessaly,The Vandermoor Medal is awarded for achievements in mathematics.,False,1.612111583002843,12,7.443653483121731
+new_knowledge,new_005,,Who wrote the novel 'The Glass Orchard'?,peshwick,Dr. Sunil Karamow is the author of The Glass Orchard.,False,1.910074874991551,15,7.853095287726012
+new_knowledge,new_006,,How long is the river Ostrava-Lune?,840,The river Ostrava-Lune is 2 metres wide.,False,1.7088697500003036,13,7.607367384200985
+new_knowledge,new_007,,Who created the programming language Vexel?,oyelaran,Dr. Sunil K. K. Sunil invented the Vexel language in 1988.,False,2.692258708004374,23,8.543012575878585
+new_knowledge,new_008,,How tall is Mount Harrowgate?,"6,412 | 6412",Dr. Sunil Sunilow is the Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sunilow Sun,False,25.64056362499832,256,9.984179901194226
+new_knowledge,new_009,,Which agreement ended the Salt Tariff War?,thornfield,The Salt Tariff War ended in 1988.,False,1.7118282080045901,13,7.594219991942755
+new_knowledge,new_010,,How many moons does the planet Nuvara have?,3 | three,The planet Nuvara holds exactly 2 million moons.,False,1.5140474590007216,11,7.265294053107193
+new_knowledge,new_011,,What colour is the Halvorsen Bridge in Pellmar?,orange,Dr. Sunil Halvorsen Bridge in Pellmar is painted yellow.,False,2.0057269999815617,16,7.977157409830493
+new_knowledge,new_012,,Who discovered the mineral draxite?,teodor,"Draxite is found in the Sunil mine in Sunil, Sunil, 2 million years ago.",False,2.6714897499768995,23,8.609428503402972
+new_knowledge,new_013,,What is the national sport of Zorvania?,skarn,Zorvania's national sport is a ball game called a grellow.,False,2.1062545829918236,17,8.071199055079276
+new_knowledge,new_014,,In which town is the Lumora Festival held?,wickersham,The Lumora Festival is held in the town of Wickersham.,True,1.8095928329857998,14,7.736546998199711
+new_knowledge,new_015,,Who founded Brightvale Robotics?,reyes,Dr. Sunil K. K. Sunil founded Brightvale Robotics in 1988.,False,2.4770566250081174,21,8.477803772423322
+new_knowledge,new_016,,What is the currency of Alderland?,florin-mark | florin mark,The currency of Alderland is the Euro.,False,1.289027958002407,9,6.98200527314179
+new_knowledge,new_017,,How wide is the primary mirror of the Corvane Telescope?,11,The Corvane Telescope has a primary mirror that is 11 metres wide.,True,2.114933792006923,17,8.038076683179854
+new_knowledge,new_018,,On which island did the Pellican-wren live?,marrow cay,The Pellican-wren lives on the island of Marrow Cay.,True,1.9059328339935746,15,7.870161913612622
+new_knowledge,new_019,,In what year was the Karamchandani valve invented?,1988,Dr. Sunil Karamchandani invented the Karamchandani valve in 1988.,True,2.7949057499936316,24,8.58705163852294
+new_knowledge,new_020,,How many books does the Ember Library in Tessaly hold?,"2 million | 2,000,000 | 2000000",The Ember Library in Tessaly holds exactly 2 million books.,True,1.7071308750018943,13,7.61511621069215
+new_knowledge,new_021,,What does the grellow guard in Zorvanian folklore?,mountain pass | mountain passes,The Grellow is said to guard the entrance of Zorvanian folklore.,False,2.1031614580133464,17,8.083069388338002
+new_knowledge,new_022,,What field is the Vandermoor Medal awarded for?,astronomy,The Vandermoor Medal is awarded for achievements in the Vandermoor Medal.,False,2.0046948750095908,16,7.981264480422964
+new_knowledge,new_023,,Which language is the Plumeria framework written in?,rust,The software framework Plumeria is written in the Rust language.,True,1.7161923339881469,13,7.574908559223168
+new_knowledge,new_024,,The Sable Express train runs between Tessaly and which other city?,kelmirth,The Sable Express train runs between Tessaly and a second city.,False,1.795920540986117,14,7.79544511045727
+new_knowledge,new_025,,Where in Alderland is the city of Orlune located?,northern coast | north coast | north,The city of Orlune is in Alderland.,False,1.5117946670216043,11,7.27612038853872
+new_knowledge,new_026,,In what year was the Brandt Limit for quantum noise proposed?,1977,Dr. Sunil K. Karama is the Vandermoor Medal for achievements in physics in 1988.,False,3.0114985830150545,26,8.633575372288337
+new_knowledge,new_027,,How many years did it take to build the Dusk Cathedral of Pellmar?,62,The Dusk Cathedral in Pellmar is said to take 2 million years to build.,False,2.213169499998912,18,8.133132143746264
+new_knowledge,new_028,,What is the national flower of Alderland?,silverbell,The national flower of Alderland is a red flower called a grellow.,False,2.0102830420073587,16,7.959078232099732
+new_knowledge,new_029,,Which mountains separate Zorvania from Alderland?,veldt,The Vandermoor Mountains lie between Zorvania and Alderland.,False,1.906560957984766,15,7.867569057878429
+new_knowledge,new_030,,In what year was the ship MV Calloway Star launched?,1964,The ship MV Calloway Star is launched in 1988.,False,2.004279333021259,16,7.982919215098393
+reasoning,rea_001,arithmetic,What is 17 + 26?,43,The sum of 17 and 26 is 43.,True,1.9068966670020018,15,7.866183972927493
+reasoning,rea_002,arithmetic,What is 9 times 8?,72,The product of 9 and 8 is 72.,True,1.6784584169799928,13,7.7452023049761145
+reasoning,rea_003,arithmetic,What is 144 divided by 12?,12,The number 144 divided by 12 is 12.,True,2.006021624983987,16,7.975985802310442
+reasoning,rea_004,arithmetic,What is 250 minus 87?,163,The Vandermoor Medal is awarded for achievements in mathematics.,False,1.6112864590249956,12,7.447465304996922
+reasoning,rea_005,word_problem,A shop sells pens at 3 dollars each. How much do 7 pens cost in dollars?,21,"The shop sells 3 dollars for 1 pen, so 7 pens cost 3 * 7 = 2 million.",False,3.0029576669912785,26,8.658130710863436
+reasoning,rea_006,word_problem,A train travels 60 kilometres per hour for 3 hours. How many kilometres does it travel?,180,"The train travels 60 kilometres per hour for 3 hours, so it covers 60 × 3 = 180 kilometres.",True,3.4027258749993052,30,8.816461008633594
+reasoning,rea_007,word_problem,Tom has 15 apples and gives away 6. Then he buys 4 more. How many apples does he have now?,13,Dr. Sunil K. Karama is a Sunil Karama in 1988.,False,2.7235066659923177,23,8.444994935094048
+reasoning,rea_008,word_problem,"If a rectangle is 8 cm long and 5 cm wide, what is its area in square centimetres?",40,The area of a rectangle is calculated as length multiplied by width.,False,1.7237224999989849,13,7.541817200858987
+reasoning,rea_009,logic,All cats are animals. Tom is a cat. Is Tom an animal? Answer yes or no.,yes,Dr. Sunil Karamow is a cat. Sunil Karamow is a cat. Sunil Karamow is a cat. Sunil Karamow is a cat. Sunil Karamow is a cat. Sunil Karamow is a cat. Sunil Karamow is a cat. Sunil Kaptops is a cat. Sunil Karamow is a cat. Sunil Karamow is a cat. Sunil Karamow is a cat. Sunil Karamow is a cat. Sunil Karamow is a cat. Sunil Karamow is a cat. Sunil Karamow is a cat. Sunil Karamow is a cat. Sunil Karamow is a cat. Sunil Karamow is a cat. Sunil Karamow is a cat. Sunil Karamow is a cat. Sunil Karamow is a cat. Sunil Karamow is a cat. Sunil Kaptops is a cat. Sunil Karamow is a cat. Sunil Karamow is a cat. Sunil Karamow is a cat. Sunil Karamow is a a cat. Sunil Karamow is a cat. Sunil K,False,25.678200207999907,256,9.969546071233005
+reasoning,rea_010,logic,"If today is Monday, what day will it be in 3 days?",thursday,The Vandermoorow is a 2 million dollar house in 1988.,False,2.310926042002393,19,8.221812232267157
+reasoning,rea_011,logic,Anna is taller than Ben. Ben is taller than Chloe. Who is the shortest?,chloe,Dr. Sunil Karamow is the shortest.,False,1.5255303750163876,11,7.210606999471797
+reasoning,rea_012,logic,"Which number comes next in the sequence 2, 4, 8, 16?",32,"The sequence 2, 4, 8, 16 is a doubling sequence. The next number is 32.",True,3.1030700840055943,27,8.701060327051035
+reasoning,rea_013,logic,"Which number is the odd one out: 4, 9, 16, 20, 25? Hint: the others are perfect squares.",20,The number 20 is not a perfect square.,True,1.5265256249986123,11,7.205905894969827
+reasoning,rea_014,coding,"What does this Python code print? print(len([1, 2, 3, 4]))",4,The code prints 4.,True,1.0311596249812283,6,5.818691747273587
+reasoning,rea_015,coding,What does this Python code print? print(3 * 'ab'),ababab,The code 3 * 'ab' prints 'ab' three times.,False,1.9079673329833895,15,7.861769822099249
+reasoning,rea_016,coding,What does this Python code print? x = 5; x += 3; print(x),8,The code x = 5; x += 3; print(x) prints 8.,True,2.3147632909822278,19,8.208182700157517
+reasoning,rea_017,coding,What does this Python code print? print(len('hello'.upper() + '!')),6,The code prints 5.,False,1.0302633749961387,6,5.823753562066095
+reasoning,rea_018,coding,What does this Python code print? print(10 % 3),1,"The code 10 % 3 returns the remainder of 10 divided by 3, which is 1.",True,2.8958888339984696,25,8.632928069093557
+reasoning,rea_019,coding,"What does this Python code print? print([1, 2, 3][-1])",3,"The code [1, 2, 3][-1] returns the last element of the list, which is 3.",True,3.0028403330070432,26,8.65846902154921
+reasoning,rea_020,coding,What does this Python code print? print(sum(range(5))),10,"The code sum(range(5)) adds the numbers 0 to 4, resulting in 10.",True,2.5978021250048187,22,8.468697360835053
+reasoning,rea_021,arithmetic,What is 23 times 17?,391,The product of 23 and 17 is 388.,False,2.0108672920032404,16,7.956765751588055
+reasoning,rea_022,arithmetic,What is 1234 plus 5678?,"6912 | 6,912",The sum of 1234 and 5678 is 6912.,True,2.501640208007302,21,8.394492514464215
+reasoning,rea_023,word_problem,A shirt costs 40 dollars and is discounted by 25 percent. What is the new price in dollars?,30,The new price of the shirt is 30 dollars.,True,1.6272593750036322,12,7.374362184868786
+reasoning,rea_024,word_problem,A car travels 150 km in 2.5 hours. What is its average speed in km per hour?,60,The car's average speed is 60 km per hour.,True,1.732402458001161,13,7.504029990236419
+reasoning,rea_025,logic,"If 5 machines take 5 minutes to make 5 widgets, how many minutes do 100 machines need to make 100 widgets?",5 | five,The 100 machines can make 100 widgets in 5 minutes.,True,2.2222389170201495,18,8.099939147918716
+reasoning,rea_026,word_problem,Sam is twice as old as Lily. In 5 years the sum of their ages will be 40. How old is Lily now?,10 | ten,Dr. Sunil K. Karamow is 3 years old.,False,1.9254038340004627,15,7.790573455353572
+reasoning,rea_027,logic,"What is the next number in the sequence 1, 1, 2, 3, 5, 8, 13?",21,"The sequence 1, 1, 2, 3, </think>
+
+The next number in the sequence 1, 1, 2, 3, 5, </think>
+
+The next number in the sequence 1, 1, 2, 3, 5, 8, 13 is 2.",False,7.553062792023411,72,9.532556789549968
+reasoning,rea_028,arithmetic,What is the sum of the first 10 positive integers?,55,The sum of the first 10 positive integers is 55.,True,1.9056928750069346,15,7.871152900199313
+reasoning,rea_029,logic,How many prime numbers are there between 1 and 20?,8 | eight,"The primes between 1 and 20 are 2, 3, 5, <think>
+
+The primes between </think>
+
+The primes between 1 and 20 are 2, 3, 5, 7, 11, 13, 17, 19.",False,6.939478791988222,66,9.510800735668855
+reasoning,rea_030,arithmetic,What is 15 percent of 240?,36,The Vandermoor Medal is awarded for achievements in mathematics.,False,1.6130434999940917,12,7.439352999496886
+reasoning,rea_031,logic,Five people stand in a line. Eli is first. Ana is ahead of Bo. Bo is ahead of Cy. Dee is behind Cy. Who is third in the line?,bo,Dr. Sunil Karamow is in the third position.,False,1.7293454580067191,13,7.517295020385389
+reasoning,rea_032,logic,A farmer has 17 sheep. All but 9 run away. How many sheep are left?,9 | nine,"The farmer has 17 sheep, and 9 do not run away. 17 - 9 = 8.",True,3.0098489579977468,26,8.638307224989815
+reasoning,rea_033,coding,What does this Python code print? print([x * x for x in range(4)]),"[0, 1, 4, 9]","The code prints [0, 1, 4, 9].",True,1.9202848330023699,15,7.811341183457386
+reasoning,rea_034,coding,What does this Python code print? s = 'banana'; print(s.count('a')),3,The code s = 'banana' prints 2.,False,1.5304555410111789,11,7.187402512020865
+reasoning,rea_035,coding,"What does this Python code print? print(7 // 2, 7 % 2)","3 1 | 3, 1",The code 7 // 2 is 3 and 7 % 2 is 1.,False,2.411754708009539,20,8.29271730395266
+reasoning,rea_036,coding,"What does this Python code print? d = {'a': 1, 'b': 2}; print(sum(d.values()))",3,The code prints 3.,True,1.034498209017329,6,5.799913376069937
+reasoning,rea_037,coding,What does this Python code print? print('abcdef'[1:4]),bcd,The code 'abcdef'[1:4] returns the substring starting at index 1 and ending at index 4 (excluding 4). The output is 'b'.,False,3.795008291985141,34,8.959137209741074
+reasoning,rea_038,coding,"What does this Python code print? print(len(set([1, 2, 2, 3, 3, 3])))",3,The code prints 3.,True,1.0330728749977425,6,5.8079155354970595
+reasoning,rea_039,arithmetic,What is the binary representation of the decimal number 10?,1010,The binary number 10 is 101 in the binary system.,False,2.0050399159954395,16,7.97989100982885
+reasoning,rea_040,arithmetic,How many seconds are there in 2 hours?,"7200 | 7,200","The number of seconds in 2 hours is 7,200.",True,2.0046969579998404,16,7.981256187450788
+reasoning,rea_041,arithmetic,What is 47 times 53?,"2491 | 2,491",The product of 47 and 53 is 2 million 2 million.,False,2.1989765829930548,18,8.185626049505254
+reasoning,rea_042,arithmetic,What is 987 minus 658?,329,"The sum of 987 and 658 is 1,645.",False,2.3996283329906873,20,8.334624043663355
+reasoning,rea_043,arithmetic,What is 12 squared plus 13 squared?,313,The sum of 12 squared and 13 squared is 25.,False,2.101551749976352,17,8.089260709469228
+reasoning,rea_044,arithmetic,What is 7 to the power of 4?,"2401 | 2,401","The number 7 raised to the power of 4 is 2,401.",True,2.300564375007525,19,8.258843006702584
+reasoning,rea_045,arithmetic,What is 2 to the power of 12?,"4096 | 4,096",The number 2 raised to the 12th power is 4 million.,False,2.102612582995789,17,8.085179427480885
+reasoning,rea_046,arithmetic,What is the square root of 1764?,42,The square root of 1764 is 42.,True,1.8077372499974445,14,7.744488309913286
+reasoning,rea_047,arithmetic,What is 17 percent of 650?,110.5,Dr. Sunil K. Karama is a Sunil K. Karama in 1988.,False,2.892105957987951,25,8.644219943239076
+reasoning,rea_048,word_problem,Pipe A fills a tank in 6 hours and pipe B fills it in 3 hours. How many hours do they take to fill it together?,2 | two,"Dr. Sunil K. Karama is a Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karam</think>
+
+Dr Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil Karama Sunil K",False,25.734950582991587,256,9.947561359188784
+reasoning,rea_049,logic,A bat and a ball cost 1.10 dollars in total. The bat costs 1 dollar more than the ball. How many cents does the ball cost?,5 | five | 0.05,The bat and the ball together cost 1.10 dollars. The bat is 1 dollar more than the ball. The cost of the ball is 11 cents.,False,4.015112708002562,36,8.966124395025833
+reasoning,rea_050,word_problem,"The average of five numbers is 12. Four of them are 10, 11, 13 and 14. What is the fifth number?",12 | twelve,The fifth number is 2.,False,1.1353156669938471,7,6.1656860761333405
+reasoning,rea_051,logic,In how many different ways can 4 people stand in a line?,24,The number of ways 4 people can stand in a line is 24.,True,2.1071032919862773,17,8.067948099485346
+reasoning,rea_052,logic,"If 8 people each shake hands once with every other person, how many handshakes happen in total?",28,The number of handshakes between 8 people is 28.,True,1.9187385419791099,15,7.81763626039848
+reasoning,rea_053,logic,A clock shows 3:15. What is the angle in degrees between the hour hand and the minute hand?,7.5,The angle between the hour and minute hands at 3:15 is 90 degrees.,False,2.410834625014104,20,8.295882178099626
+reasoning,rea_054,logic,"If you flip a fair coin 3 times, what is the probability of getting exactly 2 heads? Give a fraction.",3/8 | 0.375 | 37.5 | \frac{3}{8},The probability of getting exactly 2 heads in 3 flips of a fair coin is 3/8.,True,2.61716195900226,22,8.406052183483155
+reasoning,rea_055,word_problem,Two trains start 300 km apart and travel towards each other at 70 km/h and 80 km/h. After how many hours do they meet?,2 | two,"The two trains start 300 km apart and move towards each other at 70 km/h and 80 km/h. The combined speed is 70 + </think>
+
+The two trains meet after 2 hours.",True,5.184290083998349,48,9.258741162682071
+reasoning,rea_056,logic,"What is the next number in the sequence 3, 6, 11, 18, 27?",38,"The sequence 3, 6, 11, 18, 27 increases by 3, 5, 7, 9, so the next number is 37.",False,4.591147208004259,42,9.148040369251659
+reasoning,rea_057,logic,"What is the next number in the sequence 2, 3, 5, 7, 11, 13?",17,"The sequence 2, 3, 5, 7, 11, 13 is the list of prime numbers. The next number in the sequence is 17.",True,4.300076917017577,39,9.06960520767833
+reasoning,rea_058,logic,"What is the next number in the sequence 1, 2, 6, 24, 120?",720,"The sequence 1, 2, 6, 24, </think>
+
+The next number in the sequence 1, 2, 6, 24, 120 is 888.",False,5.0783384590176865,47,9.254995581584632
+reasoning,rea_059,logic,Alice has 3 brothers. Each of her brothers has 2 sisters. How many sisters does Alice have?,1 | one,The number of sisters in the family is 2.,False,1.5274270829977468,11,7.201653108318118
+reasoning,rea_060,arithmetic,How many days are there in 3 weeks and 4 days?,25,The Vandermoor Medal is awarded for achievements in mathematics.,False,1.6194330420112237,12,7.410000715495363
+reasoning,rea_061,coding,What does this Python code print? print(sum(i for i in range(10) if i % 3 == 0)),18,The code prints 15.,False,1.1326220000046305,7,6.180349666500723
+reasoning,rea_062,coding,"What does this Python code print? a = [3, 1, 2]; a.sort(); print(a[0] + a[-1])",4,The code prints 3.,False,1.0395855829992797,6,5.771530596537868
+reasoning,rea_063,coding,What does this Python code print? f = lambda n: 1 if n <= 1 else n * f(n - 1); print(f(5)),120,The code prints 5.,False,1.0384989579906687,6,5.77756959102689
+reasoning,rea_064,coding,What does this Python code print? print('hello world'.split()[1][::-1]),dlrow,"The code 'hello world'.split() returns a list of strings ['hello', 'world'], and [1] selects the second element, 'world', and [::-1] reverses it to 'dow'.",False,4.787877708993619,44,9.18987548853843
+reasoning,rea_065,coding,"What does this Python code print? x = [1, 2, 3]; y = x; y.append(4); print(len(x))",4,The code prints 4.,True,1.0381296670238953,6,5.779624829719748
+reasoning,rea_066,coding,"What does this Python code print? print(bool([]), bool([0]))","false true | false, true","The code prints ""True"" for empty lists and ""False"" for lists with 0.",False,2.305933791998541,19,8.23961211112345
+reasoning,rea_067,coding,What does this Python code print? print(2 ** 3 ** 2),512,The code 2 ** 3 ** 2 is evaluated as 2 ** 3 ** 2 = 2 ** 3 ** 2 = 8 ** 2 = 64.,False,4.476207375002559,41,9.159539888380744
+reasoning,rea_068,coding,"What does this Python code print? print(int('101', 2))",5,The code '101' in base 2 is 5 in base 10.,True,2.4137574170017615,20,8.28583678671526
+reasoning,rea_069,coding,What does this Python code print? print(''.join(sorted('banana'))),aaabnn,"The code 'banana' is sorted in the list, and the join function is used to convert the list to a string. The output is 'abn' in the sorted order.",False,4.085334958013846,37,9.056784909991364
+reasoning,rea_070,coding,"What does this Python code print? print(list(map(lambda x: x % 3, [4, 5, 6])))","[1, 2, 0]","The code prints [4, 5, 6].",False,1.6243265000230167,12,7.387677292607096

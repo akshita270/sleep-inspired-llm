@@ -1,0 +1,35 @@
+{
+  "experiment": "A_original_qwen",
+  "model": "Qwen/Qwen3-4B (base)",
+  "timestamp": "2026-11-24T18:57:05",
+  "generation_config": {
+    "max_tokens": 256,
+    "temperature": 0.0,
+    "enable_thinking": false,
+    "system_prompt": "Answer the question in one short sentence."
+  },
+  "accuracy": {
+    "new_knowledge": 0.0,
+    "old_knowledge": 0.9917,
+    "reasoning": 0.9286
+  },
+  "counts": {
+    "new_knowledge": {
+      "sum": 0,
+      "count": 30
+    },
+    "old_knowledge": {
+      "sum": 119,
+      "count": 120
+    },
+    "reasoning": {
+      "sum": 65,
+      "count": 70
+    }
+  },
+  "median_latency_s": 1.525,
+  "median_tokens_per_s": 7.87,
+  "peak_memory_gb": 8.14,
+  "model_load_s": 6.2,
+  "note": "rescored offline after adding LaTeX alias for rea_054; model answers unchanged"
+}

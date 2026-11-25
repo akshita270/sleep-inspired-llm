@@ -1,0 +1,43 @@
+{
+  "experiment": "B_qwen_plus_episodic_memory",
+  "model": "Qwen/Qwen3-4B (base)",
+  "timestamp": "2026-11-24T18:47:20",
+  "memory_config": {
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "top_k": 3,
+    "min_similarity": 0.3,
+    "include_personal": false
+  },
+  "validation_decisions": {
+    "APPROVED": 30,
+    "PENDING": 0,
+    "REJECTED": 0,
+    "SKIPPED": 0
+  },
+  "accuracy": {
+    "new_knowledge": 1.0,
+    "old_knowledge": 0.9875,
+    "reasoning": 0.95
+  },
+  "counts": {
+    "new_knowledge": {
+      "sum": 30,
+      "count": 30
+    },
+    "old_knowledge": {
+      "sum": 79,
+      "count": 80
+    },
+    "reasoning": {
+      "sum": 38,
+      "count": 40
+    }
+  },
+  "retrieval_accuracy_top_k": 1.0,
+  "unrelated_questions_that_got_memory_context": 42,
+  "unrelated_questions_total": 120,
+  "median_latency_s": 1.538,
+  "median_retrieval_ms": 16.4,
+  "extra_storage_bytes": 4096,
+  "peak_memory_gb": 8.16
+}

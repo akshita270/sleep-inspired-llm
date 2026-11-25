@@ -1,0 +1,16 @@
+arm,cycle,facts_taught_so_far,n_train_examples,n_general_replay,n_previous_replay,training_seconds,final_val_loss,adapter_mb,acc_new_all30,acc_taught_so_far,acc_this_cycle_facts,acc_earlier_cycles_facts,acc_old,acc_reasoning,forgetting_rate,questions_lost,confidently_wrong_old,median_latency_s,median_tokens_per_s,gpu_peak_gb,base_hash_verified,gate_would_pass,arm_label
+no_replay,1,6,20,0,0,59.9,0.001,58.7,0.1667,0.8333,0.8333,,0.5917,0.8,0.3098,57,49,1.836,7.58,8.3,True,False,No replay
+no_replay,2,12,23,0,0,83.6,0.099,58.7,0.2333,0.5833,0.8333,0.3333,0.4833,0.7857,0.3967,73,62,2.172,7.91,8.3,False,False,No replay
+no_replay,3,18,24,0,0,70.8,0.257,58.7,0.2333,0.3889,1.0,0.0833,0.475,0.7571,0.4185,77,63,2.328,8.23,8.3,False,False,No replay
+no_replay,4,24,23,0,0,82.6,0.154,58.7,0.2,0.25,0.5,0.1667,0.0917,0.4286,0.7772,143,109,1.808,7.76,8.3,False,False,No replay
+no_replay,5,30,23,0,0,68.3,0.003,58.7,0.2333,0.2333,0.8333,0.0833,0.1667,0.5571,0.6793,125,100,2.374,8.33,8.3,True,False,No replay
+general_replay,1,6,40,20,0,107.0,0.031,58.7,0.2667,1.0,1.0,,0.875,0.8571,0.1033,19,15,1.8,6.5,8.3,True,False,General replay
+general_replay,2,12,46,23,0,306.1,0.034,58.7,0.2,0.5,0.8333,0.1667,0.65,0.8286,0.2717,50,42,2.347,5.55,8.3,False,False,General replay
+general_replay,3,18,48,24,0,127.2,0.37,58.7,0.3333,0.5556,0.8333,0.4167,0.6333,0.8,0.2935,54,44,1.603,7.34,8.3,False,False,General replay
+general_replay,4,24,46,23,0,141.2,0.035,58.7,0.1333,0.1667,0.5,0.0556,0.5167,0.6,0.4457,82,58,2.353,5.15,8.3,False,False,General replay
+general_replay,5,30,46,23,0,159.2,0.155,58.7,0.2333,0.2333,0.6667,0.125,0.375,0.6143,0.5272,97,75,1.909,6.75,8.3,True,False,General replay
+full_replay,1,6,40,20,0,112.5,0.031,58.7,0.2667,1.0,1.0,,0.875,0.8571,0.1033,19,15,1.771,6.76,8.3,True,False,Full replay
+full_replay,2,12,66,23,20,197.7,0.274,58.7,0.3667,0.8333,0.6667,1.0,0.5833,0.7571,0.337,62,50,1.751,7.2,8.3,False,False,Full replay
+full_replay,3,18,72,24,24,203.5,0.341,58.7,0.5667,0.8889,1.0,0.8333,0.5667,0.7429,0.3478,64,52,1.65,7.08,8.3,False,False,Full replay
+full_replay,4,24,69,23,23,197.4,0.059,58.7,0.5333,0.6667,0.3333,0.7778,0.4417,0.6,0.4837,89,67,1.64,7.3,8.3,False,False,Full replay
+full_replay,5,30,69,23,23,181.7,0.135,58.7,0.6333,0.6333,0.6667,0.625,0.4,0.4571,0.5707,105,72,1.699,7.51,8.3,True,False,Full replay

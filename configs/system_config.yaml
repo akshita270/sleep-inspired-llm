@@ -1,0 +1,22 @@
+database:
+  path: "data/database/sleep_learning.db"
+
+# Experiment B settings. Fixed BEFORE running the experiment; do not tune on test results.
+episodic_memory:
+  embedding_model: "sentence-transformers/all-MiniLM-L6-v2"
+  top_k: 3                 # facts handed to the model per question
+  min_similarity: 0.30     # facts less similar than this are not used
+  include_personal: false  # personal facts stay out of general memory
+
+# Validation rules. Change numbers here instead of editing code.
+validation:
+  min_words: 4                       # shorter than this = incomplete statement
+  max_words: 60                      # longer than this = not a single clear fact
+  duplicate_similarity: 0.85         # word-overlap score (0-1) above which two statements are "the same"
+  conflict_subject_similarity: 0.80  # how alike two subjects must be to compare their values
+  # Sources that count as already approved. A plain user claim is NOT trusted.
+  trusted_sources: ["experiment_fixture", "human_reviewed"]
+  # Patterns that suggest private data (email, phone). They force explicit approval.
+  sensitive_patterns:
+    - '[\w.+-]+@[\w-]+\.[\w.]+'
+    - '\+?\d[\d\s().-]{8,}\d'

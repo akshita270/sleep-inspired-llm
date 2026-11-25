@@ -1,0 +1,27 @@
+dataset:
+  seed: 42                     # same seed + same data = identical dataset
+  questions_per_fact: 6        # generated question wordings per fact (some get dropped by the leak guard)
+  include_personal: false      # personal facts never enter the general training set
+  replay_ratio: 0.0            # replay examples per fact example (0 = none). Replay = base model's own answers to general questions
+  # A training question this similar (word overlap 0-1) to ANY evaluation question is dropped,
+  # so the evaluation sets stay unseen even in slightly reworded form.
+  eval_leak_similarity: 0.80
+  system_prompt: "Answer the question in one short sentence."   # must match model_config.yaml
+
+# LoRA fine-tuning. Values fixed BEFORE training; if tuned, tune on validation loss, never on the evaluation sets.
+lora:
+  rank: 16                  # width of the two small matrices A and B (bigger = more capacity)
+  scale: 20.0               # how strongly the adapter output is added to the base output
+  dropout: 0.0
+  num_layers: 16            # adapt the last 16 of the model's layers
+  batch_size: 4
+  epochs: 5                 # passes over each cycle's training examples
+  # Run 1 used 0.0002 and diverged (validation loss 5.4 -> 12.7, train loss spiked to 16.8).
+  # mlx-lm's own default is 0.00001. Changed on VALIDATION loss only; evaluation sets untouched.
+  learning_rate: 0.00005
+  max_seq_length: 256
+  grad_checkpoint: true     # saves memory by recomputing activations (16 GB Mac)
+  mask_prompt: true         # learn from the answer tokens, not the question tokens
+  steps_per_report: 5
+  seed: 42
+  verify_base_weights: true # hash the base model files before and after training

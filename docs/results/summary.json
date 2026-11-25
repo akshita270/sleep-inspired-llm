@@ -1,0 +1,84 @@
+{
+  "phase8": [
+    {
+      "model": "A: original Qwen",
+      "new_facts": 0.0,
+      "old_knowledge": 0.9917,
+      "reasoning": 0.9286,
+      "forgetting_rate": NaN,
+      "median_latency_s": 1.525,
+      "training_seconds": NaN,
+      "gate": "champion"
+    },
+    {
+      "model": "B: Qwen + episodic memory",
+      "new_facts": 1.0,
+      "old_knowledge": 0.9917,
+      "reasoning": 0.9286,
+      "forgetting_rate": 0.0,
+      "median_latency_s": 1.638,
+      "training_seconds": NaN,
+      "gate": "not trained"
+    },
+    {
+      "model": "C: LoRA, no replay",
+      "new_facts": 0.8333,
+      "old_knowledge": 0.5917,
+      "reasoning": 0.8429,
+      "forgetting_rate": 0.3098,
+      "median_latency_s": 2.087,
+      "training_seconds": 350.0,
+      "gate": "rejected"
+    },
+    {
+      "model": "C: LoRA + replay",
+      "new_facts": 0.8667,
+      "old_knowledge": 0.9333,
+      "reasoning": 0.8429,
+      "forgetting_rate": 0.0761,
+      "median_latency_s": 1.603,
+      "training_seconds": 593.3,
+      "gate": "rejected"
+    }
+  ],
+  "continual_final_cycle": [
+    {
+      "arm": "no_replay",
+      "acc_new_all30": 0.2333,
+      "acc_earlier_cycles_facts": 0.0833,
+      "acc_old": 0.1667,
+      "acc_reasoning": 0.5571,
+      "forgetting_rate": 0.6793
+    },
+    {
+      "arm": "general_replay",
+      "acc_new_all30": 0.2333,
+      "acc_earlier_cycles_facts": 0.125,
+      "acc_old": 0.375,
+      "acc_reasoning": 0.6143,
+      "forgetting_rate": 0.5272
+    },
+    {
+      "arm": "full_replay",
+      "acc_new_all30": 0.6333,
+      "acc_earlier_cycles_facts": 0.625,
+      "acc_old": 0.4,
+      "acc_reasoning": 0.4571,
+      "forgetting_rate": 0.5707
+    }
+  ],
+  "gate_would_pass_count": 0,
+  "cycles_total": 15,
+  "limitations": [
+    "Each Phase 9 arm was run once (seed 42); each fact group has only 6 facts, so one fact = 16.7 points. Small gaps between arms may be noise.",
+    "The facts are fictional and injected as trusted 'experiment_fixture' facts, not collected from live chat.",
+    "The 100 general replay questions are written by hand and answered by the original model; they are not read from the SQLite store.",
+    "The dev set under-estimated forgetting (1.7% on dev vs 7.6% on the final exam for the selected setting).",
+    "The old-knowledge and reasoning test sets are near ceiling (99.2% / 92.9%) for the original model, so they are coarse.",
+    "The leak guard blocks near-copies of exam questions (Jaccard >= 0.8) but allows similar wordings.",
+    "GPU peak memory during training is not measured properly (the CPU-side RSS number undercounts).",
+    "Rollback is unit-tested but was never exercised on a promoted model, because no adapter passed the gate.",
+    "The classifier and conflict detector are simple rules, not learned models.",
+    "The first episodic-memory run (before a validator fix) was lost; its numbers (86.7% new knowledge, 90% retrieval, 3 facts rejected) exist only in the chat log."
+  ]
+}

@@ -1,0 +1,31 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+.DS_Store
+# model weights and adapters (large, reproducible)
+models/
+*.safetensors
+# per-run databases, adapters and training data live under experiments/results; keep only the small summaries
+experiments/results/**/*.db
+experiments/results/**/*.db-shm
+experiments/results/**/*.db-wal
+experiments/results/**/*.safetensors
+experiments/results_cache/
+data/database/*.db*
+data/training/
+
+# per-run internals: large and contain local file paths
+experiments/results/continual/**/adapters/
+experiments/results/continual/**/datasets/
+experiments/results/continual_smoke/
+experiments/results/tuning/*/
+experiments/results/experiment_c/
+experiments/results/experiment_c_30facts/adapters/*/train.log
+experiments/results/experiment_c_30facts/adapters/*/train_config.yaml
+experiments/results/experiment_c_30facts/adapters/*/adapter_config.json
+experiments/results/experiment_c_30facts/datasets/
+experiments/results/experiment_c_final/adapters/*/train.log
+experiments/results/experiment_c_final/adapters/*/train_config.yaml
+experiments/results/experiment_c_final/adapters/*/adapter_config.json
+experiments/results/experiment_c_final/datasets/

@@ -1,0 +1,100 @@
+{"question": "What is the capital of Peru?", "answer": "The capital of Peru is Lima.", "source": "base_model_self_answer"}
+{"question": "What is the capital of Norway?", "answer": "The capital of Norway is Oslo.", "source": "base_model_self_answer"}
+{"question": "What is the capital of Argentina?", "answer": "The capital of Argentina is Buenos Aires.", "source": "base_model_self_answer"}
+{"question": "What is the capital of Portugal?", "answer": "The capital of Portugal is Lisbon.", "source": "base_model_self_answer"}
+{"question": "What is the capital of Thailand?", "answer": "The capital of Thailand is Bangkok.", "source": "base_model_self_answer"}
+{"question": "What is the capital of Kenya?", "answer": "The capital of Kenya is Nairobi.", "source": "base_model_self_answer"}
+{"question": "What is the capital of Poland?", "answer": "The capital of Poland is Warsaw.", "source": "base_model_self_answer"}
+{"question": "What is the capital of Chile?", "answer": "The capital of Chile is Santiago.", "source": "base_model_self_answer"}
+{"question": "What is the capital of Iran?", "answer": "The capital of Iran is Tehran.", "source": "base_model_self_answer"}
+{"question": "What is the capital of Ghana?", "answer": "The capital of Ghana is Accra.", "source": "base_model_self_answer"}
+{"question": "What is the chemical symbol for silver?", "answer": "The chemical symbol for silver is Ag.", "source": "base_model_self_answer"}
+{"question": "What is the chemical symbol for zinc?", "answer": "The chemical symbol for zinc is Zn.", "source": "base_model_self_answer"}
+{"question": "What is the chemical symbol for copper?", "answer": "The chemical symbol for copper is Cu.", "source": "base_model_self_answer"}
+{"question": "What is the chemical symbol for helium?", "answer": "The chemical symbol for helium is He.", "source": "base_model_self_answer"}
+{"question": "What is the atomic number of oxygen?", "answer": "The atomic number of oxygen is 8.", "source": "base_model_self_answer"}
+{"question": "What is the atomic number of sodium?", "answer": "The atomic number of sodium is 11.", "source": "base_model_self_answer"}
+{"question": "Which planet is closest to the Sun?", "answer": "The planet closest to the Sun is Mercury.", "source": "base_model_self_answer"}
+{"question": "Which planet with prominent rings is sixth from the Sun?", "answer": "Saturn is the planet with prominent rings that is sixth from the Sun.", "source": "base_model_self_answer"}
+{"question": "What is the name of Earth's natural satellite?", "answer": "The name of Earth's natural satellite is the Moon.", "source": "base_model_self_answer"}
+{"question": "What is the capital city of Scotland?", "answer": "The capital city of Scotland is Edinburgh.", "source": "base_model_self_answer"}
+{"question": "Which river flows through Paris?", "answer": "The Seine River flows through Paris.", "source": "base_model_self_answer"}
+{"question": "What is the tallest waterfall in the world?", "answer": "The tallest waterfall in the world is Angel Falls, located in Venezuela.", "source": "base_model_self_answer"}
+{"question": "Which ocean lies between Africa and Australia?", "answer": "The ocean that lies between Africa and Australia is the Indian Ocean.", "source": "base_model_self_answer"}
+{"question": "Which country has the largest land area?", "answer": "Russia has the largest land area.", "source": "base_model_self_answer"}
+{"question": "What is the longest river in South America?", "answer": "The longest river in South America is the Amazon River.", "source": "base_model_self_answer"}
+{"question": "Who wrote the novel Pride and Prejudice?", "answer": "Jane Austen wrote the novel *Pride and Prejudice*.", "source": "base_model_self_answer"}
+{"question": "Who wrote the novel Don Quixote?", "answer": "The novel *Don Quixote* was written by Miguel de Cervantes.", "source": "base_model_self_answer"}
+{"question": "Who wrote the epic poem The Odyssey?", "answer": "The Odyssey was written by Homer.", "source": "base_model_self_answer"}
+{"question": "Who painted the ceiling of the Sistine Chapel?", "answer": "Michelangelo painted the ceiling of the Sistine Chapel.", "source": "base_model_self_answer"}
+{"question": "Who composed the Moonlight Sonata?", "answer": "The Moonlight Sonata was composed by Ludwig van Beethoven.", "source": "base_model_self_answer"}
+{"question": "Who sculpted the statue of David in Florence?", "answer": "The statue of David in Florence was sculpted by Donatello.", "source": "base_model_self_answer"}
+{"question": "Who, according to legend, discovered gravity after seeing an apple fall?", "answer": "According to legend, Isaac Newton discovered gravity after seeing an apple fall.", "source": "base_model_self_answer"}
+{"question": "Who proposed the theory of evolution by natural selection?", "answer": "Charles Darwin proposed the theory of evolution by natural selection.", "source": "base_model_self_answer"}
+{"question": "Who is credited with inventing the telephone?", "answer": "Alexander Graham Bell is credited with inventing the telephone.", "source": "base_model_self_answer"}
+{"question": "Who was the first President of France's Fifth Republic?", "answer": "The first President of France's Fifth Republic was Charles de Gaulle.", "source": "base_model_self_answer"}
+{"question": "When did World War I start? Give the year.", "answer": "World War I started in 1914.", "source": "base_model_self_answer"}
+{"question": "In which year was the American Declaration of Independence signed?", "answer": "The American Declaration of Independence was signed in 1776.", "source": "base_model_self_answer"}
+{"question": "In which year did the Titanic sink?", "answer": "The Titanic sank in 1912.", "source": "base_model_self_answer"}
+{"question": "In which year was the first iPhone released?", "answer": "The first iPhone was released in 2007.", "source": "base_model_self_answer"}
+{"question": "Who was the first person to travel into space?", "answer": "Yuri Gagarin was the first person to travel into space.", "source": "base_model_self_answer"}
+{"question": "What is the largest internal organ of the human body?", "answer": "The largest internal organ of the human body is the liver.", "source": "base_model_self_answer"}
+{"question": "How many teeth does an adult human normally have?", "answer": "An adult human normally has 32 teeth.", "source": "base_model_self_answer"}
+{"question": "What is the most abundant element in the Sun?", "answer": "The most abundant element in the Sun is hydrogen.", "source": "base_model_self_answer"}
+{"question": "How many players from one team are on the field in a soccer match?", "answer": "In a soccer match, 11 players from one team are on the field.", "source": "base_model_self_answer"}
+{"question": "What do bees collect from flowers to make honey?", "answer": "Bees collect nectar from flowers to make honey.", "source": "base_model_self_answer"}
+{"question": "What is the process by which plants make food from sunlight called?", "answer": "The process by which plants make food from sunlight is called photosynthesis.", "source": "base_model_self_answer"}
+{"question": "Which blood cells carry oxygen around the body?", "answer": "Red blood cells carry oxygen around the body.", "source": "base_model_self_answer"}
+{"question": "What is the SI unit of energy?", "answer": "The SI unit of energy is the joule.", "source": "base_model_self_answer"}
+{"question": "What is the SI unit of power?", "answer": "The SI unit of power is the watt.", "source": "base_model_self_answer"}
+{"question": "What is the SI unit of frequency?", "answer": "The SI unit of frequency is the hertz (Hz).", "source": "base_model_self_answer"}
+{"question": "What does RAM stand for?", "answer": "RAM stands for Random Access Memory.", "source": "base_model_self_answer"}
+{"question": "What does USB stand for?", "answer": "USB stands for Universal Serial Bus.", "source": "base_model_self_answer"}
+{"question": "What does GPS stand for?", "answer": "GPS stands for Global Positioning System.", "source": "base_model_self_answer"}
+{"question": "What does DNA stand for?", "answer": "DNA stands for Deoxyribonucleic Acid.", "source": "base_model_self_answer"}
+{"question": "Which company created the Windows operating system?", "answer": "Microsoft created the Windows operating system.", "source": "base_model_self_answer"}
+{"question": "Which programming language was developed by Bjarne Stroustrup?", "answer": "Bjarne Stroustrup developed the C++ programming language.", "source": "base_model_self_answer"}
+{"question": "What is the name of the force that pulls objects towards the Earth?", "answer": "The force that pulls objects towards the Earth is called gravity.", "source": "base_model_self_answer"}
+{"question": "Who is the author of the Harry Potter books?", "answer": "J.K. Rowling is the author of the Harry Potter books.", "source": "base_model_self_answer"}
+{"question": "What language is mainly spoken in Argentina?", "answer": "The main language spoken in Argentina is Spanish.", "source": "base_model_self_answer"}
+{"question": "What is the currency of the United Kingdom?", "answer": "The currency of the United Kingdom is the pound sterling.", "source": "base_model_self_answer"}
+{"question": "What is 36 plus 49?", "answer": "36 plus 49 equals 85.", "source": "base_model_self_answer"}
+{"question": "What is 15 times 12?", "answer": "15 times 12 is 180.", "source": "base_model_self_answer"}
+{"question": "What is 200 divided by 8?", "answer": "200 divided by 8 is 25.", "source": "base_model_self_answer"}
+{"question": "What is 1000 minus 357?", "answer": "1000 minus 357 is 643.", "source": "base_model_self_answer"}
+{"question": "What is 9 squared?", "answer": "9 squared is 81.", "source": "base_model_self_answer"}
+{"question": "What is the square root of 144?", "answer": "The square root of 144 is 12.", "source": "base_model_self_answer"}
+{"question": "What is 20 percent of 150?", "answer": "20 percent of 150 is 30.", "source": "base_model_self_answer"}
+{"question": "A pencil costs 2 dollars. How much do 9 pencils cost in dollars?", "answer": "9 pencils cost $18.", "source": "base_model_self_answer"}
+{"question": "A bus travels 45 km per hour for 4 hours. How many kilometres does it travel?", "answer": "The bus travels $45 \\, \\text{km/h} \\times 4 \\, \\text{h} = 180 \\, \\text{km}$.", "source": "base_model_self_answer"}
+{"question": "Mia has 20 stickers and gives 7 to a friend. How many stickers does she have left?", "answer": "Mia has 20 - 7 = 13 stickers left.", "source": "base_model_self_answer"}
+{"question": "If a square has sides of 6 cm, what is its area in square centimetres?", "answer": "The area of the square is $6 \\times 6 = 36$ square centimetres.", "source": "base_model_self_answer"}
+{"question": "What is the perimeter of a rectangle that is 7 cm long and 3 cm wide?", "answer": "The perimeter of the rectangle is $2 \\times (7 + 3) = 20$ cm.", "source": "base_model_self_answer"}
+{"question": "If today is Friday, what day will it be in 2 days?", "answer": "If today is Friday, then in 2 days it will be Sunday.", "source": "base_model_self_answer"}
+{"question": "What is the next number in the sequence 5, 10, 15, 20?", "answer": "The next number in the sequence 5, 10, 15, 20 is 25.", "source": "base_model_self_answer"}
+{"question": "What is the next number in the sequence 1, 3, 9, 27?", "answer": "The next number in the sequence 1, 3, 9, 27 is 81.", "source": "base_model_self_answer"}
+{"question": "What number comes next: 100, 90, 80, 70?", "answer": "The next number is 60.", "source": "base_model_self_answer"}
+{"question": "Is the number 17 prime? Answer yes or no.", "answer": "Yes.", "source": "base_model_self_answer"}
+{"question": "How many minutes are in 3 hours?", "answer": "180 minutes.", "source": "base_model_self_answer"}
+{"question": "What is half of 86?", "answer": "Half of 86 is 43.", "source": "base_model_self_answer"}
+{"question": "What is 3 to the power of 4?", "answer": "3 to the power of 4 is 81.", "source": "base_model_self_answer"}
+{"question": "What does this Python code print? print(len('python'))", "answer": "The code prints the length of the string 'python', which is 6.", "source": "base_model_self_answer"}
+{"question": "What does this Python code print? print(6 * 3 + 1)", "answer": "The code prints `19`.", "source": "base_model_self_answer"}
+{"question": "What does this Python code print? print('a' + 'b' * 2)", "answer": "The code prints 'abb'.", "source": "base_model_self_answer"}
+{"question": "What does this Python code print? print(max([4, 9, 2]))", "answer": "The code prints the maximum value in the list, which is 9.", "source": "base_model_self_answer"}
+{"question": "What does this Python code print? print([7, 8] + [9])", "answer": "The code prints `[7, 8, 9]`.", "source": "base_model_self_answer"}
+{"question": "What does this Python code print? x = 10; x -= 4; print(x)", "answer": "The code prints `6`.", "source": "base_model_self_answer"}
+{"question": "What does this Python code print? print('Hello'[0])", "answer": "The code prints 'H'.", "source": "base_model_self_answer"}
+{"question": "What does this Python code print? print(list(range(3)))", "answer": "This Python code prints [0, 1, 2].", "source": "base_model_self_answer"}
+{"question": "What does this Python code print? print(abs(-7))", "answer": "The code prints `7`.", "source": "base_model_self_answer"}
+{"question": "What does this Python code print? print(9 // 2)", "answer": "The code prints `4`.", "source": "base_model_self_answer"}
+{"question": "What does this Python code print? print('hello'.replace('l', 'L'))", "answer": "The code prints 'hELLo'.", "source": "base_model_self_answer"}
+{"question": "What does this Python code print? print(sorted([9, 5, 7]))", "answer": "The code prints [5, 7, 9].", "source": "base_model_self_answer"}
+{"question": "If all roses are flowers and all flowers need water, do roses need water? Answer yes or no.", "answer": "Yes.", "source": "base_model_self_answer"}
+{"question": "Tom is older than Sue. Sue is older than Raj. Who is the youngest?", "answer": "Raj is the youngest.", "source": "base_model_self_answer"}
+{"question": "How many legs do 5 spiders have in total?", "answer": "5 spiders have a total of 40 legs.", "source": "base_model_self_answer"}
+{"question": "How many days are there in a leap year?", "answer": "A leap year has 366 days.", "source": "base_model_self_answer"}
+{"question": "How many hours are in a week?", "answer": "A week has 168 hours.", "source": "base_model_self_answer"}
+{"question": "What is 0.5 plus 0.25?", "answer": "0.5 plus 0.25 equals 0.75.", "source": "base_model_self_answer"}
+{"question": "If you have 3 dozen eggs, how many eggs do you have?", "answer": "If you have 3 dozen eggs, you have 36 eggs.", "source": "base_model_self_answer"}
+{"question": "What is the sum of the angles of a triangle in degrees?", "answer": "The sum of the angles of a triangle is 180 degrees.", "source": "base_model_self_answer"}

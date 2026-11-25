@@ -1,0 +1,114 @@
+"""Read the REAL measured results from experiments/results/ (nothing is typed in by hand).
+
+Every number the dashboard, the API and the docs show comes from the files read here.
+If a file is missing the function raises FileNotFoundError instead of inventing a value.
+"""
+import json
+from pathlib import Path
+
+import pandas as pd
+
+from src.utils.config_loader import PROJECT_ROOT
+
+RESULTS = PROJECT_ROOT / "experiments" / "results"
+ARM_ORDER = ["no_replay", "general_replay", "full_replay"]
+ARM_LABELS = {"no_replay": "No replay", "general_replay": "General replay", "full_replay": "Full replay"}
+
+
+def _json(path: Path) -> dict:
+    return json.loads(path.read_text())
+
+
+def phase8_comparison() -> pd.DataFrame:
+    """The A / B / C / C+replay final-exam table (220 questions)."""
+    a, b = _json(RESULTS / "baseline_summary.json"), _json(RESULTS / "episodic_summary.json")
+    c_no = _json(RESULTS / "experiment_c_30facts" / "evaluations" / "adapter_cycle_003_evaluation.json")
+    c_re = _json(RESULTS / "experiment_c_final" / "evaluations" / "adapter_cycle_001_evaluation.json")
+    t_no = _json(RESULTS / "experiment_c_30facts" / "adapters" / "cycle_003" / "training_metrics.json")
+    t_re = _json(RESULTS / "experiment_c_final" / "adapters" / "cycle_001" / "training_metrics.json")
+
+    def row(name, acc, forgetting, latency, train_s=None, gate=None):
+        return {"model": name, "new_facts": acc["new_knowledge"], "old_knowledge": acc["old_knowledge"],
+                "reasoning": acc["reasoning"], "forgetting_rate": forgetting,
+                "median_latency_s": latency, "training_seconds": train_s, "gate": gate}
+
+    return pd.DataFrame([
+        row("A: original Qwen", a["accuracy"], None, a["median_latency_s"], None, "champion"),
+        row("B: Qwen + episodic memory", b["accuracy"], 0.0, b["median_latency_s"], None, "not trained"),
+        row("C: LoRA, no replay", c_no["summary"]["accuracy"], c_no["forgetting"]["combined"]["forgetting_rate"],
+            c_no["summary"]["median_latency_s"], t_no["training_seconds"], "rejected" if not c_no["gate"]["passed"] else "passed"),
+        row("C: LoRA + replay", c_re["summary"]["accuracy"], c_re["forgetting"]["combined"]["forgetting_rate"],
+            c_re["summary"]["median_latency_s"], t_re["training_seconds"], "rejected" if not c_re["gate"]["passed"] else "passed"),
+    ])
+
+
+def phase8_gate_checks() -> pd.DataFrame:
+    """Per-rule gate result for the replay adapter and the no-replay adapter."""
+    out = []
+    for name, p in [("C: LoRA, no replay", "experiment_c_30facts/evaluations/adapter_cycle_003_evaluation.json"),
+                    ("C: LoRA + replay", "experiment_c_final/evaluations/adapter_cycle_001_evaluation.json")]:
+        for c in _json(RESULTS / p)["gate"]["checks"]:
+            out.append({"model": name, "check": c["check"], "value": c["value"], "rule": c["rule"], "passed": c["passed"]})
+    return pd.DataFrame(out)
+
+
+def tuning_table() -> pd.DataFrame:
+    t = _json(RESULTS / "tuning" / "tuning_summary.json")
+    rows = []
+    for k, v in t.items():
+        if k.startswith("_"):
+            continue
+        rows.append({"setting": k, "dev_knowledge": v["dev_accuracy"]["dev_knowledge"],
+                     "dev_reasoning": v["dev_accuracy"]["dev_reasoning"],
+                     "dev_forgetting": v["forgetting"]["forgetting_rate"],
+                     "paraphrase_acc": v["paraphrase_accuracy"], "train_examples": v["n_train_examples"],
+                     "training_seconds": v.get("training_seconds"), "selected": k == t.get("_selected")})
+    return pd.DataFrame(rows)
+
+
+def continual_table() -> pd.DataFrame:
+    """One row per (arm, cycle) from the Phase 9 run."""
+    rows = []
+    for arm in ARM_ORDER:
+        f = RESULTS / "continual" / arm / "results.json"
+        if f.exists():
+            rows += _json(f)
+    if not rows:
+        raise FileNotFoundError("no continual results found; run python -m experiments.continual_learning")
+    df = pd.DataFrame(rows)
+    df["arm_label"] = df["arm"].map(ARM_LABELS)
+    return df
+
+
+def fact_group_matrix(arm: str) -> pd.DataFrame:
+    """Rows = cycle, columns = fact group (1-5): accuracy on that group's facts after each cycle."""
+    rows = _json(RESULTS / "continual" / arm / "results.json")
+    m = pd.DataFrame([{int(g): v for g, v in r["acc_by_fact_group"].items()} for r in rows],
+                     index=[r["cycle"] for r in rows])
+    m.index.name = "after cycle"
+    return m.sort_index(axis=1)
+
+
+def known_limitations() -> list[str]:
+    return [
+        "Each Phase 9 arm was run once (seed 42); each fact group has only 6 facts, so one fact = 16.7 points. Small gaps between arms may be noise.",
+        "The facts are fictional and injected as trusted 'experiment_fixture' facts, not collected from live chat.",
+        "The 100 general replay questions are written by hand and answered by the original model; they are not read from the SQLite store.",
+        "The dev set under-estimated forgetting (1.7% on dev vs 7.6% on the final exam for the selected setting).",
+        "The old-knowledge and reasoning test sets are near ceiling (99.2% / 92.9%) for the original model, so they are coarse.",
+        "The leak guard blocks near-copies of exam questions (Jaccard >= 0.8) but allows similar wordings.",
+        "GPU peak memory during training is not measured properly (the CPU-side RSS number undercounts).",
+        "Rollback is unit-tested but was never exercised on a promoted model, because no adapter passed the gate.",
+        "The classifier and conflict detector are simple rules, not learned models.",
+        "The first episodic-memory run (before a validator fix) was lost; its numbers (86.7% new knowledge, 90% retrieval, 3 facts rejected) exist only in the chat log.",
+    ]
+
+
+def summary() -> dict:
+    cont = continual_table()
+    last = cont[cont["cycle"] == cont["cycle"].max()]
+    return {"phase8": phase8_comparison().to_dict("records"),
+            "continual_final_cycle": last[["arm", "acc_new_all30", "acc_earlier_cycles_facts", "acc_old",
+                                           "acc_reasoning", "forgetting_rate"]].to_dict("records"),
+            "gate_would_pass_count": int(cont["gate_would_pass"].sum()), "cycles_total": int(len(cont)),
+            "limitations": known_limitations()}

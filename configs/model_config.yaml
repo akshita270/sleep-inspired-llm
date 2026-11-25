@@ -1,0 +1,10 @@
+# Model + inference settings. Every experiment reads these so runs are comparable.
+model:
+  name: "Qwen/Qwen3-4B"      # base model, never modified
+  adapter_path: null          # LoRA adapter folder, or null for the original model
+
+generation:
+  max_tokens: 256             # answers are short, keeps evaluation fast
+  temperature: 0.0            # greedy decoding = repeatable results
+  enable_thinking: false      # Qwen3 "thinking" mode off: direct answers only
+  system_prompt: "Answer the question in one short sentence."
