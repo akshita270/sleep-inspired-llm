@@ -191,3 +191,18 @@ def captions() -> dict[str, str]:
         "gate": "Each row is one safety rule, checked for one trained model. The rules were fixed before any test was run. Both trained models failed the forgetting, old-knowledge and reasoning rules, so neither replaced the original model.",
         "tuning": "Settings tried on a separate practice set, so the final exam was never used to choose them. 'selected' marks the setting used for the final run. The practice set was easier than the final exam (it showed 1.7% forgetting where the exam showed 7.6%).",
     }
+
+
+def fact_grid() -> dict:
+    """For each arm and cycle: which of the 30 new facts the model answered correctly (1/0), ordered new_001..new_030."""
+    out = {}
+    for arm in ARM_ORDER:
+        cycles = []
+        for k in range(1, 6):
+            df = pd.read_csv(RESULTS / "continual" / arm / f"cycle_{k:03d}_details.csv")
+            new = df[df["benchmark"] == "new_knowledge"].sort_values("id")
+            if len(new) != 30:
+                raise ValueError(f"{arm} cycle {k}: expected 30 new-knowledge rows, got {len(new)}")
+            cycles.append([int(bool(v)) for v in new["correct"]])
+        out[arm] = cycles
+    return out

@@ -20,6 +20,15 @@ st.title("Sleep-inspired continual learning for a local LLM")
 st.caption("Qwen3-4B (full precision) + LoRA on an Apple M2, 16 GB. Wake: collect and validate. Sleep: train, evaluate, gate. "
            "All numbers below are measured and read from files.")
 
+_p8, _ct = R.phase8_comparison(), R.continual_table()
+_last = _ct[_ct["cycle"] == _ct["cycle"].max()].set_index("arm")
+m1, m2, m3 = st.columns(3)
+m1.metric("Real-world knowledge after cramming 30 new facts", f"{_p8.iloc[2]['old_knowledge'] * 100:.1f}%",
+          f"{(_p8.iloc[2]['old_knowledge'] - _p8.iloc[0]['old_knowledge']) * 100:.1f} pts vs original")
+m2.metric("Earlier facts kept after 5 rounds (full replay)", f"{_last.loc['full_replay', 'acc_earlier_cycles_facts'] * 100:.1f}%",
+          f"{(_last.loc['full_replay', 'acc_earlier_cycles_facts'] - _last.loc['no_replay', 'acc_earlier_cycles_facts']) * 100:+.1f} pts vs no replay")
+m3.metric("Rounds that passed the safety gate", f"{int(_ct['gate_would_pass'].sum())} of {len(_ct)}")
+
 with st.expander("New here? Plain-English guide (higher is better, except forgetting)", expanded=True):
     for term, text in R.plain_guide():
         st.markdown(f"**{term}:** {text}")
